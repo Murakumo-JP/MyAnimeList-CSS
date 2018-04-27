@@ -116,7 +116,7 @@
 /* Cover Block */
 
 .list-container .cover-block {
-    background-image: url("https://dl.dropbox.com/s/bqtc74xr5ow98o9/cover-block-1.png");
+    background-image: url("https://murakumochan.github.io/MurakumoMalCss/Eorzea_Collection_Mal/cover-block-1.png");
 }
 
 .list-container .cover-block {
@@ -134,7 +134,7 @@
     display: block;
     width: 730px;
     height: 250px;
-    background: url("https://dl.dropbox.com/s/wdhdg20lqafmxj5/cover-block-2v2.png") #1a2426;
+    background: url("https://murakumochan.github.io/MurakumoMalCss/Eorzea_Collection_Mal/cover-block-2v2.png") #1a2426;
     clip-path: polygon(0% 100%, 70% 100%, 90% 0, 0px 0px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -171,7 +171,7 @@
     margin-top: 0px;
     padding: 2px 6px 2px 14px;
     margin-right: 14px;
-    background: url(https://dl.dropbox.com/s/70bpbinzmoewnyn/RatingRX.png) #191919f2;
+    background: url(https://murakumochan.github.io/MurakumoMalCss/Eorzea_Collection_Mal/RatingRX.png) #191919f2;
     margin-left: -100%;
     opacity: 1;
 }
