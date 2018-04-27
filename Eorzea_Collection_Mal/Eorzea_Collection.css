@@ -27,8 +27,7 @@
 .list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-volume, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-episode, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-chapter, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status{
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume,{
 	background-color: #f10834 !important;
 }
 
@@ -280,7 +279,8 @@
     padding: 4px 10px;
     font-size: 10px;
     width: 72px;
-	text-align: center;
+    text-align: center;
+    z-index: 1;
 }
 
 /*===================================================================================================*/
