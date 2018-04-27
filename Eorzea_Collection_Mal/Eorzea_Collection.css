@@ -170,7 +170,7 @@
     margin-top: 0px;
     padding: 2px 6px 2px 14px;
     margin-right: 14px;
-    background: url(https://murakumochan.github.io/MurakumoMalCss/Eorzea_Collection_Mal/RatingRX.png) #191919f2;
+    background: url("https://murakumochan.github.io/MurakumoMalCss/Eorzea_Collection_Mal/RatingRX.png") #191919f2;
     margin-left: -100%;
     opacity: 1;
 }
