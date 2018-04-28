@@ -143,7 +143,6 @@
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    opacity: 1;
 }
 
 .list-container .cover-block:after {
@@ -161,7 +160,6 @@
     position: absolute;
     top: 1px;
     right: 0;
-    opacity: 1;
 }
 
 .list-container .cover-block:hover:before {
