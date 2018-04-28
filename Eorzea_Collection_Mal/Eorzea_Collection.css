@@ -1208,7 +1208,8 @@ a.status-button:hover {
   color: #cccccc;
 }
 
-.list-container .list-unit .list-table .list-item:hover .list-table-data .data.season {
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.season,
+.list-container .list-unit .list-table .list-item:hover  .list-table-data .data.airing-started {
     display: block;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
@@ -1220,7 +1221,8 @@ a.status-button:hover {
 	width: 197px;
 }
 
-.list-container .list-unit .list-table .list-item .list-table-data .data.season {
+.list-container .list-unit .list-table .list-item .list-table-data .data.season,
+.list-container .list-unit .list-table .list-item .list-table-data .data.airing-started {
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
@@ -1244,7 +1246,7 @@ a.status-button:hover {
   color: #cccccc;
 }
 
-#footer-block, .list-unit .loading-space, .header .header-menu .btn-menu, .list-table .list-table-data .tags .edit, .list-container .list-unit .list-table .list-item .list-table-data .data.started, .list-container .list-unit .list-table .list-item .list-table-data .data.finished, .list-container .list-unit .list-table .list-item .list-table-data .data.days, .list-container .list-unit .list-table .list-item .list-table-data .data.storage, .list-container .list-unit .list-table .list-item .list-table-data .data.priority, .list-container .list-unit .list-table .list-item .list-table-data .data.airing-started, .list-container .list-unit .list-table .list-item .list-table-data .data.airing-finished, .list-container .list-unit .list-table .list-item .list-table-data .data.studio, .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, .list-container .list-unit .list-table .list-item .list-table-data .data.retail {
+#footer-block, .list-unit .loading-space, .header .header-menu .btn-menu, .list-table .list-table-data .tags .edit, .list-container .list-unit .list-table .list-item .list-table-data .data.started, .list-container .list-unit .list-table .list-item .list-table-data .data.finished, .list-container .list-unit .list-table .list-item .list-table-data .data.days, .list-container .list-unit .list-table .list-item .list-table-data .data.storage, .list-container .list-unit .list-table .list-item .list-table-data .data.priority, .list-container .list-unit .list-table .list-item .list-table-data .data.airing-finished, .list-container .list-unit .list-table .list-item .list-table-data .data.studio, .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, .list-container .list-unit .list-table .list-item .list-table-data .data.retail {
   display: none;
 }
 
