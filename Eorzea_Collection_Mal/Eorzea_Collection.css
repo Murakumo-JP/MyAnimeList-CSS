@@ -1,8 +1,17 @@
 @charset "UTF-8";
 @import url('https://malcat-gen.appspot.com/series?template=.data.image a[href^="/$list/$id/"]::after{background-image:url($series_image)}');
 
-/*===== Edit Color list =======*/ 
+/* Font */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.header .header-title, .list-unit .list-status-title .text,
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .link{
+	font-family: 'Roboto', sans-serif;
+}
+
+/*===== Edit Color list =======*/ 
+ 
 .header .header-title, .list-container .status-menu-container .status-menu .status-button.on,
 .list-container .status-menu-container .status-menu .status-button:hover,
 .list-container .list-unit .list-table .list-item .list-table-data .data.score::before,
