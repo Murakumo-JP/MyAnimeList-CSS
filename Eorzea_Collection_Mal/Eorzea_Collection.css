@@ -120,9 +120,6 @@
 
 .list-container .cover-block {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-1.png");
-}
-
-.list-container .cover-block {
     width: 1043px;
     height: 250px;
     background-color: #191919;
@@ -132,52 +129,45 @@
     border: 1px solid #f10834;
 }
 
-.list-container .cover-block:before {
-    content: "";
+.list-container .cover-block:before, .list-container .cover-block:after{
+	content: "";
     display: block;
     width: 650px;
     height: 250px;
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.list-container .cover-block:before {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-2.png");
     clip-path: polygon(0% 100%, 399px 100%, 100% 0, 0px 0px);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
 .list-container .cover-block:after {
-    content: "";
-    display: block;
-    width: 650px;
-    height: 250px;
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-2.png");
     background-position: right;
     clip-path: polygon(0% 100%, 100% 100%, 100% 0, 249px 0%);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
     position: absolute;
+	right: 0;
     top: 1px;
-    right: 0;
+}
+
+.list-container .cover-block:hover:before, .list-container .cover-block:hover:after  {
+	width: 250px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .list-container .cover-block:hover:before {
-    width: 250px;
     clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
 .list-container .cover-block:hover:after {
-    width: 250px;
     clip-path: polygon(0% 100%, 100% 100%, 100% 0, 100% 0px);
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
 }
 
 /* Hentai R-18 */
