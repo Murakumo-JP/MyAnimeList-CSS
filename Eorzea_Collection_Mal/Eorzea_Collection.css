@@ -5,10 +5,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.header .header-title, .list-container .list-unit .list-table .list-item .list-table-data .data.title .link{
-	font-family: 'Roboto', sans-serif;
-}
-
 /*===== Edit Color list =======*/ 
  
 .header .header-title, .list-container .status-menu-container .status-menu .status-button.on,
@@ -461,27 +457,22 @@ select option {
   content: "";
 }
 
-.header .header-title:hover {
-    color: #ffffff !important;
-}
-
 .header .header-title {
-    z-index: 999;
-    width: auto;
+    z-index: 101;
+    width: 165px;
+    height: 40px;
     background-image: none;
     text-indent: 0;
+    top: 0;
+    left: 0;
+    position: fixed;
+    text-decoration: none !important;
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     line-height: 40px;
-    font-size: 19px;
-    top: 0;
-    left: 0;
+    font-size: 20px;
     padding: 0 5px 0 10px;
-    color: #f10834;
     vertical-align: middle;
-    position: fixed;
-    text-transform: uppercase;
-    text-decoration: none !important;
 }
 
 .list-menu-float, .header-menu.other {
