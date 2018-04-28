@@ -216,6 +216,40 @@
     opacity: 1;
 }
 
+/* Sort Menu */
+
+.list-container .list-unit .list-table tbody:first-child::after {
+    display: inline-block;
+    font-size: 13px;
+    font-family: 'verdana', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    content: " ";
+    width: 57px;
+    height: 40px;
+    clip-path: polygon(67% 100%, 100% 100%, 33% 0, 0px 0px);
+    background-color: #f10834;
+}
+
+.list-container .list-unit .list-table tbody:first-child {
+    margin-top: -50px;
+    margin-right: 306px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: block;
+}
+
+.list-container .list-unit .list-table tbody:first-child .list-table-header {
+    height: 40px !important;
+}
+
+.header-title.tags, .header-title.started {
+    font-size: 0;
+}
+
 /*==================================== Edit ===============================================*/
 
 .list-item:hover:before {
@@ -860,13 +894,6 @@ a.status-button:hover {
     color: #fff;
     margin: 10px 0px 0px;
     padding-bottom: 6px;
-}
-
-.list-container .list-unit .list-table tbody:first-child {
-  margin-top: -67px;
-  position: absolute;
-  right: 10px;
-  cursor: pointer;
 }
 
 .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
