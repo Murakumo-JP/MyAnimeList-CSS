@@ -930,7 +930,9 @@ a.status-button:hover {
     overflow: hidden;
 }
 
-.list-container .list-unit .list-table .list-item:hover .list-table-data .data.progress {
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.progress,
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.chapter,
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.volume {
     display: block;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
@@ -949,6 +951,26 @@ a.status-button:hover {
     pointer-events: all;
     color: #fff;
 	margin-right: 5px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter:before {
+    padding: 2px 0px 0px 0;
+    content: "Chapters:";
+    font-size: 13px !important;
+    font-weight: bold;
+    pointer-events: all;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter ~ .volume:before {
+    padding: 2px 0px 0px 0;
+    content: "Volumes:";
+    font-size: 13px !important;
+    font-weight: bold;
+    pointer-events: all;
+    color: #fff;
+    margin-right: 5px;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.progress, 
@@ -1125,16 +1147,6 @@ a.status-button:hover {
     color: #ccc;
 }
 
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter, .list-container .list-unit .list-table .list-item .list-table-data .data.volume {
-  font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
-  color: #fff;
-  white-space: nowrap;
-  font-size: 0;
-  padding: 3px 9px 3px 3px;
-  border-bottom-right-radius: 9.5px;
-  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
-}
-
 .list-container .list-unit .list-table .list-item .list-table-data .data.progress div, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter div, .list-container .list-unit .list-table .list-item .list-table-data .data.volume div {
   display: inline-block;
   vertical-align: top;
@@ -1181,12 +1193,7 @@ a.status-button:hover {
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.chapter ~ .volume {
-  top: 23px;
-  border-top-right-radius: 9.5px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter ~ .volume::before {
-  opacity: 0;
+  top: 191px;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.rated, .list-container .list-unit .list-table .list-item .list-table-data .data.magazine {
