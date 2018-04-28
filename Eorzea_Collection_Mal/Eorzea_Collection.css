@@ -173,7 +173,7 @@
 
 .list-container .cover-block:hover:after {
     width: 250px;
-    clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 100% 0px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
