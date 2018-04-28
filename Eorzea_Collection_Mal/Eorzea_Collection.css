@@ -135,19 +135,47 @@
 .list-container .cover-block:before {
     content: "";
     display: block;
-    width: 730px;
+    width: 649px;
     height: 250px;
     background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-2.png") #1a2426;
-    clip-path: polygon(0% 100%, 70% 100%, 90% 0, 0px 0px);
+    clip-path: polygon(0% 100%, 399px 100%, 100% 0, 0px 0px);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+.list-container .cover-block:after {
+    content: "";
+    display: block;
+    width: 646px;
+    height: 250px;
+    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-2.png");
+    background-position: right;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 249px 0%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: absolute;
+    top: 1px;
+    right: 0;
+    opacity: 1;
+}
+
+.list-container .cover-block:hover:before {
+    width: 250px;
+    clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-.list-container .cover-block:hover:before {
-    width: 590px;
-    clip-path: polygon(0% 100%, 70% 100%, 90% 0, 0px 0px);
+.list-container .cover-block:hover:after {
+    width: 250px;
+    clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
