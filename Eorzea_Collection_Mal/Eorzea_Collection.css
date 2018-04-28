@@ -142,13 +142,13 @@
 
 .list-container .cover-block:before {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-2.png");
-    clip-path: polygon(0% 100%, 399px 100%, 100% 0, 0px 0px);
+    clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
 }
 
 .list-container .cover-block:after {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-2.png");
     background-position: right;
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 249px 0%);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
     position: absolute;
 	right: 0;
     top: 1px;
@@ -167,7 +167,7 @@
 }
 
 .list-container .cover-block:hover:after {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 100% 0px);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
 }
 
 /* Hentai R-18 */
