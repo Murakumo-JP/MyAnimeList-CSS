@@ -11,7 +11,7 @@
 /* List Cover */
 @import url(https://murakumo-jp.github.io/MyAnimeList-CSS/ShelterV3/ListCover/v3.1.css);
 
-/*========= Anime  Cover =========*/
+/*========= Anime  Cover =========*/ 
 
 @import '//mal-image.appspot.com/all/MurakumoJP/?code=.data.image%20a%5Bhref%5E%3D%22%2F%5BTYPE%5D%2F%5BID%5D%2F%22%5D%20%7B%20background%3A%20url(%5BURL%5D)%3B%20%7D%0A.data.image%20a%5Bhref%5E%3D%22%2F%5BTYPE%5D%2F%5BID%5D%2F%22%5D%20img%20%7B%20display%3A%20none%3B%20%7D';
 @import '//dl.dropbox.com/s/v4fz16bhe2i5kgt/DVD_Cover.css/?code=.data.image%20a%5Bhref%5E%3D%22%2F%5BTYPE%5D%2F%5BID%5D%2F%22%5D%20%7B%20background%3A%20url(%5BURL%5D)%3B%20%7D%0A.data.image%20a%5Bhref%5E%3D%22%2F%5BTYPE%5D%2F%5BID%5D%2F%22%5D%20img%20%7B%20display%3A%20none%3B%20%7D';
