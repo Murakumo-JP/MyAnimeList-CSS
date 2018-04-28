@@ -134,10 +134,10 @@
     display: block;
     width: 650px;
     height: 250px;
-	-webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+	-webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
 }
 
 .list-container .cover-block:before {
@@ -156,10 +156,10 @@
 
 .list-container .cover-block:hover:before, .list-container .cover-block:hover:after  {
 	width: 250px;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8;
+    transition: all 0.8s;
 }
 
 .list-container .cover-block:hover:before {
