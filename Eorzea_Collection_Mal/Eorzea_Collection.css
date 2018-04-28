@@ -5,8 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-.header .header-title, .list-unit .list-status-title .text,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .link{
+.header .header-title, .list-container .list-unit .list-table .list-item .list-table-data .data.title .link{
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -789,6 +788,8 @@ a.status-button:hover {
 }
 
 #show-stats-button {
+	font-family: 'verdana', sans-serif;
+    font-size: 11px;
     border: none;
 }
 
@@ -821,15 +822,15 @@ a.status-button:hover {
 }
 
 .list-unit .list-status-title .text {
-    clip-path: polygon(15% 100%, 100% 100%, 100% 0, 0px 0px);
+	clip-path: polygon(15% 100%, 100% 100%, 100% 0, 0px 0px);
     padding: 15px 0px 15px 35px;
     top: 0px;
     width: 220px;
-    right: 87px;
+    right: 88px;
     display: table-cell;
     vertical-align: middle;
-    font-family: 'Roboto', sans-serif;
-    font-size: inherit;
+    font-family: 'verdana', sans-serif;
+    font-size: 12px;
     height: 10px;
     background-color: #f10834;
     color: #fff;
