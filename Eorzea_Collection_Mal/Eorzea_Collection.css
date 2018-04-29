@@ -265,6 +265,11 @@
     text-decoration: none !important;
 }
 
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link:hover {
+  text-decoration: none;
+  color: #191919;
+}
+
 /*==================================== Edit ===============================================*/
 
 .list-item:hover:before {
