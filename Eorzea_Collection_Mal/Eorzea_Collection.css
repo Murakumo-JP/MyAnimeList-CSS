@@ -242,6 +242,29 @@
     display: block;
 }
 
+.list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
+    clip-path: polygon(15% 100%, 100% 100%, 331px 0, 0px 0px);
+    width: 370px;
+    height: 37px;
+    margin-top: 0px;
+    right: 30px;
+    background-color: #f10834;
+    text-align: center;
+    opacity: 1;
+}
+
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
+    padding: 0 10px;
+    border-left: none !important;
+    color: inherit;
+    font-weight: normal;
+    font-family: 'verdana', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
 /*==================================== Edit ===============================================*/
 
 .list-item:hover:before {
@@ -888,11 +911,6 @@ a.status-button:hover {
     padding-bottom: 6px;
 }
 
-.list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
-  width: 850px;
-  opacity: 1;
-}
-
 .list-container .list-unit .list-table tbody:first-child .list-table-header {
   display: inline-block;
   position: absolute;
@@ -922,14 +940,6 @@ a.status-button:hover {
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .sort-icon {
   color: inherit;
-}
-
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
-  padding: 0 10px;
-  border-left: currentColor 1px solid;
-  color: inherit;
-  font-weight: normal;
-  font-size: 13px;
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link:hover {
