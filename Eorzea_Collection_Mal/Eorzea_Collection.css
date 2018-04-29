@@ -242,18 +242,20 @@
 }
 
 .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
-    clip-path: polygon(15% 100%, 100% 100%, 331px 0, 0px 0px);
-    width: 370px;
-    height: 37px;
-    margin-top: 0px;
+    width: 465px;
+    height: 41px;
+    top: 16px;
     right: 30px;
-    background-color: #f10834;
+    background-color: transparent;
     text-align: center;
     opacity: 1;
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
-    padding: 10px 5px;
+    padding: 17px 31px 12px 34px;
+    margin: 0 -39px 0 0;
+    width: 63px;
+    background-color: #f10834;
     border-left: none !important;
     color: inherit;
     font-weight: normal;
@@ -262,11 +264,21 @@
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none !important;
+    clip-path: polygon(30% 100%, 100% 100%, 70% 0, 0px 0px);
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link:hover {
   text-decoration: none;
   color: #191919;
+}
+
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link {
+    border-left: 0;
+    display: initial;
+    top: 3px;
+    right: -2px;
+    font-size: 11px;
+    clip-path: polygon(30% 100%, 100% 100%, 72% 0, 0px 0px);
 }
 
 /*==================================== Edit ===============================================*/
@@ -952,10 +964,6 @@ a.status-button:hover {
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.image {
   display: none;
-}
-
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link {
-  border-left: 0;
 }
 
 .list-container .list-unit .list-table > tbody:nth-of-type(2n+1) {
