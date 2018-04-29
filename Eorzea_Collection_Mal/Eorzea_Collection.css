@@ -234,10 +234,9 @@
 }
 
 .list-container .list-unit .list-table tbody:first-child {
-    margin-top: -50px;
-    margin-right: 306px;
+    top: 264px;
     position: absolute;
-    right: 0;
+    right: 306px;
     cursor: pointer;
     display: block;
 }
