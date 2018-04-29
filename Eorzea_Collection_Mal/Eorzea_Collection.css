@@ -242,29 +242,29 @@
 }
 
 .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
-    width: 465px;
+	width: 370px;
     height: 41px;
-    top: 16px;
-    right: 30px;
+    top: 19px;
+    right: 0px;
     background-color: transparent;
-    text-align: center;
+    text-align: left;
     opacity: 1;
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
-    padding: 17px 31px 12px 34px;
+	padding: 15px 40px 13px 40px;
     margin: 0 -39px 0 0;
-    width: 63px;
+    width: 57px;
     background-color: #f10834;
+    border-top: 2px solid #f10834;
     border-left: none !important;
     color: inherit;
-    font-weight: normal;
     font-family: 'verdana', sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none !important;
-    clip-path: polygon(30% 100%, 100% 100%, 70% 0, 0px 0px);
+    clip-path: polygon(30% 108%, 100% 100%, 72% 0, 0px 0px);
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link:hover {
@@ -272,13 +272,8 @@
   color: #191919;
 }
 
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link {
-    border-left: 0;
-    display: initial;
-    top: 3px;
-    right: -2px;
-    font-size: 11px;
-    clip-path: polygon(30% 100%, 100% 100%, 72% 0, 0px 0px);
+i.fa.fa-sort-asc.sort-icon, .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link {
+    display: none;
 }
 
 /*==================================== Edit ===============================================*/
