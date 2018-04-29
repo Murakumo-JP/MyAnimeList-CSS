@@ -254,7 +254,7 @@
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
-    padding: 0 10px;
+    padding: 10px 5px;
     border-left: none !important;
     color: inherit;
     font-weight: normal;
