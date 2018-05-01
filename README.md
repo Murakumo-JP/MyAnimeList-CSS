@@ -1,5 +1,7 @@
 # Eorzea Collection CSS theme for MyAnimeList
 
+The Eorzea Collection site was taken as a basis for the design: http://ffxiv.eorzeacollection.com/
+
 ## Preview
 ![Screenshot](Eorzea_Collection/preview/Snapshot.jpg?raw=true)
 
