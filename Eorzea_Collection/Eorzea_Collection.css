@@ -119,7 +119,7 @@
 /* Cover Block */
 
 .list-container .cover-block {
-    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-1.png");
+    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-1.png");
     width: 1043px;
     height: 250px;
     background-color: #191919;
@@ -141,12 +141,12 @@
 }
 
 .list-container .cover-block:before {
-    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-2.png");
+    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
     clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
 }
 
 .list-container .cover-block:after {
-    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/cover-block-2.png");
+    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
     background-position: right;
     clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
     position: absolute;
@@ -190,7 +190,7 @@
     margin-top: 0px;
     padding: 2px 6px 2px 14px;
     margin-right: 14px;
-    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection_Mal/images/RatingRX.png") #191919f2;
+    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/RatingRX.png") #191919f2;
     margin-left: -100%;
     opacity: 1;
 }
