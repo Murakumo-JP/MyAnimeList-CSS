@@ -3,7 +3,7 @@
 The Eorzea Collection site was taken as a basis for the design: http://ffxiv.eorzeacollection.com/
 
 ## Preview
-![Screenshot](Eorzea_Collection/preview/Snapshot.jpg?raw=true)
+![Screenshot](Eorzea_Collection/preview/Snapshot2.jpg?raw=true)
 
 ## Features
 
