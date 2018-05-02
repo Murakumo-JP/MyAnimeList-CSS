@@ -3,7 +3,7 @@
 The Eorzea Collection site was taken as a basis for the design: http://ffxiv.eorzeacollection.com/
 
 ## Preview
-![Screenshot](Eorzea_Collection/preview/Snapshot.jpg?raw=true)
+![Screenshot](Eorzea_Collection/preview/Snapshot2.jpg?raw=true)
 
 ## Features
 
@@ -28,14 +28,16 @@ https://myanimelist.net/ownlist/style
 
 ![Screenshot](Eorzea_Collection/preview/ListSettings/StyleEdit.png?raw=true)
 
-Select the default theme and paste the code into the Add custom CSS
+Go to your list style editing page, and turn off these options.
+https://myanimelist.net/ownlist/style/theme/1
+![Screenshot](https://i.imgur.com/1pVzKRM.png?raw=true)
+
+On the same page, in the Add Custom CSS field, paste the code shown below.
 
 ```css
-@import url('https://malcat-gen.appspot.com/series?template=.data.image a[href^="/$list/$id/"]:after{background-image:url($series_image)}');
 @import url('https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/Eorzea_Collection.css');
 ```
 If you want to change the images in CSS then paste this after the code and replace the links to your.
-
 
 ```css
 .list-container .cover-block {
