@@ -41,7 +41,10 @@
 .list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-volume, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-episode, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-chapter, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume {
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume,
+.list-unit .list-status-title .text, .list-container .list-unit .list-table tbody:first-child::after,
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link,
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status {
 	background-color: #f10834 !important;
 }
 
@@ -262,11 +265,10 @@
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
-	padding: 15px 40px 13px 40px;
+	padding: 17px 40px 13px 40px;
     margin: 0 -39px 0 0;
     width: 57px;
     background-color: #f10834;
-    border-top: 2px solid #f10834;
     border-left: none !important;
     color: inherit;
     font-family: 'verdana', sans-serif;
