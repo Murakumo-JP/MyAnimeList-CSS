@@ -1,5 +1,8 @@
 # Eorzea Collection CSS theme for MyAnimeList
 
+[![DUB](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](https://github.com/Murakumo-JP/MyAnimeList-CSS/blob/master/LICENSE)
+[![MyAnimeList](https://img.shields.io/badge/CSS%20for%20the%20site-MyAnimeList-blue.svg?style=flat-square)](https://myanimelist.net)
+
 The Eorzea Collection site was taken as a basis for the design: http://ffxiv.eorzeacollection.com/
 
 ## Preview
@@ -41,14 +44,14 @@ If you want to change the images in CSS then paste this after the code and repla
 
 ```css
 .list-container .cover-block {
-    background-image: url("Here is a link to your images") !important;
+    background-image: url("your images") !important;
 }
 
 .list-container .cover-block:before {
-    background-image: url("Here is a link to your images") !important;
+    background-image: url("your images") !important;
 }
 
 .list-container .cover-block:after {
-    background-image: url("Here is a link to your images") !important;
+    background-image: url("your images") !important;
 }
 ```
