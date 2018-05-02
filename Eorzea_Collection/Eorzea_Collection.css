@@ -156,12 +156,18 @@
 .list-container .cover-block:before {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
     clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
+	-webkit-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
+	-moz-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
+	-o-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
 }
 
 .list-container .cover-block:after {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
     background-position: right;
     clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
+	-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
+	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
+	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
     position: absolute;
 	right: 0;
     top: 1px;
@@ -177,10 +183,16 @@
 
 .list-container .cover-block:hover:before {
     clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
+	-webkit-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
+	-moz-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
+	-o-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
 }
 
 .list-container .cover-block:hover:after {
     clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
+	-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
+	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
+	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
 }
 
 /* Hentai R-18 */
@@ -282,6 +294,11 @@
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link:hover {
   text-decoration: none;
   color: #191919;
+}
+
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title {
+    background: none;
+    border-bottom: 0;
 }
 
 /* List Table */
@@ -414,19 +431,19 @@ i.fa.fa-sort-asc.sort-icon,
 }
 
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.title .content-status {
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
     margin-left: 0;
     top: 285px;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status {
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
     position: absolute;
     left: 103px;
     top: 247px;
@@ -973,14 +990,6 @@ a.status-button:hover {
   transition-timing-function: ease-in-out;
 }
 
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title {
-  height: auto;
-  width: auto;
-  background: none;
-  border-bottom: 0;
-  display: inline-block;
-}
-
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .sort-icon {
   color: inherit;
 }
@@ -1151,37 +1160,6 @@ a.status-button:hover {
   position: absolute;
 }
 
-.list-container .list-unit .list-table .list-item:hover .list-table-data .data.type {
-    display: block;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
-    margin-left: 0;
-    opacity: 0;
-    height: 0;
-    width: 196px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.type {
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 37px;
-    width: 196px;
-    padding: 3px 0 7px 0;
-    background-color: #191919;
-    font-size: 11px;
-    opacity: 1;
-    color: #ccc;
-}
-
 .list-container .list-unit .list-table .list-item .list-table-data .data.progress div, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter div, .list-container .list-unit .list-table .list-item .list-table-data .data.volume div {
   display: inline-block;
   vertical-align: top;
@@ -1243,13 +1221,15 @@ a.status-button:hover {
   color: #cccccc;
 }
 
+/* Data Season */
+
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.season,
 .list-container .list-unit .list-table .list-item:hover  .list-table-data .data.airing-started {
     display: block;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
     margin-left: 0;
     opacity: 0;
     height: 0;
@@ -1258,10 +1238,10 @@ a.status-button:hover {
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.season,
 .list-container .list-unit .list-table .list-item .list-table-data .data.airing-started {
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -1275,6 +1255,40 @@ a.status-button:hover {
     font-size: 10px;
     opacity: 1;
 }
+
+/* Data Type */
+
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.type {
+    display: block;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    margin-left: 0;
+    opacity: 0;
+    height: 0;
+    width: 196px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.type {
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 37px;
+    width: 196px;
+    padding: 3px 0 7px 0;
+    background-color: #191919;
+    font-size: 11px;
+    opacity: 1;
+    color: #ccc;
+}
+
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.season a {
   font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
