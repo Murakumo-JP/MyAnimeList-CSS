@@ -430,33 +430,6 @@ i.fa.fa-sort-asc.sort-icon,
     overflow: hidden;
 }
 
-.list-container .list-unit .list-table .list-item:hover .list-table-data .data.title .content-status {
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    margin-left: 0;
-    top: 285px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status {
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    position: absolute;
-    left: 103px;
-    top: 247px;
-    background-color: #f10834;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 4px 10px;
-    font-size: 10px;
-    width: 72px;
-    text-align: center;
-    z-index: 1;
-}
-
 /*===================================================================================================*/
 /* NONE */
 
@@ -1221,15 +1194,44 @@ a.status-button:hover {
   color: #cccccc;
 }
 
+/* Content Status */
+
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.title .content-status {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    margin-left: 0;
+    top: 285px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    position: absolute;
+    left: 103px;
+    top: 247px;
+    background-color: #f10834;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    font-size: 10px;
+    width: 72px;
+    text-align: center;
+    z-index: 1;
+}
+
 /* Data Season */
 
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.season,
 .list-container .list-unit .list-table .list-item:hover  .list-table-data .data.airing-started {
     display: block;
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
     margin-left: 0;
     opacity: 0;
     height: 0;
@@ -1238,10 +1240,10 @@ a.status-button:hover {
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.season,
 .list-container .list-unit .list-table .list-item .list-table-data .data.airing-started {
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -1260,10 +1262,10 @@ a.status-button:hover {
 
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.type {
     display: block;
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
     margin-left: 0;
     opacity: 0;
     height: 0;
@@ -1271,10 +1273,10 @@ a.status-button:hover {
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.type {
-    -webkit-transition: all 0.6s;
-    -moz-transition: all 0.6s;
-    -o-transition: all 0.6s;
-    transition: all 0.6s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
     text-align: center;
     position: absolute;
     bottom: 0;
