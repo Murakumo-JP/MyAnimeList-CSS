@@ -41,14 +41,14 @@ If you want to change the images in CSS then paste this after the code and repla
 
 ```css
 .list-container .cover-block {
-    background-image: url("Here is a link to your images") !important;
+    background-image: url("your images") !important;
 }
 
 .list-container .cover-block:before {
-    background-image: url("Here is a link to your images") !important;
+    background-image: url("your images") !important;
 }
 
 .list-container .cover-block:after {
-    background-image: url("Here is a link to your images") !important;
+    background-image: url("your images") !important;
 }
 ```
