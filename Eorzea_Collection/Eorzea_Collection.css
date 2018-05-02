@@ -1304,6 +1304,7 @@ footer {
     background: #191919;
     border-top: 2px solid #f10834;
     z-index: 125!important;
+	bottom: 0;
 }
 
 #footer-block {
