@@ -982,7 +982,6 @@ a.status-button:hover {
     transition: all 0.8s;
     margin-left: 0;
     opacity: 1;
-    z-index: 1;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.progress:before {
@@ -1030,7 +1029,6 @@ a.status-button:hover {
     margin-right: 14px;
     margin-left: -100%;
     opacity: 0;
-    z-index: -1;
 }
 
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.title .add-edit-more,
