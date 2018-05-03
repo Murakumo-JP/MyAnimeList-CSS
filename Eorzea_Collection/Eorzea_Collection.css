@@ -128,6 +128,20 @@
     font-weight: 100;
 }
 
+.list-container .status-menu-container .search-container #search-button {
+	color: inherit;
+    font-size: 14px;
+    height: 14px;
+    margin: 0;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/search.png") #f10834;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+}
+
 /* Cover Block */
 
 .list-container .cover-block {
@@ -379,32 +393,23 @@
   height: 100%;
 }
 
-/* Display NONE */
-
-i.fa.fa-sort-asc.sort-icon, 
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link ,
-.header .header-menu .btn-menu #header-menu-button .fa, .header .header-menu .list-menu .icon-menu svg.icon,
-.header .header-menu .list-menu .icon-menu .text, .list-menu-float .icon-menu svg.icon, 
-.list-container .cover-block #cover-image-container .btn-list-setting, #advanced-options-button,
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.image,
-.list-container .list-unit .list-table .list-item .list-table-data .data.status,
-.list-container .list-unit .list-table .list-item .list-table-data .data.number,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .icon-watch, 
-#footer-block, .list-unit .loading-space, .header .header-menu .btn-menu, 
-.list-table .list-table-data .tags .edit, .list-container .list-unit .list-table .list-item .list-table-data .data.started, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.finished, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.days, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.storage, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.priority, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.airing-finished, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.studio, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.retail
-{
-    display: none;
+.list-container .list-unit .list-table .list-item .list-table-data .data.image .link .image {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
-/*= Text =*/
+.list-container .list-unit .list-table .list-item .list-table-data .data.image .link::after {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .link {
     position: absolute;
@@ -428,11 +433,266 @@ i.fa.fa-sort-asc.sort-icon,
     overflow: hidden;
 }
 
-/*===================================================================================================*/
-/* NONE */
+/* Content Status */
 
-.status-menu-container .status-menu .status-button:after{
-	display: none !important;
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.title .content-status {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    margin-left: 0;
+    top: 285px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    position: absolute;
+    left: 103px;
+    top: 247px;
+    background-color: #f10834;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    font-size: 10px;
+    width: 72px;
+    text-align: center;
+    z-index: 1;
+}
+/* Data Season */
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.season,
+.list-container .list-unit .list-table .list-item:hover  .list-table-data .data.airing-started {
+    display: block;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    margin-left: 0;
+    opacity: 0;
+    height: 0;
+	width: 197px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.season,
+.list-container .list-unit .list-table .list-item .list-table-data .data.airing-started {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 13px;
+    width: 197px;
+    padding: 5px 0 5px 0;
+    border-top: 2px solid #3e3d3d;
+    background-color: transparent;
+    font-size: 10px;
+    opacity: 1;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.rated a, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.magazine a {
+  font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
+  color: #cccccc;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.season a {
+  font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
+  color: #cccccc;
+}
+/* Data Type */
+.list-container .list-unit .list-table .list-item:hover .list-table-data .data.type {
+    display: block;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    margin-left: 0;
+    opacity: 0;
+    height: 0;
+    width: 196px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.type {
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 37px;
+    width: 196px;
+    padding: 3px 0 7px 0;
+    background-color: #191919;
+    font-size: 11px;
+    opacity: 1;
+    color: #ccc;
+}
+/* Add / Edit / More */
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more {
+  display: none;
+  font-size: 0;
+}
+/* Data Score */
+.list-container .list-unit .list-table .list-item .list-table-data .data.score {
+  z-index: 1;
+  right: 13px;
+  top: 13px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.score::before {
+  display: inline-block;
+  font: normal normal normal 28px / 1 FontAwesome;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: auto;
+  position: absolute;
+  color: #f10834;
+  content: "";
+  z-index: -1;
+  right: 0;
+  top: 0;
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.score .link {
+  font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
+  color: #fff;
+  top: 5.5px;
+  right: 0;
+  width: 28px;
+  position: absolute;
+}
+/* Data Progress */
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress:before {
+    padding: 2px 0px 0px 0;
+    content: "Episodes:";
+    font-size: 13px !important;
+    font-weight: bold;
+    pointer-events: all;
+    color: #fff;
+	margin-right: 5px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter:before {
+    padding: 2px 0px 0px 0;
+    content: "Chapters:";
+    font-size: 13px !important;
+    font-weight: bold;
+    pointer-events: all;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter ~ .volume:before {
+    padding: 2px 0px 0px 0;
+    content: "Volumes:";
+    font-size: 13px !important;
+    font-weight: bold;
+    pointer-events: all;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume {
+    font-size: 13px !important;
+    font-weight: bold;
+    pointer-events: all;
+    color: #fff;
+    position: absolute;
+    left: 1px;
+    top: 243px;
+    padding: 3px 7px 3px 15px;
+    background-color: #f10834;
+    margin-right: 14px;
+    margin-left: -100%;
+    opacity: 0;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress div, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter div, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress a, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter a, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume a {
+  color: #fff;
+  font-size: 13px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress span:only-child, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter span:only-child, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume span:only-child {
+  font-size: 13px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress span:nth-child(2), 
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter span:nth-child(2), 
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume span:nth-child(2) {
+  font-size: 13px;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-episode,
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-chapter,
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-volume, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-episode,
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-chapter,
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-volume, .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-episode,
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-chapter,
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume {
+    display: none;
+    position: absolute;
+    right: -22px;
+    top: 0px;
+    padding: 5px 5px 6px 5px;
+    border-left: 1px solid #a0102b;
+    background-color: #f10834;
+}
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-episode .fa,
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-chapter .fa,
+.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-volume .fa, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-episode .fa,
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-chapter .fa,
+.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-volume .fa, .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-episode .fa,
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-chapter .fa,
+.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume .fa {
+  font-size: 14px;
+  text-shadow: #000 1px 1px 1px;
+}
+/* Display NONE */
+i.fa.fa-sort-asc.sort-icon, 
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link ,
+.header .header-menu .btn-menu #header-menu-button .fa, .header .header-menu .list-menu .icon-menu svg.icon,
+.header .header-menu .list-menu .icon-menu .text, .list-menu-float .icon-menu svg.icon, 
+.list-container .cover-block #cover-image-container .btn-list-setting, #advanced-options-button,
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.image,
+.list-container .list-unit .list-table .list-item .list-table-data .data.status,
+.list-container .list-unit .list-table .list-item .list-table-data .data.number,
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .icon-watch, 
+#footer-block, .list-unit .loading-space, .header .header-menu .btn-menu, 
+.list-table .list-table-data .tags .edit, .list-container .list-unit .list-table .list-item .list-table-data .data.started, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.finished, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.days, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.storage, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.priority, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.airing-finished, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.studio, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.retail,
+.status-menu-container .status-menu .status-button:after {
+    display: none !important;
 }
 
 /* Header Height */
@@ -827,20 +1087,6 @@ a.status-button:hover {
     height: 25px;
 }
 
-.list-container .status-menu-container .search-container #search-button {
-	color: inherit;
-    font-size: 14px;
-    height: 14px;
-    margin: 0;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    background: url(https://ffxiv.eorzeacollection.com/img/icons/search.png) #f10834;
-    width: 28px;
-    height: 28px;
-    font-size: 0;
-}
-
 .list-container .status-menu-container .search-container #search-button::after {
   right: 0;
   top: 0;
@@ -908,13 +1154,13 @@ a.status-button:hover {
 }
 
 .list-container .list-unit .list-status-title .stats #advanced-options-button::after {
-  right: 0;
-  top: 0;
-  margin-top: -19px;
-  padding-top: 3px;
-  text-align: right;
-  vertical-align: top;
-  content: "Filter";
+	right: 0;
+	top: 0;
+	margin-top: -19px;
+	padding-top: 3px;
+	text-align: right;
+	vertical-align: top;
+	content: "Filter";
 }
 
 .list-unit .list-status-title .text {
@@ -984,81 +1230,11 @@ a.status-button:hover {
     opacity: 1;
 }
 
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress:before {
-    padding: 2px 0px 0px 0;
-    content: "Episodes:";
-    font-size: 13px !important;
-    font-weight: bold;
-    pointer-events: all;
-    color: #fff;
-	margin-right: 5px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter:before {
-    padding: 2px 0px 0px 0;
-    content: "Chapters:";
-    font-size: 13px !important;
-    font-weight: bold;
-    pointer-events: all;
-    color: #fff;
-    margin-right: 5px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter ~ .volume:before {
-    padding: 2px 0px 0px 0;
-    content: "Volumes:";
-    font-size: 13px !important;
-    font-weight: bold;
-    pointer-events: all;
-    color: #fff;
-    margin-right: 5px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume {
-    font-size: 13px !important;
-    font-weight: bold;
-    pointer-events: all;
-    color: #fff;
-    position: absolute;
-    left: 1px;
-    top: 243px;
-    padding: 3px 7px 3px 15px;
-    background-color: #f10834;
-    margin-right: 14px;
-    margin-left: -100%;
-    opacity: 0;
-}
-
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.title .add-edit-more,
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.progress .icon-add-episode,
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.chapter .icon-add-chapter,
 .list-container .list-unit .list-table .list-item:hover .list-table-data .data.volume .icon-add-volume {
   display: block;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.image .link .image {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.image .link::after {
-  content: '';
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more {
-  display: none;
-  font-size: 0;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .edit a:hover,
@@ -1091,86 +1267,11 @@ a.status-button:hover {
   content: "";
 }
 
-.list-container .list-unit .list-table .list-item .list-table-data .data.score {
-  z-index: 1;
-  right: 13px;
-  top: 13px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.score::before {
-  display: inline-block;
-  font: normal normal normal 28px / 1 FontAwesome;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: auto;
-  position: absolute;
-  color: #f10834;
-  content: "";
-  z-index: -1;
-  right: 0;
-  top: 0;
-  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.score .link {
-  font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
-  color: #fff;
-  top: 5.5px;
-  right: 0;
-  width: 28px;
-  position: absolute;
-}
-
 .list-container .list-unit .list-table .list-item .list-table-data .data.score select {
   top: 5.5px;
   right: 3px;
   width: 20px;
   position: absolute;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress div, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter div, .list-container .list-unit .list-table .list-item .list-table-data .data.volume div {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress a, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter a, .list-container .list-unit .list-table .list-item .list-table-data .data.volume a {
-  color: #fff;
-  font-size: 13px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress span:only-child, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter span:only-child, .list-container .list-unit .list-table .list-item .list-table-data .data.volume span:only-child {
-  font-size: 13px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress span:nth-child(2), .list-container .list-unit .list-table .list-item .list-table-data .data.chapter span:nth-child(2), .list-container .list-unit .list-table .list-item .list-table-data .data.volume span:nth-child(2) {
-  font-size: 13px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-episode,
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-chapter,
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-volume, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-episode,
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-chapter,
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-volume, .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-episode,
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-chapter,
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume {
-    display: none;
-    position: absolute;
-    right: -22px;
-    top: 0px;
-    padding: 5px 5px 6px 5px;
-    border-left: 1px solid #a0102b;
-    background-color: #f10834;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-episode .fa,
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-chapter .fa,
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-volume .fa, .list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-episode .fa,
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-chapter .fa,
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-volume .fa, .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-episode .fa,
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-chapter .fa,
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume .fa {
-  font-size: 14px;
-  text-shadow: #000 1px 1px 1px;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.chapter ~ .volume {
@@ -1182,114 +1283,6 @@ a.status-button:hover {
   color: #cccccc;
   bottom: 3px;
   right: 3px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.rated a, .list-container .list-unit .list-table .list-item .list-table-data .data.magazine a {
-  font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
-  color: #cccccc;
-}
-
-/* Content Status */
-
-.list-container .list-unit .list-table .list-item:hover .list-table-data .data.title .content-status {
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
-    margin-left: 0;
-    top: 285px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status {
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
-    position: absolute;
-    left: 103px;
-    top: 247px;
-    background-color: #f10834;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 4px 10px;
-    font-size: 10px;
-    width: 72px;
-    text-align: center;
-    z-index: 1;
-}
-
-/* Data Season */
-
-.list-container .list-unit .list-table .list-item:hover .list-table-data .data.season,
-.list-container .list-unit .list-table .list-item:hover  .list-table-data .data.airing-started {
-    display: block;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
-    margin-left: 0;
-    opacity: 0;
-    height: 0;
-	width: 197px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.season,
-.list-container .list-unit .list-table .list-item .list-table-data .data.airing-started {
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 13px;
-    width: 197px;
-    padding: 5px 0 5px 0;
-    border-top: 2px solid #3e3d3d;
-    background-color: transparent;
-    font-size: 10px;
-    opacity: 1;
-}
-
-/* Data Type */
-
-.list-container .list-unit .list-table .list-item:hover .list-table-data .data.type {
-    display: block;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
-    margin-left: 0;
-    opacity: 0;
-    height: 0;
-    width: 196px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.type {
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    -o-transition: all 0.7s;
-    transition: all 0.7s;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 37px;
-    width: 196px;
-    padding: 3px 0 7px 0;
-    background-color: #191919;
-    font-size: 11px;
-    opacity: 1;
-    color: #ccc;
-}
-
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.season a {
-  font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
-  color: #cccccc;
 }
 
 .list-unit::after {
