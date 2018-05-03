@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url('https://malcat-gen.appspot.com/series?template=.data.image a[href^="/$list/$id/"]::after{background-image:url($series_image)}');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 ::-webkit-scrollbar {
     height: 9px;
@@ -311,7 +310,7 @@
     background: #191919;
     color: #fff;
     margin: 10px 0px 0px;
-    padding-bottom: 6px;
+    padding-bottom: 15px;
 }
 
 .list-container .list-unit .list-table .list-item {
@@ -420,7 +419,6 @@ i.fa.fa-sort-asc.sort-icon,
     color: #fff;
     font-size: 17px !important;
     text-decoration: none !important;
-    font-family: 'Roboto', sans-serif;
     font-weight: 100 !important;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -601,7 +599,6 @@ select option {
     left: 0;
     position: fixed;
     text-decoration: none !important;
-    font-family: 'Roboto', sans-serif;
     display: inline-block;
     line-height: 40px;
     font-size: 20px;
