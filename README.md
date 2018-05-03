@@ -1,9 +1,8 @@
 # Eorzea Collection CSS theme for MyAnimeList
 
-[![DUB](https://img.shields.io/dub/l/vibe-d.svg?style=flat-square)](https://github.com/Murakumo-JP/MyAnimeList-CSS/blob/master/LICENSE)
-[![MyAnimeList](https://img.shields.io/badge/CSS-MyAnimeList-blue.svg?style=flat-square)](https://myanimelist.net)
+Original page design from http://ffxiv.eorzeacollection.com/ by Edeon Vails.
 
-The Eorzea Collection site was taken as a basis for the design: http://ffxiv.eorzeacollection.com/
+List CSS and adaption by MurakumoJP.
 
 ## Preview
 ![Screenshot](Eorzea_Collection/preview/Snapshot2.jpg?raw=true)
