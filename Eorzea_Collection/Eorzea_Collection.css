@@ -541,6 +541,67 @@
   display: none;
   font-size: 0;
 }
+/* More */
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before {
+    content: "\f00b";
+    display: inline-block;
+    font: normal normal normal 15px / 1 FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    color: #fff;
+    margin-top: 13px;
+    margin-left: 40px;
+    position: absolute;
+    z-index: 99;
+    background-color: #f10834;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.list-container .list-unit .list-table .list-item:hover .more-info[style*=tab] {
+    top: 0;
+    opacity: 1;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.list-container .list-unit .list-table .list-item .more-info[style*=tab] {
+    top: 300px;
+    left: 0;
+    position: absolute;
+    display: block!important;
+    height: 328px;
+    background: #191919;
+    border: none;
+    overflow-y: scroll;
+    z-index: 7;
+    opacity: 0;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.list-table .more-info .more-content:before {
+    content: " ";
+    display: block;
+    height: 41px;
+}
+
+.list-table .more-info .more-content {
+    padding: 10px 0 10px 10px;
+}
+
+td.td1.borderRBL div {
+    display: none;
+}
+
+.more-info[style*=tab] tbody:after{
+  display: none !important;
+}
 /* Data Score */
 .list-container .list-unit .list-table .list-item .list-table-data .data.score {
   z-index: 1;
