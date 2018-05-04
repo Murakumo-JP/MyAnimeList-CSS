@@ -271,7 +271,7 @@
     background-color: #f10834;
 }
 
-.list-container .list-unit .list-table tbody:first-child {
+.list-table>tbody:first-of-type {
     top: 264px;
     position: absolute;
     right: 306px;
