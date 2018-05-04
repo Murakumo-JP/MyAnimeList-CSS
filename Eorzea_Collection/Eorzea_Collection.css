@@ -574,7 +574,7 @@
 /* Data Progress */
 .list-container .list-unit .list-table .list-item .list-table-data .data.progress:before {
     padding: 2px 0px 0px 0;
-    content: "Episodes:";
+    content: "Progress:";
     font-size: 13px !important;
     font-weight: bold;
     pointer-events: all;
