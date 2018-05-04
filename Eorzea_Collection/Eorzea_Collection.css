@@ -543,7 +543,7 @@
 }
 /* More */
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before {
-    content: "\f00b";
+    content: "\f078";
     display: inline-block;
     font: normal normal normal 15px / 1 FontAwesome;
     -webkit-font-smoothing: antialiased;
