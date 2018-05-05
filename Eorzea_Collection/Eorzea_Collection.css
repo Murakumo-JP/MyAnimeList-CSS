@@ -561,7 +561,7 @@
 }
 
 .list-container .list-unit .list-table .list-item:hover .more-info[style*=tab] {
-    top: 0;
+    top: 50px;
     opacity: 1;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
@@ -570,13 +570,14 @@
 }
 
 .list-container .list-unit .list-table .list-item .more-info[style*=tab] {
-    top: 300px;
+	box-shadow: rgb(25, 25, 25) 0px -60px 20px 20px;
+    border-top: 1px solid #3c3c3c;
+    top: 280px;
     left: 0;
     position: absolute;
     display: block!important;
-    height: 328px;
+    height: 278px;
     background: #191919;
-    border: none;
     overflow-y: scroll;
     z-index: 7;
     opacity: 0;
@@ -584,12 +585,6 @@
     -moz-transition: all 0.8s;
     -o-transition: all 0.8s;
     transition: all 0.8s;
-}
-
-.list-table .more-info .more-content:before {
-    content: " ";
-    display: block;
-    height: 41px;
 }
 
 .list-table .more-info .more-content {
