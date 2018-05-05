@@ -19,7 +19,7 @@
 .header .header-title, .list-container .status-menu-container .status-menu .status-button.on,
 .list-container .status-menu-container .status-menu .status-button:hover,
 .list-container .list-unit .list-table .list-item .list-table-data .data.score::before,
-.list-unit::after, input[type='text'], select {
+.list-unit::after, input[type='text'], select, .td1.borderRBL a {
 	color: #f10834 !important;
 }
 
@@ -43,7 +43,8 @@
 .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume,
 .list-unit .list-status-title .text, .list-container .list-unit .list-table tbody:first-child::after,
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status {
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status,
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before {
 	background-color: #f10834 !important;
 }
 
@@ -604,7 +605,6 @@ td.td1.borderRBL div {
 }
 /* Data Score */
 .list-container .list-unit .list-table .list-item .list-table-data .data.score {
-  z-index: 1;
   right: 13px;
   top: 13px;
 }
@@ -621,7 +621,6 @@ td.td1.borderRBL div {
   z-index: -1;
   right: 0;
   top: 0;
-  text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.score .link {
