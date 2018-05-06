@@ -156,6 +156,10 @@
     border: 1px solid #f10834;
 }
 
+.list-container .cover-block:before, .list-container .cover-block:after {
+	background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
+}
+
 .list-container .cover-block:before, .list-container .cover-block:after{
 	content: "";
     display: block;
@@ -168,7 +172,6 @@
 }
 
 .list-container .cover-block:before {
-    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
     clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
 	-webkit-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
 	-moz-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
