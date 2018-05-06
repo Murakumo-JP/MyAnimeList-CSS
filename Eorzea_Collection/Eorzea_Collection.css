@@ -787,6 +787,7 @@ body {
   font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
   background-color: #3c3c3c;
   background-position: top 190px center;
+  background-image: none !important;
 }
 
 input[type='text'],
@@ -1115,7 +1116,9 @@ border-radius: 5px;
   flex-shrink: 0;
 }
 
-
+#cover-image {
+    display: none;
+}
 
 .list-container .status-menu-container .status-menu .status-button::after {
   border-radius: 2px;
