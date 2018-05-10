@@ -178,6 +178,13 @@
 	-o-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
 }
 
+.list-container .cover-block:hover:before {
+    clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
+	-webkit-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
+	-moz-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
+	-o-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
+}
+
 .list-container .cover-block:after {
     background-position: right;
     clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
@@ -189,26 +196,19 @@
     top: 1px;
 }
 
+.list-container .cover-block:hover:after {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
+	-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
+	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
+	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
+}
+
 .list-container .cover-block:hover:before, .list-container .cover-block:hover:after  {
 	width: 250px;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
     -o-transition: all 0.8;
     transition: all 0.8s;
-}
-
-.list-container .cover-block:hover:before {
-    clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-webkit-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-moz-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-o-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-}
-
-.list-container .cover-block:hover:after {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
 }
 
 /* Hentai R-18 */
@@ -786,10 +786,13 @@ i.fa.fa-sort-asc.sort-icon,
 }
 
 body {
-  font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
-  background-color: #3c3c3c;
-  background-position: top 190px center;
-  background-image: none !important;
+	font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
+    font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
+    background-color: #3c3c3c;
+    background-position: top 40px center !important;
+    background-image: none !important;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 input[type='text'],
