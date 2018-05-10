@@ -40,18 +40,18 @@ On the same page, in the Add Custom CSS field, paste the code shown below.
 @import url('https://malcat-gen.appspot.com/series?template=.data.image a[href^="/$list/$id/"]::after{background-image:url($series_image)}');
 @import url('https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/Eorzea_Collection.css');
 ```
+## Image Сhanges
+
 If you want to change the images in CSS then paste this after the code and replace the links to your.
+
+I recommend images with resolutions of 1043px - 250px
 
 ```css
 .list-container .cover-block {
     background-image: url("your images") !important;
 }
 
-.list-container .cover-block:before {
-    background-image: url("your images") !important;
-}
-
-.list-container .cover-block:after {
-    background-image: url("your images") !important;
+.list-container .cover-block:before, .list-container .cover-block:after {
+	background-image: url("Your images") !important;
 }
 ```
