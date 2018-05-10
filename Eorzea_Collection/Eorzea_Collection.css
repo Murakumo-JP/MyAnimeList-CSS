@@ -748,7 +748,7 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table .list-item .list-table-data .data.studio, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.retail,
-.status-menu-container .status-menu .status-button:after {
+.status-menu-container .status-menu .status-button:after, .header .header-menu .list-menu {
     display: none !important;
 }
 
