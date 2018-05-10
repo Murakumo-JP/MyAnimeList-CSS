@@ -748,7 +748,7 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table .list-item .list-table-data .data.studio, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.retail,
-.status-menu-container .status-menu .status-button:after, .header .header-menu .list-menu {
+.status-menu-container .status-menu .status-button:after {
     display: none !important;
 }
 
@@ -882,8 +882,8 @@ select option {
 
 .header .header-menu .list-menu {
   display: block !important;
-  top: 21px;
-  right: 0;
+  top: 250px;
+  right: 907px;
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -892,22 +892,33 @@ select option {
 }
 
 .header .header-menu .list-menu .icon-menu {
-  width: 14px;
-  height: 14px;
-  color: inherit;
-}
-
-.header .header-menu .list-menu .icon-menu:hover {
-  background-color: transparent;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #ffffff !important;
+    background-color: #f1083499;
+    margin-right: 3px;
+    height: 18px;
+    width: 100px;
+    padding: 2px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .header .header-menu .list-menu .icon-menu.anime-list::before {
-  display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: auto;
-  content: "";
+    display: inline-block;
+    content: "Anime List";
+}
+
+.header .header-menu .list-menu .icon-menu:hover{
+    background-color: #f1083499;
+}
+
+.header .header-menu .list-menu .icon-menu.manga-list::before {
+    display: inline-block;
+    content: "Manga List";
 }
 
 .header .header-title {
