@@ -882,8 +882,8 @@ select option {
 
 .header .header-menu .list-menu {
   display: block !important;
-  top: 250px;
-  right: 907px;
+  top: 250px !important;
+  right: 907px !important;
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -897,8 +897,8 @@ select option {
     color: #ffffff !important;
     background-color: #f1083499;
     margin-right: 3px;
-    height: 18px;
-    width: 100px;
+    height: 18px !important;
+    width: 100px !important;
     padding: 2px 0px;
     box-sizing: border-box;
     cursor: pointer;
@@ -913,7 +913,7 @@ select option {
 }
 
 .header .header-menu .list-menu .icon-menu:hover{
-    background-color: #f1083499;
+    background-color: #f1083499 !important;
 }
 
 .header .header-menu .list-menu .icon-menu.manga-list::before {
