@@ -292,6 +292,15 @@
     opacity: 1;
 }
 
+.header-title.started,  .header-title.finished {
+	opacity: 0;
+}
+
+body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
+    width: auto !important;
+    right: -134px !important;
+}
+
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
 	padding: 17px 40px 13px 40px;
     margin: 0 -39px 0 0;
