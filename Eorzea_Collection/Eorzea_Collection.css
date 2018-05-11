@@ -794,7 +794,7 @@ body {
     font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
     background-color: #3c3c3c;
     background-position: top 40px center !important;
-    background-image: url(none) !important;
+    background-image: url(none);
     background-size: cover !important;
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
