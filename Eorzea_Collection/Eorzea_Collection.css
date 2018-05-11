@@ -286,19 +286,15 @@
 	width: 370px;
     height: 41px;
     top: 16px;
-    right: 0px;
+    right: 17px;
     background-color: transparent;
     text-align: left;
     opacity: 1;
 }
 
-.header-title.started,  .header-title.finished {
-	opacity: 0;
-}
-
 body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
-    width: auto !important;
-    right: -134px !important;
+    width: 460px !important;
+    right: 30px !important;
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
@@ -757,7 +753,7 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table .list-item .list-table-data .data.studio, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.retail,
-.status-menu-container .status-menu .status-button:after {
+.status-menu-container .status-menu .status-button:after, .header-title.started, .header-title.finished {
     display: none !important;
 }
 
