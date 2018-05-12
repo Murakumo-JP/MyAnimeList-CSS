@@ -1095,16 +1095,22 @@ border-radius: 5px;
   text-decoration: none !important;
 }
 
+.list-menu-float .icon-menu.profile:hover:after {
+	width: 81px !important;
+	opacity: 1;
+}
+
 .list-menu-float .icon-menu.profile::after {
     content: "Profile";
     top: 0px;
     left: 25px;
-    width: 81px !important;
+    width: 0;
     padding: 7px 0px;
     color: #fff;
     text-align: center;
     background-color: #f10834;
     border-radius: 4px;
+	opacity: 0;
 }
 /*========*/
 
