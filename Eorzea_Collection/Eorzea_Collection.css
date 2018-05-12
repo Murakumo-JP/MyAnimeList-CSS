@@ -286,7 +286,7 @@
 	width: 370px;
     height: 41px;
     top: 16px;
-    right: 23px;
+    right: 20px;
     background-color: transparent;
     text-align: left;
     opacity: 1;
@@ -294,12 +294,12 @@
 
 body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
     width: 460px !important;
-    right: 30px !important;
+    right: 27px !important;
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link {
 	padding: 17px 40px 13px 40px;
-    margin: 0 -39px 0 0;
+    margin: 0 -40px 0 0;
     width: 57px;
     background-color: #f10834;
     border-left: none !important;
@@ -309,7 +309,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none !important;
-    clip-path: polygon(30% 108%, 100% 100%, 72% 0, 0px 0px);
+    clip-path: polygon(29% 100%, 100% 100%, 71% 0, 0px 0px);
 }
 
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link:hover {
