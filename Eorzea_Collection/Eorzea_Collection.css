@@ -673,7 +673,7 @@ td.td1.borderRBL div {
     color: #fff;
     position: absolute;
     left: 1px;
-    top: 240px;
+    top: 243px;
     padding: 3px 7px 3px 15px;
     background-color: #f10834;
     margin-right: 14px;
@@ -791,6 +791,7 @@ i.fa.fa-sort-asc.sort-icon,
 }
 
 body {
+	font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
 	background-image: url(none);
 	background-position: top 40px center !important;
 	background-attachment: fixed !important;
