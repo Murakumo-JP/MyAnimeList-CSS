@@ -1009,31 +1009,8 @@ border-radius: 5px;
   background-image: none !important;
 }
 
-.list-menu-float .icon-menu.profile::after {
-    content: "Profile";
-    margin-top: -37px;
-    max-width: 181px;
-    margin-left: -60px;
-    padding: 3px 0px;
-    color: #fff;
-    text-align: center;
-    background-color: #000;
-    border-radius: 4px;
-}
-
 .list-menu-float .icon-menu.profile::before {
   content: "";
-}
-
-.list-menu-float .icon-menu .text {
-    max-width: 181px;
-    margin-left: -90px;
-    margin-top: -43px;
-    padding: 3px 0px;
-    color: #fff;
-    text-align: center;
-    background-color: #000;
-    border-radius: 4px;
 }
 
 .list-menu-float .icon-menu::before {
@@ -1076,17 +1053,60 @@ border-radius: 5px;
   cursor: pointer;
 }
 
-.list-menu-float .icon-menu.setting .text {
-  font-size: 0;
-  height: 30px;
+/* Menu 2 */
+.icon-menu.quick-add.List_LightBox:hover, .list-menu-float .icon-menu.anime-list:hover,
+.list-menu-float .icon-menu.manga-list:hover, .list-menu-float .icon-menu.history:hover,
+.list-menu-float .icon-menu.export:hover, .list-menu-float .icon-menu.logout:hover, .icon-menu.profile:hover {
+    margin-right: 79px !important;
 }
 
 .list-menu-float .icon-menu.setting:hover .text {
-    width: 190px;
+    width: 190px !important;
     height: 16px;
     text-decoration: none;
-    margin-top: -23px;
+    top: 14px !important;
 }
+
+.list-menu-float .icon-menu .text {
+    max-width: 181px !important;
+    margin-left: -25px !important; 
+    margin-top: -14px !important;
+    padding: 7px 0px !important;
+    color: #fff !important;
+    text-align: center !important;
+    background-color: #f10834 !important;
+    border-radius: 4px !important;
+}
+
+.list-menu-float .icon-menu:hover .text {
+    width: 81px !important;
+    opacity: 1;
+}
+
+.list-menu-float .icon-menu.setting .text {
+    font-size: 0;
+    top: 14px;
+    height: 16px !important;
+    width: 0;
+}
+
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting:hover,
+.list-menu-float .icon-menu.setting:hover .text .link-style-setting:hover {
+  text-decoration: none !important;
+}
+
+.list-menu-float .icon-menu.profile::after {
+    content: "Profile";
+    top: 0px;
+    left: 25px;
+    width: 81px !important;
+    padding: 7px 0px;
+    color: #fff;
+    text-align: center;
+    background-color: #f10834;
+    border-radius: 4px;
+}
+/*========*/
 
 .list-menu-float .icon-menu.setting:hover .text .link-list-setting,
 .list-menu-float .icon-menu.setting:hover .text .link-style-setting {
@@ -1100,11 +1120,6 @@ border-radius: 5px;
   top: 0;
   width: auto;
   color: inherit;
-}
-
-.list-menu-float .icon-menu.setting:hover .text .link-list-setting:hover,
-.list-menu-float .icon-menu.setting:hover .text .link-style-setting:hover {
-  text-decoration: underline;
 }
 
 .list-menu-float .icon-menu.setting:hover .text .link-list-setting {
