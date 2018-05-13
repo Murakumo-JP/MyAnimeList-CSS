@@ -192,7 +192,7 @@
 	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
 	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
     position: absolute;
-	right: 1.9px;
+	right: 0.9px;
     top: 1px;
 }
 
