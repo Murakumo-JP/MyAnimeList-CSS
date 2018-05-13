@@ -147,11 +147,11 @@
 
 .list-container .cover-block {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-1.png");
-    width: 1043px;
+    width: 1055px;
     height: 250px;
     background-color: #191919;
     margin-bottom: 52px;
-    margin-left: 11px;
+    margin-left: 0;
     margin-right: 0;
     border: 1px solid #f10834;
 }
@@ -163,7 +163,7 @@
 .list-container .cover-block:before, .list-container .cover-block:after{
 	content: "";
     display: block;
-    width: 650px;
+    width: 655px;
     height: 250px;
 	-webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
@@ -192,7 +192,7 @@
 	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
 	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
     position: absolute;
-	right: 0;
+	right: -1px;
     top: 1px;
 }
 
@@ -326,7 +326,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
 
 .list-container .list-unit .list-table {
     display: inline-block;
-    width: 101%;
+    width: 100%;
     border: transparent;
     list-style: none;
     background: #191919;
@@ -336,7 +336,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
 }
 
 .list-container .list-unit .list-table .list-item {
-	-webkit-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
@@ -348,7 +348,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
     padding: 1px;
     background-color: #191919;
     border: 1px solid #3c3c3c;
-    margin: 10px 0 0 9px;
+    margin: 10px 0 0 11px;
     overflow: hidden;
 }
 
@@ -945,12 +945,12 @@ select option {
 
 .list-menu-float, .header-menu.other {
     position: relative;
-    top: auto;
     display: block;
     width: 1020px;
     height: 0;
+    right: 10px;
     padding-left: 0;
-    margin: 0 auto;
+    margin: 0px auto;
     border: none;
     background: 0 0;
     text-align: left;
@@ -1249,7 +1249,7 @@ a.status-button:hover {
 }
 
 .list-container .list-block {
-  margin: 10px;
+  margin: 0;
   min-height: 0;
 }
 
@@ -1263,7 +1263,7 @@ a.status-button:hover {
     background-color: #191919;
     display: table-cell;
 	height: 40px;
-	width: 1045px;
+	width: 1055px;
 }
 
 .fa-bar-chart-o:before, .fa-bar-chart:before {
@@ -1325,7 +1325,7 @@ a.status-button:hover {
 }
 
 .list-container .list-unit .list-stats {
-	width: 1045px;
+	width: 1055px;
     border-top: 2px solid #f10834;
     background: #191919;
 }
@@ -1432,7 +1432,8 @@ a.status-button:hover {
     content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2015 All Rights Reserved. \a Original page design from ffxiv.eorzeacollection.com by Edeon Vails. \a List CSS and adaption by MurakumoJP.";
     display: block !important;
     padding: 15px !important;
-    width: 1015px;
+    width: 1025px;
+	margin-bottom: 15px;
     background-color: #191919;
     text-align: center;
     font-size: 12px;
