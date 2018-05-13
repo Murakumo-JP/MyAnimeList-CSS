@@ -147,7 +147,7 @@
 
 .list-container .cover-block {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-1.png");
-    width: 1055px;
+    width: 1053px;
     height: 250px;
     background-color: #191919;
     margin-bottom: 52px;
@@ -192,7 +192,7 @@
 	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
 	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
     position: absolute;
-	right: -1px;
+	right: 0px;
     top: 1px;
 }
 
@@ -886,14 +886,14 @@ select option {
 }
 
 .header .header-menu .list-menu {
-  display: block !important;
-  top: 250px !important;
-  right: 907px !important;
-  background-color: transparent;
-  border: 0;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
+    display: block !important;
+    top: 250px !important;
+    right: 917px !important;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
 }
 
 .header .header-menu .list-menu .icon-menu {
@@ -961,7 +961,7 @@ select option {
 .header .header-menu .header-info {
     font-size: 13px;
     margin-top: 270px;
-    margin-left: 10px;
+    margin-left: 0px;
     border-radius: 5px;
     color: #ffffff !important;
     background-color: #f1083499;
