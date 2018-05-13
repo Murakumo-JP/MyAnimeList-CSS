@@ -1095,7 +1095,7 @@ border-radius: 5px;
     height: 0 !important;
     text-decoration: none;
     top: 14px !important;
-    padding: 10px 25px 20px 13px;
+    padding: 10px 0 20px 0;
     font-size: 10px;
     font-family: 'verdana', sans-serif;
 }
