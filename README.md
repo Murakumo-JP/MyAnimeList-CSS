@@ -44,7 +44,7 @@ On the same page, in the Add Custom CSS field, paste the code shown below.
 
 If you want to change the images in CSS then paste this after the code and replace the links to your.
 
-I recommend images with resolutions of 1043px - 250px
+I recommend images with resolutions of 1055px250
 
 ```css
 .list-container .cover-block {
