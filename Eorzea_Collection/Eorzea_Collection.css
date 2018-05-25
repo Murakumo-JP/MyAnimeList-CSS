@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url('https://malcat-gen.appspot.com/series?template=.data.image a[href^="/$list/$id/"]::after{background-image:url($series_image)}');
-
+@import url('https://murakumo-jp.github.io/MyAnimeList-CSS/Cover/Cover.css');
 ::-webkit-scrollbar {
     height: 9px;
     width: 9px;
