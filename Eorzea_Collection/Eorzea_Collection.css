@@ -146,7 +146,7 @@
 /* Cover Block */
 
 .list-container .cover-block {
-    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-1.png");
+    background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
     width: 1053px;
     height: 250px;
     background-color: #191919;
@@ -156,7 +156,7 @@
     border: 1px solid #f10834;
 }
 
-.list-container .cover-block:before, .list-container .cover-block:after {
+/*.list-container .cover-block:before, .list-container .cover-block:after {
 	background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
 }
 
@@ -209,7 +209,7 @@
     -moz-transition: all 0.8s;
     -o-transition: all 0.8;
     transition: all 0.8s;
-}
+}*/
 
 /* Hentai R-18 */
 
@@ -769,7 +769,7 @@ i.fa.fa-sort-asc.sort-icon,
 
 /* Header Height */
 .list-menu-float {
-  top: 319px !important;
+  top: 289px !important;
 }
 
 /* Footer Font Color */
@@ -1191,7 +1191,7 @@ border-radius: 5px;
 }
 
 .list-container {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 1055px;
     min-width: 820px;
     background-color: transparent;
