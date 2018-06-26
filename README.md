@@ -50,10 +50,6 @@ I recommend images with resolutions of 1055px250
 .list-container .cover-block {
     background-image: url("your images") !important;
 }
-
-.list-container .cover-block:before, .list-container .cover-block:after {
-	background-image: url("Your images") !important;
-}
 ```
 ## MIT License
 
