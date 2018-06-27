@@ -99,7 +99,8 @@
     margin-top: 5px;
     padding: 0 15px;
     border-right: 2px solid #3c3c3c;
-    font-size: 14px;
+        font-size: 12px;
+    font-weight: bold;
 }
 
 .status-menu-container .status-menu .status-button:hover:before {
@@ -125,7 +126,8 @@
 
 .list-container .status-menu-container .status-menu .status-button.on {
     color: #f10834;
-    font-size: 14px;
+    font-size: 12px;
+	font-weight: bold;
     font-weight: 100;
 }
 
