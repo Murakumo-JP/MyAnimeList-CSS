@@ -14,6 +14,10 @@
     background-color: #3c3c3c;
 }
 
+.initialize-tutorial {
+    display: none;
+}
+
 /*===== Edit Color list =======*/ 
  
 .header .header-title, .list-container .status-menu-container .status-menu .status-button.on,
@@ -770,7 +774,7 @@ i.fa.fa-sort-asc.sort-icon,
 
 /* Header Height */
 .list-menu-float {
-  top: 289px !important;
+  top: 329px !important;
 }
 
 /* Footer Font Color */
@@ -1192,7 +1196,7 @@ border-radius: 5px;
 }
 
 .list-container {
-    margin-top: 20px;
+    margin-top: 60px;
     width: 1055px;
     min-width: 820px;
     background-color: transparent;
