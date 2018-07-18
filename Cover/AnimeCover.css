@@ -636,3 +636,7 @@ a[href*="/37210/"]::after {background-image: url("https://myanimelist.cdn-dena.c
 a[href*="/35983/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/1439/91363.jpg");}
 /*Shichisei no Subaru*/
 a[href*="/36316/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/1629/91971.jpg");}
+/*Quanzhi Gaoshou: Tebie Pian*/
+a[href*="/37078/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/1825/91514.jpg");}
+/*Sunoharasou no Kanrinin-san*/
+a[href*="/36817/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/1054/91107.jpg");}
