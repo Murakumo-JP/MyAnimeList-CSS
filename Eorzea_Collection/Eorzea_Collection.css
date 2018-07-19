@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://malcat-gen.appspot.com/series?template=.data.image a[href^="/$list/$id/"]::after{background-image:url($series_image)}');
 @import url('https://murakumo-jp.github.io/MyAnimeList-CSS/Cover/AnimeCover.css');
+
 ::-webkit-scrollbar {
     height: 9px;
     width: 9px;
@@ -817,20 +818,15 @@ body {
 
 input[type='text'],
 select {
-	text-transform: uppercase;
     background-color: #3c3c3c;
-    border: 1px solid #f10834;
-    border-radius: 5px;
+    border: 0;
+    border-bottom: 0 !important;
     vertical-align: middle;
     font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
     padding: 5px;
     margin: 0;
-    border-bottom: currentColor 1px solid;
     outline: none;
-    caret-color: #ffffff;
-    color: #f10834;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+    color: #ffffff !important;
 }
 
 input[type='text'] option,
@@ -1235,13 +1231,26 @@ a.status-button:hover {
 }
 
 .list-container .status-menu-container .search-container #search-box {
-  margin: 0;
-  height: 13px;
+	margin: 0;
+    width: 150px;
+    border: 0;
+    height: 25px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5;
+}
+
+.list-container .status-menu-container .search-container #search-box:hover {
+    box-shadow: 0 0 2px 1px #f10834;
+    width: 170px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5;
 }
 
 .list-container .status-menu-container .search-container #search-box.open {
-    background-color: #3c3c3c;
-    width: 160px;
+    width: 150px;
+    border: 0;
     height: 25px;
 }
 
