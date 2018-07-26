@@ -19,6 +19,23 @@
     display: none !important;
 }
 
+.initialize-tutorial.warning {
+    color: #ffffff !important;
+    background-color: #191919 !important;
+    border-left: 1px solid #f10834 !important;
+    border-right: 1px solid #191919 !important;
+    border-bottom: 2px solid #f10834 !important;
+    display: block !important;
+    margin-top: 13px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.initialize-tutorial.warning:hover {
+    margin-top: 40px;
+}
+
 /*===== Edit Color list =======*/ 
  
 .header .header-title, .list-container .status-menu-container .status-menu .status-button.on,
