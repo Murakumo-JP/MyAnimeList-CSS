@@ -791,6 +791,116 @@ i.fa.fa-sort-asc.sort-icon,
     display: none !important;
 }
 
+/* Header Menu Other */
+
+a[href="/login.php"] {
+    border-radius: 5px;
+    color: #ffffff !important;
+    background-color: #f10834;
+    margin-right: 3px;
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    width: 30px;
+    padding: 8px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    font-size: 0;
+    margin-top: -7px;
+}
+
+a[href="/login.php"]:after {
+    content: "";
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+}
+
+.header-info a[href*="/history/"] {
+    font-size: 0 !important;
+}
+
+.header .header-menu .header-info a:last-child {
+    top: 5px;
+    display: inline;
+    color: #fff;
+    line-height: 19px;
+    margin-top: 5px;
+    padding: 0 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.header .header-menu .list-menu .icon-menu {
+    border-radius: 5px;
+    color: #ffffff !important;
+    background-color: #f10834;
+    margin-right: 3px;
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    width: 30px;
+    padding: 8px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    top: 4px;
+    left: 820px;
+}
+
+.header .header-menu .list-menu .icon-menu:before {
+    content: "";
+    display: inline-block;
+    font: normal normal normal 14px / 1 FontAwesome;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+}
+
+.header .header-menu .list-menu .icon-menu.anime-list::before {
+    display: inline-block;
+    content: "";
+}
+
+.header .header-menu .list-menu .icon-menu:hover {
+    background-color: #f10834;
+}
+
+.header .header-menu .header-info {
+    font-size: 11px !important;
+    color: #ffffff !important;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: fixed;
+    left: 853px;
+    top: 8px;
+}
+
+.header-menu.other {
+    position: relative !important;
+    display: block;
+    width: 1020px;
+    height: 0;
+    right: 10px !important;
+    padding-left: 0;
+    margin: 0px auto;
+    border: none;
+    background: 0 0;
+    text-align: left;
+    font-size: 0;
+    z-index: 999 !important;
+}
+
+
 /* Header Height */
 .list-menu-float {
   top: 329px !important;
@@ -896,20 +1006,6 @@ select option {
   color: inherit;
 }
 
-.header .header-menu .header-info a:last-child {
-  font-size: 0;
-}
-
-.header .header-menu .header-info a:last-child::after {
-  right: 17px;
-  bottom: 0;
-  margin-bottom: -19px;
-  padding-bottom: 3px;
-  text-align: right;
-  vertical-align: bottom;
-  content: "History";
-}
-
 .header .header-menu .header-info a:last-child .fa {
   font-size: 14px;
 }
@@ -923,36 +1019,6 @@ select option {
     box-shadow: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
-}
-
-.header .header-menu .list-menu .icon-menu {
-    font-size: 13px;
-    border-radius: 5px;
-    color: #ffffff !important;
-    background-color: #f1083499;
-    margin-right: 3px;
-    height: 18px !important;
-    width: 100px !important;
-    padding: 2px 0px;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.header .header-menu .list-menu .icon-menu.anime-list::before {
-    display: inline-block;
-    content: "Anime List";
-}
-
-.header .header-menu .list-menu .icon-menu:hover{
-    background-color: #f1083499 !important;
-}
-
-.header .header-menu .list-menu .icon-menu.manga-list::before {
-    display: inline-block;
-    content: "Manga List";
 }
 
 .header .header-title {
@@ -972,7 +1038,7 @@ select option {
     vertical-align: middle;
 }
 
-.list-menu-float, .header-menu.other {
+.list-menu-float {
     position: relative;
     display: block;
     width: 1020px;
@@ -985,25 +1051,6 @@ select option {
     text-align: left;
     font-size: 0;
     z-index: 38;
-}
-
-.header .header-menu .header-info {
-    font-size: 13px;
-    margin-top: 270px;
-    margin-left: 0px;
-    border-radius: 5px;
-    color: #ffffff !important;
-    background-color: #f1083499;
-    margin-right: 3px;
-    display: inline-block;
-    vertical-align: top;
-    height: 19px;
-    padding: 2px 20px;
-    box-sizing: border-box;
-    cursor: pointer;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 .list-menu-float form {
