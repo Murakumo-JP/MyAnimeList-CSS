@@ -76,6 +76,30 @@
 	border-color: #f10834 !important;
 }
 
+/* Display NONE */
+i.fa.fa-sort-asc.sort-icon, 
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link ,
+.header .header-menu .btn-menu #header-menu-button .fa, .header .header-menu .list-menu .icon-menu svg.icon,
+.header .header-menu .list-menu .icon-menu .text, .list-menu-float .icon-menu svg.icon, 
+.list-container .cover-block #cover-image-container .btn-list-setting, #advanced-options-button,
+.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.image,
+.list-container .list-unit .list-table .list-item .list-table-data .data.status,
+.list-container .list-unit .list-table .list-item .list-table-data .data.number,
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .icon-watch, 
+#footer-block, .list-unit .loading-space, .header .header-menu .btn-menu, 
+.list-table .list-table-data .tags .edit, .list-container .list-unit .list-table .list-item .list-table-data .data.started, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.finished, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.days, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.storage, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.priority, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.airing-finished, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.studio, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
+.list-container .list-unit .list-table .list-item .list-table-data .data.retail,
+.status-menu-container .status-menu .status-button:after, .header-title.started, .header-title.finished {
+    display: none !important;
+}
+
 /* Menu */
 
 .list-container .status-menu-container {
@@ -766,29 +790,6 @@ td.td1.borderRBL div {
 .list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume .fa {
   font-size: 14px;
   text-shadow: #000 1px 1px 1px;
-}
-/* Display NONE */
-i.fa.fa-sort-asc.sort-icon, 
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link ,
-.header .header-menu .btn-menu #header-menu-button .fa, .header .header-menu .list-menu .icon-menu svg.icon,
-.header .header-menu .list-menu .icon-menu .text, .list-menu-float .icon-menu svg.icon, 
-.list-container .cover-block #cover-image-container .btn-list-setting, #advanced-options-button,
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.image,
-.list-container .list-unit .list-table .list-item .list-table-data .data.status,
-.list-container .list-unit .list-table .list-item .list-table-data .data.number,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .icon-watch, 
-#footer-block, .list-unit .loading-space, .header .header-menu .btn-menu, 
-.list-table .list-table-data .tags .edit, .list-container .list-unit .list-table .list-item .list-table-data .data.started, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.finished, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.days, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.storage, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.priority, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.airing-finished, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.studio, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.retail,
-.status-menu-container .status-menu .status-button:after, .header-title.started, .header-title.finished {
-    display: none !important;
 }
 
 /* Header Menu Other */
