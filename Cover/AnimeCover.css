@@ -216,8 +216,6 @@ a[href*="/23361/"]::after {background-image: url("https://myanimelist.cdn-dena.c
 a[href*="/15711/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/10/60857.jpg")}
 /*Bakuon*/
 a[href*="/30795/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/3/78914.jpg")}
-/*BanG Dream*/
-a[href*="/33573/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/4/82414.jpg")}
 /*Barakamon*/
 a[href*="/22789/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/5/59321.jpg")}
 /*Ben-To*/
@@ -684,3 +682,17 @@ a[href*="/20899/"]::after {background-image: url("https://myanimelist.cdn-dena.c
 a[href*="/26055/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/11/75045.jpg");}
 /*JoJo no Kimyou na Bouken: Diamond wa Kudakenai (2016)*/
 a[href*="/31933/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/3/79156.jpg");}
+/*Karakai Jouzu no Takagi-san*/
+a[href*="/35860/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/7/89990.jpg");}
+/*One Punch Man*/
+a[href*="/30276/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/12/76049.jpg");}
+/*One Punch Man 2*/
+a[href*="/34134/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/1797/93459.jpg");}
+/*BanG Dream! 1nd Season*/
+a[href*="/33573/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/4/82414.jpg");}
+/*BanG Dream! 2nd Season*/
+a[href*="/37869/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/1306/92896.jpg");}
+/*BanG Dream! 3nd Season*/
+a[href*="/37870/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/1362/92850l.jpg");}
+/*Gakuen Babysitters*/
+a[href*="/35222/"]::after {background-image: url("https://myanimelist.cdn-dena.com/images/anime/8/89978.jpg");}
