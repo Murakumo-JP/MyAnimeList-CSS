@@ -1,6 +1,13 @@
 @charset "UTF-8";
-@import url('https://malcat-gen.appspot.com/series?template=.data.image a[href^="/$list/$id/"]::after{background-image:url($series_image)}');
-@import url('https://murakumo-jp.github.io/MyAnimeList-CSS/Cover/AnimeCover.css');
+@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
+
+/* Latest Updates: 19.08.2018
+	Original page design from ffxiv.eorzeacollection.com by Edeon Vails.
+	List CSS and adaption by MurakumoJP.
+	GitHub: https://github.com/Murakumo-JP/MyAnimeList-CSS
+	MyAnimeList Forum: https://myanimelist.net/forum/?topicid=1726107
+	MyAnimeList Profile: https://myanimelist.net/profile/MurakumoJP
+*/
 
 ::-webkit-scrollbar {
     height: 9px;
@@ -15,26 +22,74 @@
     background-color: #3c3c3c;
 }
 
-.initialize-tutorial {
-    display: none !important;
+/* Tutorial by Valerio_Lyndon */
+
+body .initialize-tutorial:hover {
+    pointer-events: auto;
 }
 
-.initialize-tutorial.warning {
-    color: #ffffff !important;
-    background-color: #191919 !important;
-    border-left: 1px solid #f10834 !important;
-    border-right: 1px solid #191919 !important;
-    border-bottom: 2px solid #f10834 !important;
-    display: block !important;
-    margin-top: 13px;
+body .initialize-tutorial {
     position: fixed;
-    z-index: 100;
-    width: 100%;
-	top: 0;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+	color: #fff;
+    background: 0 0!important;
+    border: none!important;
+    pointer-events: none;
+    z-index: 99;
 }
 
-.initialize-tutorial.warning:hover {
-    margin-top: 40px;
+.initialize-tutorial:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -45px;
+    display: block;
+    width: 90px;
+    height: 80px;
+    background: #191919;
+    border-bottom: 2px solid #f10834;
+    pointer-events: auto;
+    transform: rotate(-45deg);
+}
+
+.initialize-tutorial a:visited {
+    color: #ffffff !important;
+}
+
+.initialize-tutorial:hover .initialize-tutorial__message {
+    opacity: 1;
+}
+
+.initialize-tutorial .initialize-tutorial__message {
+    top: 40px;
+    position: absolute;
+    width: 450px;
+    height: 36px;
+    padding: 10px 10px 10px 30px;
+    background: #191919;
+    border-bottom: 2px solid #f10834;
+    border-right: 2px solid #f10834;
+    line-height: 15px;
+    text-align: left;
+    opacity: 0;
+    z-index: 1;
+}
+
+.initialize-tutorial:after {
+    content: "\f129";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    color: #f10834;
+    font: 20px/30px FontAwesome;
+    z-index: 1;
 }
 
 /*===== Edit Color list =======*/ 
