@@ -39,17 +39,6 @@ On the same page, in the Add Custom CSS field, paste the code shown below.
 ```css
 @import url('https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/Eorzea_Collection.css');
 ```
-## Image Сhanges
-
-If you want to change the images in CSS then paste this after the code and replace the links to your.
-
-I recommend images with resolutions of 1055px250
-
-```css
-.list-container .cover-block {
-    background-image: url("your images") !important;
-}
-```
 To remove blurry covers
 
 Add this line to the top of your animelist CSS
@@ -57,6 +46,17 @@ Add this line to the top of your animelist CSS
 Replace USERNAME in the line with your exact username. 
 ```css
 @import "https://malscraper.azurewebsites.net/covers/anime/USERNAME/presets/dataimagelinkafter";
+```
+## Image Сhanges
+
+If you want to change the images in CSS then paste this after the code and replace the links to your.
+
+I recommend images with resolutions of 1053px250
+
+```css
+.list-container .cover-block {
+    background-image: url("your images") !important;
+}
 ```
 ## MIT License
 
