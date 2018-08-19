@@ -37,7 +37,6 @@ https://myanimelist.net/ownlist/style/theme/1
 On the same page, in the Add Custom CSS field, paste the code shown below.
 
 ```css
-@import url('https://malcat-gen.appspot.com/series?template=.data.image a[href^="/$list/$id/"]::after{background-image:url($series_image)}');
 @import url('https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/Eorzea_Collection.css');
 ```
 ## Image Сhanges
@@ -50,6 +49,12 @@ I recommend images with resolutions of 1055px250
 .list-container .cover-block {
     background-image: url("your images") !important;
 }
+```
+To remove blurry covers
+Add this line to the top of your animelist CSS
+Replace USERNAME in the line with your exact username. 
+```css
+@import "https://malscraper.azurewebsites.net/covers/anime/USERNAME/presets/dataimagelinkafter";
 ```
 ## MIT License
 
