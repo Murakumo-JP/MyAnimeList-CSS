@@ -37,15 +37,8 @@ https://myanimelist.net/ownlist/style/theme/1
 On the same page, in the Add Custom CSS field, paste the code shown below.
 
 ```css
+@import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
 @import url('https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/Eorzea_Collection.css');
-```
-To remove blurry covers
-
-Add this line to the top of your animelist CSS
-
-Replace USERNAME in the line with your exact username. 
-```css
-@import "https://malscraper.azurewebsites.net/covers/anime/USERNAME/presets/dataimagelinkafter";
 ```
 ## Image Сhanges
 
