@@ -28,7 +28,7 @@
     display: block !important;
     margin-top: 13px;
     position: fixed;
-    z-index: 99;
+    z-index: 100;
     width: 100%;
 	top: 0;
 }
