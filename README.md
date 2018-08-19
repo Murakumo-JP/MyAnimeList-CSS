@@ -51,7 +51,9 @@ I recommend images with resolutions of 1055px250
 }
 ```
 To remove blurry covers
+
 Add this line to the top of your animelist CSS
+
 Replace USERNAME in the line with your exact username. 
 ```css
 @import "https://malscraper.azurewebsites.net/covers/anime/USERNAME/presets/dataimagelinkafter";
