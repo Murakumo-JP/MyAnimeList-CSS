@@ -5,6 +5,7 @@ Original page design from http://ffxiv.eorzeacollection.com/ by Edeon Vails.
 List CSS and adaption by MurakumoJP.
 
 ## Preview
+https://myanimelist.net/animelist/MurakumoJP
 ![Screenshot](Eorzea_Collection/preview/Snapshot2.jpg?raw=true)
 
 ## Features
