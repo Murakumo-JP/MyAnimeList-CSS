@@ -22,7 +22,7 @@
     background-color: #3c3c3c;
 }
 
-/* Tutorial by Valerio_Lyndon */
+/* Tutorial.Warning by Valerio_Lyndon */
 
 body .initialize-tutorial:hover {
     pointer-events: auto;
@@ -674,7 +674,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
     margin-top: 13px;
     margin-left: 40px;
     position: absolute;
-    z-index: 99;
+    z-index: 98;
     background-color: #f10834;
     padding: 5px;
     border-radius: 7px;
@@ -1543,7 +1543,7 @@ a.status-button:hover {
     margin-top: 13px;
     margin-left: 13px;
     position: absolute;
-    z-index: 99;
+    z-index: 98;
     background-color: #f10834;
     padding: 5px;
     border-radius: 7px;
