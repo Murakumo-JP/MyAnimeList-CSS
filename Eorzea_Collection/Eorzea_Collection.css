@@ -89,7 +89,7 @@ body .initialize-tutorial {
 }
 
 .initialize-tutorial:after {
-    content: "\f129";
+    content: "\f085";
     position: absolute;
     top: 40px;
     left: 0;
