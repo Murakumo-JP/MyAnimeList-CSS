@@ -58,7 +58,7 @@ body .initialize-tutorial {
 }
 
 .initialize-tutorial a:visited {
-    color: #f10834 !important;
+    color: #828282 !important;
 }
 
 .initialize-tutorial:hover .initialize-tutorial__message {
@@ -70,7 +70,11 @@ body .initialize-tutorial {
 }
 
 .initialize-tutorial .initialize-tutorial__message {
-	-webkit-transition: all 0.3s;
+	clip-path: polygon(0% 100%, 440px 100%, 100% 0, 0px 0px);
+	-webkit-clip-path: polygon(0% 100%, 440px 100%, 100% 0, 0px 0px);
+	-moz-clip-path: polygon(0% 100%, 440px 100%, 100% 0, 0px 0px);
+	-o-clip-path: polygon(0% 100%, 440px 100%, 100% 0, 0px 0px);
+    -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -80,8 +84,8 @@ body .initialize-tutorial {
     height: 36px;
     padding: 10px 10px 10px 30px;
     background: #191919;
-    border-bottom: 2px solid #f10834;
-    border-right: 2px solid #f10834;
+    border-bottom: 1px solid #f10834;
+    border-right: none;
     line-height: 15px;
     text-align: left;
     opacity: 0;
@@ -95,7 +99,7 @@ body .initialize-tutorial {
     left: 0;
     width: 30px;
     height: 30px;
-    color: #f10834;
+    color: #3c3c3c;
     font: 20px/30px FontAwesome;
     z-index: 1;
 }
