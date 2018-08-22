@@ -58,14 +58,22 @@ body .initialize-tutorial {
 }
 
 .initialize-tutorial a:visited {
-    color: #ffffff !important;
+    color: #f10834 !important;
 }
 
 .initialize-tutorial:hover .initialize-tutorial__message {
     opacity: 1;
 }
 
+.initialize-tutorial a:hover {
+    text-decoration: none !important;
+}
+
 .initialize-tutorial .initialize-tutorial__message {
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
     top: 40px;
     position: absolute;
     width: 450px;
@@ -151,7 +159,8 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table .list-item .list-table-data .data.studio, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.retail,
-.status-menu-container .status-menu .status-button:after, .header-title.started, .header-title.finished {
+.status-menu-container .status-menu .status-button:after, .header-title.started, .header-title.finished, 
+.fa-info-circle:before {
     display: none !important;
 }
 
