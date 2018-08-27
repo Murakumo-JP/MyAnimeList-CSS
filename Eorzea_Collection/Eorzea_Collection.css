@@ -57,7 +57,7 @@ body .initialize-tutorial {
     transform: rotate(-45deg);
 }
 
-.initialize-tutorial a:visited {
+.initialize-tutorial a, .initialize-tutorial a:visited {
     color: #828282 !important;
 }
 
@@ -1451,16 +1451,6 @@ a.status-button:hover {
     font-family: 'verdana', sans-serif;
     font-size: 11px;
     border: none;
-}
-
-.list-container .list-unit .list-status-title .stats #advanced-options-button::after {
-	right: 0;
-	top: 0;
-	margin-top: -19px;
-	padding-top: 3px;
-	text-align: right;
-	vertical-align: top;
-	content: "Filter";
 }
 
 .list-unit .list-status-title .text {
