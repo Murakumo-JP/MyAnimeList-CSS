@@ -1444,12 +1444,12 @@ a.status-button:hover {
 /* Stats */
 
 #show-stats-button {
-    font-size: 0;
+	font-size: 0;
     position: absolute;
-    padding: 5px 16px;
+    padding: 5px 15px;
     right: 28px;
     height: 30px;
-    background-color: #f10834;
+    width: 18px;
 }
 
 .fa-bar-chart-o:before, .fa-bar-chart:before {
@@ -1465,7 +1465,6 @@ a.status-button:hover {
     padding: 5px 14px;
     right: -12px;
     height: 30px;
-    background-color: #f10834;
 }
 
 .fa-filter:before {
