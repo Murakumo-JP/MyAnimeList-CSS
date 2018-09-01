@@ -114,7 +114,8 @@ body .initialize-tutorial {
 }
 
 .status-menu-container .status-menu .status-button:before,
-.list-menu-float .icon-menu, .list-menu-float .icon-menu:not(.profile):hover, 
+.list-menu-float .icon-menu, .list-menu-float .icon-menu:not(.profile):hover,
+.list-container .list-unit .list-status-title .stats, 
 .list-container .status-menu-container .search-container #search-button,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .edit a::before, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .add a::before,
@@ -134,7 +135,7 @@ body .initialize-tutorial {
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before,
-.header .header-menu .list-menu .icon-menu, ::-webkit-scrollbar, #show-stats-button, #advanced-options-button {
+.header .header-menu .list-menu .icon-menu, ::-webkit-scrollbar {
 	background-color: #f10834 !important;
 }
 
@@ -149,7 +150,7 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.title .link ,
 .header .header-menu .btn-menu #header-menu-button .fa, .header .header-menu .list-menu .icon-menu svg.icon,
 .header .header-menu .list-menu .icon-menu .text, .list-menu-float .icon-menu svg.icon, 
-.list-container .cover-block #cover-image-container .btn-list-setting,
+.list-container .cover-block #cover-image-container .btn-list-setting, #advanced-options-button,
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title.image,
 .list-container .list-unit .list-table .list-item .list-table-data .data.status,
 .list-container .list-unit .list-table .list-item .list-table-data .data.number,
@@ -982,25 +983,14 @@ a[href="/login.php"]:after {
   color: gray;
 }
 
-.header .header-menu .header-info a:last-child::after, 
-.header .header-menu .list-menu .icon-menu.manga-list::after, 
-.header .header-menu .list-menu .icon-menu.anime-list::after, 
-.list-menu-float .icon-menu.profile::after, .list-menu-float .icon-menu .text, 
-.list-container .status-menu-container .search-container #search-button::after, 
-.list-container .list-unit .list-status-title .stats #show-stats-button::after, 
-.list-container .list-unit .list-status-title .stats #advanced-options-button::after {
+.header .header-menu .header-info a:last-child::after, .header .header-menu .list-menu .icon-menu.manga-list::after, .header .header-menu .list-menu .icon-menu.anime-list::after, .list-menu-float .icon-menu.profile::after, .list-menu-float .icon-menu .text, .list-container .status-menu-container .search-container #search-button::after, .list-container .list-unit .list-status-title .stats #show-stats-button::after, .list-container .list-unit .list-status-title .stats #advanced-options-button::after {
   font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
   height: 16px;
   white-space: nowrap;
   color: inherit;
 }
 
-.header .header-menu .header-info a:last-child::after, 
-.header .header-menu .list-menu .icon-menu.manga-list::after, 
-.header .header-menu .list-menu .icon-menu.anime-list::after, 
-.list-menu-float .icon-menu.profile::after, .list-container .status-menu-container .search-container #search-button::after, 
-.list-container .list-unit .list-status-title .stats #show-stats-button::after, 
-.list-container .list-unit .list-status-title .stats #advanced-options-button::after {
+.header .header-menu .header-info a:last-child::after, .header .header-menu .list-menu .icon-menu.manga-list::after, .header .header-menu .list-menu .icon-menu.anime-list::after, .list-menu-float .icon-menu.profile::after, .list-container .status-menu-container .search-container #search-button::after, .list-container .list-unit .list-status-title .stats #show-stats-button::after, .list-container .list-unit .list-status-title .stats #advanced-options-button::after {
   position: absolute;
   overflow: hidden;
   width: 0;
@@ -1010,13 +1000,7 @@ a[href="/login.php"]:after {
   transition-timing-function: ease-in-out;
 }
 
-.header .header-menu .header-info a:last-child:hover::after,
-.header .header-menu .list-menu .icon-menu.manga-list:hover::after, 
-.header .header-menu .list-menu .icon-menu.anime-list:hover::after, 
-.list-menu-float .icon-menu.profile:hover::after, 
-.list-container .status-menu-container .search-container #search-button:hover::after, 
-.list-container .list-unit .list-status-title .stats #show-stats-button:hover::after, 
-.list-container .list-unit .list-status-title .stats #advanced-options-button:hover::after {
+.header .header-menu .header-info a:last-child:hover::after, .header .header-menu .list-menu .icon-menu.manga-list:hover::after, .header .header-menu .list-menu .icon-menu.anime-list:hover::after, .list-menu-float .icon-menu.profile:hover::after, .list-container .status-menu-container .search-container #search-button:hover::after, .list-container .list-unit .list-status-title .stats #show-stats-button:hover::after, .list-container .list-unit .list-status-title .stats #advanced-options-button:hover::after {
   width: 100px;
   opacity: 1;
 }
@@ -1441,54 +1425,34 @@ a.status-button:hover {
 	width: 1055px;
 }
 
-/* Stats */
-
-#show-stats-button {
-    font-size: 0;
-    position: absolute;
-    padding: 5px 16px;
-    right: 28px;
-    height: 30px;
-    background-color: #f10834;
-}
-
 .fa-bar-chart-o:before, .fa-bar-chart:before {
-    content: "";
-    font-size: 13px;
+    content: "\f078" !important;
+	font-size: 14px;
 }
 
-/* Filters */
-
-#advanced-options-button {
-    font-size: 0;
-    position: absolute;
-    padding: 5px 14px;
-    right: -12px;
-    height: 30px;
+.list-container .list-unit .list-status-title .stats {
+    right: 0px;
+    float: right;
     background-color: #f10834;
-}
-
-.fa-filter:before {
-    content: "";
-    font-size: 13px;
-}
-
-#advanced-options .filter-widget.title input[type=text],#advanced-options select{
-	border: 0;
-	background-color: #313131;
-}
-
-#advanced-options{
-	border: #c82544 1px solid !important;
-	color: #ffffff !important;
-	background-color: #313131 !important;
-}
-
-#advanced-options .filter-widget select {
-    border: 0;
-    margin-right: 8px;
+    height: 100%;
+    line-height: 40px;
+    padding: 0 10px;
     font-size: 12px;
-    background-color: #3c3c3c;
+    text-transform: uppercase;
+}
+
+.list-container .list-unit .list-status-title .stats a {
+	padding: 5px;
+    margin: 0;
+    outline: none;
+    caret-color: #ffffff;
+    color: #ffffff;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-weight: bold;
+    font-family: 'verdana', sans-serif;
+    font-size: 11px;
+    border: none;
 }
 
 .list-unit .list-status-title .text {
