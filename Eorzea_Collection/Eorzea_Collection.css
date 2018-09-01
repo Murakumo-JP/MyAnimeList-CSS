@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
 
-/* Latest Updates: 19.08.2018
+/* Latest Updates: 02.09.2018
 	Original page design from ffxiv.eorzeacollection.com by Edeon Vails.
 	List CSS and adaption by MurakumoJP.
 	GitHub: https://github.com/Murakumo-JP/MyAnimeList-CSS
@@ -1475,7 +1475,7 @@ a.status-button:hover {
 
 #advanced-options .filter-widget.title input[type=text],#advanced-options select{
 	border: 0;
-	background-color: #313131;
+	background-color: #3c3c3c;
 }
 
 #advanced-options{
