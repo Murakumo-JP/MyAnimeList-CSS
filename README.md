@@ -6,7 +6,7 @@ List CSS and adaption by MurakumoJP.
 
 ## Preview
 https://myanimelist.net/animelist/MurakumoJP
-![Screenshot](Eorzea_Collection/preview/Snapshot2.jpg?raw=true)
+![Screenshot](Eorzea_Collection/preview/Snapshot.png?raw=true)
 
 ## Features
 
