@@ -134,12 +134,14 @@ body .initialize-tutorial {
 .list-unit .list-status-title .text, .list-container .list-unit .list-table tbody:first-child::after,
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before {
+.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before,
+.header .header-menu .list-menu .icon-menu, ::-webkit-scrollbar {
 	background-color: #f10834 !important;
 }
 
 .list-container .status-menu-container,.list-item:hover:before,
-.list-container .list-unit .list-stats, .list-unit::after, .list-container .cover-block, input[type='text'], select{
+.list-container .list-unit .list-stats, .list-unit::after, .list-container .cover-block, input[type='text'], 
+select, .initialize-tutorial:before, .initialize-tutorial .initialize-tutorial__message {
 	border-color: #f10834 !important;
 }
 
