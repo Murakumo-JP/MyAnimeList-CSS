@@ -1443,6 +1443,7 @@ a.status-button:hover {
     background-color: #191919 !important;
     top: 364px;
     width: 1055px;
+	z-index: 2 !important;
 }
 
 #fancybox-overlay {background-color: transparent !important;}
