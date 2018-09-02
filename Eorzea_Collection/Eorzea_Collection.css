@@ -1445,7 +1445,7 @@ a.status-button:hover {
     width: 1055px;
 	z-index: 2 !important;
 }
-
+#fancybox-overlay{z-index: 0 !important;}
 #fancybox-overlay {background-color: transparent !important;}
 #advanced-options .sort-widget input[type=radio]:checked:disabled + label {color: #ffffff !important;}
 
