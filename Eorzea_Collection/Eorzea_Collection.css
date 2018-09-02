@@ -134,13 +134,19 @@ body .initialize-tutorial {
 .list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before,
-.header .header-menu .list-menu .icon-menu, ::-webkit-scrollbar, #show-stats-button, #advanced-options-button {
+.header .header-menu .list-menu .icon-menu, ::-webkit-scrollbar, #show-stats-button, #advanced-options-button,
+#advanced-options .btn-apply, #advanced-options .btn-clear, #advanced-options .sort-widget input[type=radio]:checked + label {
 	background-color: #f10834 !important;
+}
+
+#advanced-options .btn-apply:hover, #advanced-options .btn-clear:hover {
+    background-color: rgba(241, 8, 52, 0.8) !important;
 }
 
 .list-container .status-menu-container,.list-item:hover:before,
 .list-container .list-unit .list-stats, .list-unit::after, .list-container .cover-block, input[type='text'], 
-select, .initialize-tutorial:before, .initialize-tutorial .initialize-tutorial__message {
+select, .initialize-tutorial:before, .initialize-tutorial .initialize-tutorial__message, 
+#advanced-options .sort-widget input[type=radio]:checked + label {
 	border-color: #f10834 !important;
 }
 
@@ -165,7 +171,7 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.retail,
 .status-menu-container .status-menu .status-button:after, .header-title.started, .header-title.finished, 
-.fa-info-circle:before {
+.fa-info-circle:before, #fancybox-close {
     display: none !important;
 }
 
@@ -272,61 +278,6 @@ i.fa.fa-sort-asc.sort-icon,
     margin-right: 0;
     border: 1px solid #f10834;
 }
-
-/*.list-container .cover-block:before, .list-container .cover-block:after {
-	background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
-}
-
-.list-container .cover-block:before, .list-container .cover-block:after{
-	content: "";
-    display: block;
-    width: 655px;
-    height: 250px;
-	-webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8s;
-    transition: all 0.8s;
-}
-
-.list-container .cover-block:before {
-    clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
-	-webkit-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
-	-moz-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
-	-o-clip-path: polygon(0% 100%, 400px 100%, 100% 0, 0px 0px);
-}
-
-.list-container .cover-block:hover:before {
-    clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-webkit-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-moz-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-	-o-clip-path: polygon(0% 100%, 0 100%, 100% 0, 0px 0px);
-}
-
-.list-container .cover-block:after {
-    background-position: right;
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
-	-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
-	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
-	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0%);
-    position: absolute;
-	right: 0.9px;
-    top: 1px;
-}
-
-.list-container .cover-block:hover:after {
-    clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-webkit-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-moz-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-	-o-clip-path: polygon(0% 100%, 100% 100%, 100% 0, 250px 0px);
-}
-
-.list-container .cover-block:hover:before, .list-container .cover-block:hover:after  {
-	width: 250px;
-    -webkit-transition: all 0.8s;
-    -moz-transition: all 0.8s;
-    -o-transition: all 0.8;
-    transition: all 0.8s;
-}*/
 
 /* Hentai R-18 */
 
@@ -1478,18 +1429,26 @@ a.status-button:hover {
 	background-color: #3c3c3c;
 }
 
-#advanced-options{
-	border: #c82544 1px solid !important;
-	color: #ffffff !important;
-	background-color: #313131 !important;
-}
-
 #advanced-options .filter-widget select {
     border: 0;
     margin-right: 8px;
     font-size: 12px;
     background-color: #3c3c3c;
 }
+
+#advanced-options {
+    border: none;
+    border-top: 2px solid #f10834;
+    color: #ffffff !important;
+    background-color: #191919 !important;
+    top: 364px;
+    width: 1055px;
+}
+
+#fancybox-overlay {background-color: transparent !important;}
+#advanced-options .sort-widget input[type=radio]:checked:disabled + label {color: #ffffff !important;}
+
+/*================================*/
 
 .list-unit .list-status-title .text {
 	clip-path: polygon(15% 100%, 100% 100%, 100% 0, 0px 0px);
