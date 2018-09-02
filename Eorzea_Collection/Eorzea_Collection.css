@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
+@import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
 
 /* Latest Updates: 02.09.2018
 	Original page design from ffxiv.eorzeacollection.com by Edeon Vails.
@@ -171,7 +171,8 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .list-unit .list-table .list-item .list-table-data .data.licensor, 
 .list-container .list-unit .list-table .list-item .list-table-data .data.retail,
 .status-menu-container .status-menu .status-button:after, .header-title.started, .header-title.finished, 
-.fa-info-circle:before, #fancybox-close {
+.fa-info-circle:before, #fancybox-close, .header-title.rated, .header-title.status, .header-title.number, 
+.header-title.title, .header-title.tags, .header-title.started {
     display: none !important;
 }
 
@@ -358,10 +359,10 @@ i.fa.fa-sort-asc.sort-icon,
 }
 
 .list-container .list-unit .list-table tbody:first-child:hover .list-table-header {
-	width: 370px;
+    width: 334px;
     height: 41px;
     top: 16px;
-    right: 20px;
+    right: 31px;
     background-color: transparent;
     text-align: left;
     opacity: 1;
