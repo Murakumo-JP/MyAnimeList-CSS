@@ -976,7 +976,7 @@ a[href="/login.php"]:after {
 
 body {
 	font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
-	background-image: url(none);
+	background-image: url(none) !important;
 	background-position: top 40px center !important;
 	background-attachment: fixed !important;
     background-color: #3c3c3c !important;
