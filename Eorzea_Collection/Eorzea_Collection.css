@@ -684,7 +684,7 @@ td.td1.borderRBL div {
 /* Data Progress */
 .list-container .list-unit .list-table .list-item .list-table-data .data.progress:before {
     padding: 2px 0px 0px 0;
-    content: "Progress:";
+    content: "Ep:";
     font-size: 13px !important;
     font-weight: bold;
     pointer-events: all;
