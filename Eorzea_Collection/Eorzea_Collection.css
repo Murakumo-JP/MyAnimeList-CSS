@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
 
+:root{
+	--color: #f10834;
+}
+
 /* Latest Updates: 02.09.2018
 	Original page design from ffxiv.eorzeacollection.com by Edeon Vails.
 	List CSS and adaption by MurakumoJP.
@@ -12,7 +16,7 @@
 ::-webkit-scrollbar {
     height: 9px;
     width: 9px;
-    background-color: #f10834;
+    background-color: var(--color);
     border: 4px solid #191919;
 }
 
@@ -20,6 +24,16 @@
     border: 4px solid transparent;
     background-clip: padding-box;
     background-color: #3c3c3c;
+}
+ 
+body {
+	font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
+	background-image: url(none) !important;
+	background-position: top 40px center !important;
+	background-attachment: fixed !important;
+    background-color: #3c3c3c !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
 }
 
 /* Tutorial.Warning by Valerio_Lyndon */
@@ -52,7 +66,7 @@ body .initialize-tutorial {
     width: 90px;
     height: 80px;
     background: #191919;
-    border-bottom: 2px solid #f10834;
+    border-bottom: 2px solid var(--color);
     pointer-events: auto;
     transform: rotate(-45deg);
 }
@@ -84,7 +98,7 @@ body .initialize-tutorial {
     height: 36px;
     padding: 10px 10px 10px 30px;
     background: #191919;
-    border-bottom: 1px solid #f10834;
+    border-bottom: 1px solid var(--color);
     border-right: none;
     line-height: 15px;
     text-align: left;
@@ -102,52 +116,6 @@ body .initialize-tutorial {
     color: #3c3c3c;
     font: 20px/30px FontAwesome;
     z-index: 1;
-}
-
-/*===== Edit Color list =======*/ 
- 
-.header .header-title, .list-container .status-menu-container .status-menu .status-button.on,
-.list-container .status-menu-container .status-menu .status-button:hover,
-.list-container .list-unit .list-table .list-item .list-table-data .data.score::before,
-.list-unit::after, input[type='text'], select, .td1.borderRBL a {
-	color: #f10834 !important;
-}
-
-.status-menu-container .status-menu .status-button:before,
-.list-menu-float .icon-menu, .list-menu-float .icon-menu:not(.profile):hover, 
-.list-container .status-menu-container .search-container #search-button,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .edit a::before, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .add a::before,
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume,
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-episode, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-chapter, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-volume, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-episode, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-chapter, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.chapter .icon-add-volume, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-episode, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-chapter, 
-.list-container .list-unit .list-table .list-item .list-table-data .data.volume .icon-add-volume,
-.list-unit .list-status-title .text, .list-container .list-unit .list-table tbody:first-child::after,
-.list-container .list-unit .list-table tbody:first-child .list-table-header .header-title .link,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .content-status,
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before,
-.header .header-menu .list-menu .icon-menu, ::-webkit-scrollbar, #show-stats-button, #advanced-options-button,
-#advanced-options .btn-apply, #advanced-options .btn-clear, #advanced-options .sort-widget input[type=radio]:checked + label {
-	background-color: #f10834 !important;
-}
-
-#advanced-options .btn-apply:hover, #advanced-options .btn-clear:hover {
-    background-color: rgba(241, 8, 52, 0.8) !important;
-}
-
-.list-container .status-menu-container,.list-item:hover:before,
-.list-container .list-unit .list-stats, .list-unit::after, .list-container .cover-block, input[type='text'], 
-select, .initialize-tutorial:before, .initialize-tutorial .initialize-tutorial__message, 
-#advanced-options .sort-widget input[type=radio]:checked + label {
-	border-color: #f10834 !important;
 }
 
 /* Display NONE */
@@ -190,7 +158,7 @@ i.fa.fa-sort-asc.sort-icon,
     z-index: 100;
     list-style: none;
     box-sizing: border-box;
-    border-bottom: 2px solid #f10834;
+    border-bottom: 2px solid var(--color);
 }
 
 .list-container .status-menu-container .status-menu {
@@ -206,7 +174,7 @@ i.fa.fa-sort-asc.sort-icon,
     -o-transition: all 0.3s;
     transition: all 0.3s;
     background: none;
-    color: #f10834;
+    color: var(--color);
 }
 
 .list-container .status-menu-container .status-menu .status-button {
@@ -244,11 +212,11 @@ i.fa.fa-sort-asc.sort-icon,
     width: 0;
     height: 2px;
     content: '';
-    background-color: #f10834;
+    background-color: var(--color);
 }
 
 .list-container .status-menu-container .status-menu .status-button.on {
-    color: #f10834;
+    color: var(--color);
     font-size: 13px;
 	font-weight: bold !important;
 }
@@ -261,7 +229,7 @@ i.fa.fa-sort-asc.sort-icon,
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/search.png") #f10834;
+    background: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/search.png") var(--color);
     width: 28px;
     height: 28px;
     font-size: 0;
@@ -272,17 +240,13 @@ i.fa.fa-sort-asc.sort-icon,
 .list-container .cover-block {
     background-image: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/images/cover-block-2.png");
     background-repeat: no-repeat;
-	background-size: cover;
-    	/*background-position: center;*/
-	max-width: 1053px;
-	max-height: 250px;
 	width: 1053px;
     height: 250px;
     background-color: #191919;
     margin-bottom: 52px;
     margin-left: 0;
     margin-right: 0;
-    border: 1px solid #f10834;
+    border: 1px solid var(--color);
 }
 
 /* Hentai R-18 */
@@ -352,7 +316,7 @@ i.fa.fa-sort-asc.sort-icon,
 	-webkit-clip-path: polygon(67% 100%, 100% 100%, 33% 0, 0px 0px);
 	-moz-clip-path: polygon(67% 100%, 100% 100%, 33% 0, 0px 0px);
 	-o-clip-path: polygon(67% 100%, 100% 100%, 33% 0, 0px 0px);
-    background-color: #f10834;
+    background-color: var(--color);
 }
 
 .list-table>tbody:first-of-type {
@@ -382,7 +346,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
 	padding: 17px 40px 13px 40px;
     margin: 0 -40px 0 0;
     width: 57px;
-    background-color: #f10834;
+    background-color: var(--color);
     border-left: none !important;
     color: inherit;
     font-family: 'verdana', sans-serif;
@@ -466,7 +430,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
     opacity: 1;
     width: 94%;
     height: 94%;
-    border-color: #f10834;
+    border-color: var(--color);
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data {
@@ -544,7 +508,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
     position: absolute;
     left: 103px;
     top: 247px;
-    background-color: #f10834;
+    background-color: var(--color);
     color: #fff;
     text-transform: uppercase;
     padding: 4px 10px;
@@ -646,7 +610,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
     margin-left: 40px;
     position: absolute;
     z-index: 98;
-    background-color: #f10834;
+    background-color: var(--color);
     padding: 5px;
     border-radius: 7px;
 }
@@ -702,7 +666,7 @@ td.td1.borderRBL div {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: auto;
   position: absolute;
-  color: #f10834;
+  color: var(--color);
   content: "";
   z-index: 0;
   right: 0;
@@ -759,7 +723,7 @@ td.td1.borderRBL div {
     left: 1px;
     top: 243px;
     padding: 3px 7px 3px 15px;
-    background-color: #f10834;
+    background-color: var(--color);
     margin-right: 14px;
     margin-left: -100%;
     opacity: 0;
@@ -804,7 +768,7 @@ td.td1.borderRBL div {
     top: 0px;
     padding: 5px 5px 6px 5px;
     border-left: 1px solid #a0102b;
-    background-color: #f10834;
+    background-color: var(--color);
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.progress .icon-add-episode .fa,
@@ -823,7 +787,7 @@ td.td1.borderRBL div {
 a[href="/login.php"] {
     border-radius: 5px;
     color: #ffffff !important;
-    background-color: #f10834;
+    background-color: var(--color);
     margin-right: 3px;
     display: inline-block;
     vertical-align: top;
@@ -864,7 +828,7 @@ a[href="/login.php"]:after {
 .header .header-menu .list-menu .icon-menu {
     border-radius: 5px;
     color: #ffffff !important;
-    background-color: #f10834;
+    background-color: var(--color);
     margin-right: 3px;
     display: inline-block;
     vertical-align: top;
@@ -894,7 +858,7 @@ a[href="/login.php"]:after {
 }
 
 .header .header-menu .list-menu .icon-menu:hover {
-    background-color: #f10834;
+    background-color: var(--color);
 }
 
 .header .header-menu .header-info {
@@ -978,16 +942,6 @@ a[href="/login.php"]:after {
   opacity: 1;
 }
 
-body {
-	font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
-	background-image: url(none) !important;
-	background-position: top 40px center !important;
-	background-attachment: fixed !important;
-    background-color: #3c3c3c !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-
 input[type='text'],
 select {
     background-color: #3c3c3c;
@@ -1066,6 +1020,7 @@ select option {
 }
 
 .header .header-title {
+	color: var(--color);
     z-index: 101;
     width: 165px;
     height: 40px;
@@ -1141,9 +1096,9 @@ form:hover {
 }
 
 .list-menu-float .icon-menu, .list-menu-float .icon-menu:not(.profile):hover {
-border-radius: 5px;
+	border-radius: 5px;
     color: #ffffff !important;
-    background-color: #f10834;
+    background-color: var(--color);
     margin-right: 3px;
     display: inline-block;
     vertical-align: top;
@@ -1350,7 +1305,7 @@ a.status-button:hover {
 }
 
 .list-container .status-menu-container .search-container #search-box:hover {
-    box-shadow: 0 0 2px 1px #f10834;
+    box-shadow: 0 0 2px 1px var(--color);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5;
@@ -1401,6 +1356,7 @@ a.status-button:hover {
 /* Stats */
 
 #show-stats-button {
+	background-color: var(--color);
     font-size: 0;
     position: inherit;
     padding: 5px 15px;
@@ -1418,6 +1374,7 @@ a.status-button:hover {
 /* Filters */
 
 #advanced-options-button {
+	background-color: var(--color);
     font-size: 0;
     position: inherit;
     padding: 5px 8px 5px 14px;
@@ -1446,7 +1403,7 @@ a.status-button:hover {
 
 #advanced-options {
     border: none;
-    border-top: 2px solid #f10834;
+    border-top: 2px solid var(--color);
     color: #ffffff !important;
     background-color: #191919 !important;
     top: 364px;
@@ -1473,7 +1430,7 @@ a.status-button:hover {
     font-family: 'verdana', sans-serif;
     font-size: 12px;
     height: 10px;
-    background-color: #f10834;
+    background-color: var(--color);
     color: #fff;
     text-transform: capitalize;
     position: absolute;
@@ -1482,7 +1439,7 @@ a.status-button:hover {
 
 .list-container .list-unit .list-stats {
 	width: 1055px;
-    border-top: 2px solid #f10834;
+    border-top: 2px solid var(--color);
     background: #191919;
 	color: #fff;
 }
@@ -1554,7 +1511,7 @@ a.status-button:hover {
     margin-left: 13px;
     position: absolute;
     z-index: 98;
-    background-color: #f10834;
+    background-color: var(--color);
     padding: 5px;
     border-radius: 7px;
 }
@@ -1594,8 +1551,8 @@ a.status-button:hover {
     background-color: #191919;
     text-align: center;
     font-size: 12px;
-    border-top: 2px solid #f10834;
-    color: #f10834;
+    border-top: 2px solid var(--color);
+    color: var(--color);
     font-weight: bold;
     white-space: pre;
 }
