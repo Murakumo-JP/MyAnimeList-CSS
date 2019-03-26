@@ -1020,6 +1020,7 @@ select option {
 }
 
 .header .header-title {
+    color: var(--color);
     z-index: 101;
     width: 165px;
     height: 40px;
