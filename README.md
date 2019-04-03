@@ -1,6 +1,7 @@
 # Eorzea Collection CSS theme for MyAnimeList
 
 Original page design from http://ffxiv.eorzeacollection.com/ by Edeon Vails.
+MyAnimeList Forum: https://myanimelist.net/forum/?topicid=1726107
 
 List CSS and adaption by MurakumoJP.
 
@@ -39,8 +40,8 @@ https://myanimelist.net/ownlist/style/theme/1
 On the same page, in the Add Custom CSS field, paste the code shown below.
 
 ```css
-@import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
-@import "https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/Eorzea_Collection.css";
+@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
+@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/Eorzea_Collection.css";
 ```
 ## Image Сhanges
 
@@ -53,6 +54,15 @@ I recommend images with resolutions of 1053px250
     background-image: url("your images") !important;
 }
 ```
+
+Edit Color
+
+```css
+:root{
+	--color: #Your color;
+}
+```
+
 ## MIT License
 
 Copyright (c) 2018 Murakumo-JP
