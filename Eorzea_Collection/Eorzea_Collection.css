@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
+@\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
 
 :root{
 	--color: #f10834;
