@@ -1,6 +1,7 @@
 # Eorzea Collection CSS theme for MyAnimeList
 
 Original page design from http://ffxiv.eorzeacollection.com/ by Edeon Vails.
+
 MyAnimeList Forum: https://myanimelist.net/forum/?topicid=1726107
 
 List CSS and adaption by MurakumoJP.
