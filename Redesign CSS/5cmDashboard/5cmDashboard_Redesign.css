@@ -8,7 +8,7 @@
 }
 
 body {
-    background: var(--background);
+    background: var(--background) !important;
     background-attachment: fixed;
     background-repeat: no-repeat !important;
     background-size: cover !important;
