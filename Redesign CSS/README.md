@@ -1,7 +1,7 @@
 # 5cmDashboard Redesign CSS theme for MyAnimeList
 
 List design by 5cm
-Background
+
 Redesign CSS by MurakumoJP
 
 ## Preview
