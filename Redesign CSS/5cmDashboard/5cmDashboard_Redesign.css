@@ -4,7 +4,7 @@
 @\import "https://fonts.googleapis.com/css?family=Source+Sans+Pro";
 
 :root{
-	--background: url("https://i.imgur.com/zIhGT8Q.png");
+	--background: url("https://i.imgur.com/FLDhpeh.jpg");
 }
 
 body {
@@ -13,7 +13,9 @@ body {
     font: 11px Source Sans Pro;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: var(--background), fixed center/cover;
+    background: var(--background);
+    background-position: center;
+    background-size: cover;
     background-attachment: fixed !important;
 }
 
