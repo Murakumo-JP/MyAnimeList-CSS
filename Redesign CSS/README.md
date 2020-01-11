@@ -27,6 +27,6 @@ Edit Background
 
 ```css
 :root{
-	--background: url("Link to your image");
+	--background: url("Link to your image") !important;
 }
 ```
