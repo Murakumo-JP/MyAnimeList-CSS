@@ -21,7 +21,6 @@ I recommend images with resolutions of 975px201
 
 ![Screenshot](5cmDashboard/CoverImageEdit.jpg?raw=true)
 
-```
 If you want to change the images in CSS then paste this after the code and replace the links to your.
 
 Edit Background
