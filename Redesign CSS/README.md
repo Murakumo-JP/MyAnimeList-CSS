@@ -8,6 +8,11 @@ Redesign CSS by MurakumoJP
 
 ![Screenshot](5cmDashboard/5cmDashboard_Redesign_Snapshot.jpg?raw=true)
 
+## Features
+
+* Supports anime
+* Uses MAL Modern Theme
+
 ## Use CSS
 
 ```css
