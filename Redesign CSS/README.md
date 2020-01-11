@@ -8,7 +8,7 @@ Redesign CSS by MurakumoJP
 
 ![Screenshot](5cmDashboard/5cmDashboard_Redesign_Snapshot.jpg?raw=true)
 
-##Use CSS
+## Use CSS
 
 ```css
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
