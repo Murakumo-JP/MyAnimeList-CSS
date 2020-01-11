@@ -8,15 +8,13 @@
 }
 
 body {
-    background: var(--background) !important;
-    background-attachment: fixed;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
     width: 1058px;
     margin: auto;
     font: 11px Source Sans Pro;
     letter-spacing: 1px;
     text-transform: uppercase;
+    background: var(--background), fixed center/cover;
+    background-attachment: fixed !important;
 }
 
 a {color: black;}
