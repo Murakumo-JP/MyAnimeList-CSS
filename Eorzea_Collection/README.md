@@ -9,7 +9,7 @@ List CSS and adaption by MurakumoJP.
 ## Preview
 https://myanimelist.net/animelist/MurakumoJP
 
-![Screenshot](Eorzea_Collection/preview/Snapshot.png?raw=true)
+![Screenshot](preview/Snapshot.png?raw=true)
 
 ## Features
 
@@ -23,16 +23,16 @@ https://myanimelist.net/editprofile.php?go=listpreferences
 
 Anime List
 
-![Screenshot](Eorzea_Collection/preview/ListSettings/AnimeList.png?raw=true)
+![Screenshot](preview/ListSettings/AnimeList.png?raw=true)
 
 Manga List
 
-![Screenshot](Eorzea_Collection/preview/ListSettings/MangaList.png?raw=true)
+![Screenshot](preview/ListSettings/MangaList.png?raw=true)
 
 After setting the list, go to the list Style Design page and move the slider from classic to modern.
 https://myanimelist.net/ownlist/style
 
-![Screenshot](Eorzea_Collection/preview/ListSettings/StyleEdit.png?raw=true)
+![Screenshot](preview/ListSettings/StyleEdit.png?raw=true)
 
 Go to your list style editing page, and turn off these options.
 https://myanimelist.net/ownlist/style/theme/1
