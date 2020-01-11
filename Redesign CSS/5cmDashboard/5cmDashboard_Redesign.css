@@ -446,3 +446,4 @@ body:after {
     background: #33333380;
     box-shadow: 0 8px 20px rgba(0,0,0,.6);
 }
+.tags {display: none !important;}
