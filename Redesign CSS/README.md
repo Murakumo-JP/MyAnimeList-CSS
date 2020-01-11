@@ -1,4 +1,4 @@
-# Eorzea Collection CSS theme for MyAnimeList
+# 5cmDashboard Redesign CSS theme for MyAnimeList
 
 List design by 5cm
 
