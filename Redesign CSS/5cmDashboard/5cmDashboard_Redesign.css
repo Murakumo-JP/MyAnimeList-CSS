@@ -48,8 +48,8 @@ td.data.number {display: none;}
 }
 
 #header-menu-button:before {content: ''; display: inline-block; width: 13px; height: 12px; margin: 0 10px 0 20px;}
-.anime #header-menu-button:before {background: left/cover url(https://s6.postimg.cc/46qmpa1m9/blackanime.png);}
-.manga #header-menu-button:before {background: left/cover url(https://s6.postimg.cc/3tz8j33wx/blackmanga.png);}
+.anime #header-menu-button:before {background: left/cover url(./svg/animelist.svg);}
+.manga #header-menu-button:before {background: left/cover url(./svg/mangalist.svg);}
 
 .header a, .header .header-menu .list-menu .icon-menu {display: block; width: 160px; height: 50px; transition: none;}
 
