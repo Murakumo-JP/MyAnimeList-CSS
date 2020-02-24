@@ -185,6 +185,7 @@ a {color: black;}
 .list-unit {
     width: auto;
     margin-left: 160px;
+	min-height: 445px;
     padding: 10px 30px 30px;
     overflow: auto;
     border-radius: 0 0 10px;
@@ -336,7 +337,7 @@ a {color: black;}
     z-index: 99;
 }
 .list-table .list-table-header .header-title:hover {background: var(--list-menu-on) !important;}
-.list-container .list-unit .list-table tbody:first-child:hover:after {background: var(--list-menu-on);}
+.list-container .list-unit .list-table tbody:first-child:hover:after {background: #222;}
 .list-table .list-table-header .header-title.title {padding-left: 0 !important;}
 .list-container .list-unit .list-table tbody:first-child::after {
     content: "Sort List";
