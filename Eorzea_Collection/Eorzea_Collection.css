@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
+@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Cover/AnimeCover.css"; /* Cover Without Auto-Update */
 
 :root{
 	--color: #f10834;
