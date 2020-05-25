@@ -15,7 +15,6 @@ https://myanimelist.net/animelist/MurakumoJP
 
 * Supports anime and manga
 * Uses MAL Modern Theme
-* All controls still in place and fully functional
 
 ## List Settings
 On the List page, do the following.
