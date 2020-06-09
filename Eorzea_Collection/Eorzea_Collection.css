@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
+@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Cover/AnimeCover.css"; /* Cover Without Auto-Update */
 
 :root{
 	--color: #f10834;
@@ -1516,13 +1517,13 @@ a.status-button:hover {
     border-radius: 7px;
 }
 
-.list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .edit a::before {
+/* .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .edit a::before {
   content: "";
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .add a::before {
   content: "";
-}
+} */
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.score select {
   top: 5.5px;
