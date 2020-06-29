@@ -1557,3 +1557,4 @@ a.status-button:hover {
     font-weight: bold;
     white-space: pre;
 }
+footer #footer-block,.root {display: none !important;}
