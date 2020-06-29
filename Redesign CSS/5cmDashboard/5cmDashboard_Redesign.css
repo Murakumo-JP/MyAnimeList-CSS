@@ -626,3 +626,4 @@ input[type="text"], select {background-color: #333 !important; border: 0 !import
 #advanced-options .sort-widget input[type=radio] + label {background-color: #999 !important; border: 0 !important; color: #191919 !important;}
 #advanced-options .btn-apply:hover, #advanced-options .btn-clear:hover {background-color: #191919cc !important;}
 #advanced-options .btn-apply, #advanced-options .btn-clear {background-color: rgba(25, 25, 25, 1) !important;}
+footer #footer-block,.root {display: none !important;}
