@@ -2,7 +2,7 @@
 
 List design by 5cm
 
-Redesign CSS by MurakumoJP
+Cover version CSS by MurakumoJP
 
 ## Preview
 
