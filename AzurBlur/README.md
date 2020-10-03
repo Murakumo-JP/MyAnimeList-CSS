@@ -72,5 +72,6 @@ Well, or completely remove it.
 :root{
 	--char-display: none;
 	--Sort-display: none;
+	--SortPTop: 0px;
 }
 ```
