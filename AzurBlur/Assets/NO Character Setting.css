@@ -1,0 +1,6 @@
+/*	README!!!!! | Just add this to the beginning of the CSS */
+
+:root{
+	--char-display: none;
+	--Sort-display: none;
+}
