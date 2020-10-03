@@ -6,6 +6,14 @@ If the covers are not updated via malscraper.azurewebsites.net, then you can ins
 @\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Cover/AnimeCover.css";
 ```
 
+# Azur Blur CSS theme for MyAnimeList
+
+Installation and Settings: https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/
+
+## Preview
+
+![Screenshot](AzurBlur/AzurBlur.jpg?raw=true)
+
 # Eorzea Collection CSS theme for MyAnimeList
 
 Installation and Settings: https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/
