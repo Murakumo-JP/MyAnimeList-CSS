@@ -26,7 +26,7 @@ https://myanimelist.net/ownlist/style
 
 After setting up the list, go to the List style Design page and move the slider from Classic to Modern.
 
-![Screenshot](preview/ListSettings/StyleEdit.png?raw=true)
+![Screenshot](../Eorzea_Collection/preview/ListSettings/StyleEdit.png?raw=true)
 
 Go to your list style editing page, and turn off these options.
 
