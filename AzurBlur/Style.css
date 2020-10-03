@@ -1134,19 +1134,3 @@ footer #footer-block,.root {display: none !important;}
 }
 #advanced-options .btn-apply, #advanced-options .btn-clear {background-color: #78787833;}
 #advanced-options .btn-apply:hover, #advanced-options .btn-clear:hover {background-color: #78787866;}
-/* Edit Info */
-#fancybox-wrap {
-    position: fixed !important;
-    left: 0 !important;
-    right: 0 !important;
-    margin: 0 auto !important;
-    width: 650px !important;
-    height: 745px !important;
-}
-#fancybox-inner {
-    position: initial !important;
-    padding: 0 !important;
-    top: 0 !important;
-    width: 650px !important;
-    height: 745px !important;
-}
