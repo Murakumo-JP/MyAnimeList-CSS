@@ -210,8 +210,7 @@ i.fa.fa-search {
 	border-radius: var(--border-radius);
     object-fit: cover;
 	margin-bottom: 10px;
-    border-bottom: 1px solid #131722;
-    box-shadow: 0 2px 5px #131722;
+    box-shadow: 0 0 4px #131722;
 }
 .cover-block .image-container .btn-list-setting:hover {
     background-color: var(--menu-bg-color);
