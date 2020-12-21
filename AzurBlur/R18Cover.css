@@ -3,29 +3,12 @@
    top: 0;
 }
 
-.list-item .list-table-data .data.tags>div {
-   top: 0 !important;
-   width: 180px !important;
-   height: 280px !important;
-   padding: 0 !important;
-   overflow: hidden !important;
-}
-
-.list-item:hover .list-table-data .data.tags>div {
-   top: 33px !important;
-   width: 160px !important;
-   height: 50px !important;
-   overflow-x: hidden !important;
-   overflow-y: auto !important;
-   padding: 10px !important;
-}
-
 .list-item .list-table-data .tags span:before {
-   display: none;
+   opacity: 0;
 }
 
 .list-item:hover .list-table-data .tags span:before {
-   display: inline-block;
+   opacity: 1;
 }
 
 .list-item .list-table-data .tags span a {
@@ -38,39 +21,29 @@
 
 /* Tags Hentai */
 
-.list-item .tags span a[href$="tag=Hentai"] {
-   width: 180px !important;
-   height: 280px;
-}
-
-.list-item:hover .tags span a[href$="tag=Hentai"] {
-   width: auto !important;
-   height: auto;
-}
-
 .list-item .tags span a[href$="tag=Hentai"]:after {
-   content: "Rx - Hentai";
+   content: "Hentai";
    text-shadow: 2px 2px 5px #000;
    display: block;
-   text-transform: none;
-   position: absolute;
-   font-size: 27px;
+   position: fixed;
+   font-size: 30px;
    text-align: center;
    width: 180px;
    height: 280px;
    line-height: 280px;
    top: 0;
-   opacity: 1;
+   left: 0;
    color: #fff;
    font-family: cursive;
    background: var(--menu-bg-color);
    backdrop-filter: var(--bg-blur);
-   transition: all .4s ease-in-out;
    transform: scaleX(-1);
+   transition: all .4s ease-in-out;
+   opacity: 1;
 }
 
 .list-item:hover .tags span a[href$="tag=Hentai"]:after {
-   display: none;
+   opacity: 0;
 }
 
 /* Edit Tags */
