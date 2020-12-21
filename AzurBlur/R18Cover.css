@@ -40,10 +40,12 @@
    transform: scaleX(-1);
    transition: all .4s ease-in-out;
    opacity: 1;
+   visibility: visible;
 }
 
 .list-item:hover .tags span a[href$="tag=Hentai"]:after {
    opacity: 0;
+   visibility: hidden;
 }
 
 /* Edit Tags */
