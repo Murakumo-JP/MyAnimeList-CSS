@@ -139,11 +139,11 @@ body {
 .status-menu-container .status-menu .status-button.on {
     color: var(--MenuHoverColor);
 }
-
+.list-table .list-table-data .data a {color: #9B9B9B !important;}
 .list-container {
     margin-top: 66px;
     width: var(--watch-list);
-    background-color: transparent;
+    background-color: transparent !important;
     border: none;
 }
 
@@ -381,6 +381,7 @@ i.fa.fa-search {
 
 .list-table .list-table-data a:not(.edit-disabled):hover {
     text-decoration: none;
+    color: #9b9b9b !important;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.image .link::after {
@@ -613,7 +614,7 @@ i.fa.fa-search {
     height: 33px;
     margin: 0 auto;
     line-height: 33px;
-    color: #9B9B9B;
+    color: #9B9B9B !important;
     top: 0;
     left: 0;
     right: 0;
@@ -736,13 +737,13 @@ i.fa.fa-search {
 .list-item .data.score a {
     top: 10px;
     text-align: center;
-    color: rgb(255, 215, 0);
+    color: rgb(255, 215, 0) !important;
     text-shadow: 0 0 2px rgb(255, 215, 0);
     text-decoration: none !important;
     font-size: 15px !important;
     position: relative;
 }
-
+.list-item .data.score a:hover {color: gold !important;}
 .list-item .data.score a::after {
     content: "/ 10";
     display: block;
@@ -768,7 +769,7 @@ i.fa.fa-search {
 .list-item .data.chapter a {
     font-size: 11px;
     font-weight: bold;
-    color: #969697;
+    color: #969697 !important;
 }
 
 .list-item .data.progress a.icon-add-episode,
@@ -1185,11 +1186,11 @@ a.icon-add-volume {
     right: 0;
     margin: 0 auto;
     width: 180px;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .list-menu-float .icon-menu:not(.profile):hover {
-    background-color: rgba(12, 16, 27, 0.5);
+    background-color: rgba(12, 16, 27, 0.5) !important;
     width: 100%;
 }
 
