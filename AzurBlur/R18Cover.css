@@ -1,26 +1,9 @@
-.list-item .data.tags {
-   opacity: 1;
-   top: 0;
-}
-
-.list-item .list-table-data .tags span:before {
-   opacity: 0;
-}
-
-.list-item:hover .list-table-data .tags span:before {
-   opacity: 1;
-}
-
-.list-item .list-table-data .tags span a {
-   font-size: 0 !important;
-}
-
-.list-item:hover .list-table-data .tags span a {
-   font-size: 13px !important;
-}
-
+.list-item .data.tags {opacity: 1;top: 0;}
+.list-item .list-table-data .tags span:before {opacity: 0;}
+.list-item:hover .list-table-data .tags span:before {opacity: 1;}
+.list-item .list-table-data .tags span a {font-size: 0 !important;}
+.list-item:hover .list-table-data .tags span a {font-size: 13px !important;}
 /* Tags Hentai */
-
 .list-item .tags span a[href$="tag=Hentai"]:after {
    content: "Hentai";
    text-shadow: 2px 2px 5px #000;
@@ -42,18 +25,11 @@
    opacity: 1;
    visibility: visible;
 }
-
 .list-item:hover .tags span a[href$="tag=Hentai"]:after {
    opacity: 0;
    visibility: hidden;
+   font-size: 0;
 }
-
 /* Edit Tags */
-.list-item .tags>.edit {
-   opacity: 0;
-   transition: all .4s ease-in-out;
-}
-
-.list-item:hover .tags>.edit {
-   opacity: 1;
-}
+.list-item .tags>.edit {opacity: 0;transition: all .4s ease-in-out;}
+.list-item:hover .tags>.edit {opacity: 1;}
