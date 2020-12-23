@@ -3,6 +3,7 @@
 :root {
     --MenuHoverColor: #fff;
     --MenuColor: #9B9B9B;
+    /* Cover Height */
     --max-height: 450px;
     --watch-list: 1120px;
     --bg-blur: blur(5px);
@@ -10,14 +11,22 @@
     --menu-bg-color: rgba(12, 16, 27, .8);
     --menu-transition: all 0.4s;
     --border-radius: 0 0 15px 15px;
+    /* Button outline color */
+    --bt-border: #131722;
+    --bt-shadow: #131722;
+    --bt-bg: #9b9b9b1a;
+    /* Avatar Calor */
+    --u-avatar-color-1: red;
+    --u-avatar-color-2: gold;
+    --u-avatar-color-3: green;
 
     /* Character Setting | Atago Summer March */
     /* BG */
     --body-bg: url("https://i.imgur.com/YHB21DC.jpg");
     /* Menu Character */
     --char-img: url("https://i.imgur.com/yhtoTSX.png");
-    --char-width: 590px;
-    --char-height: 860px;
+    --char-width: 575px;
+    --char-height: 100%;
     --char-display: block;
     /* Sort Menu */
     --SortPTop: 150px;
@@ -239,9 +248,6 @@ i.fa.fa-search {
 .cover-block {
     display: block;
     width: var(--watch-list);
-    margin: 0 auto;
-    text-align: center;
-    vertical-align: middle;
 }
 
 .cover-block .image-container {
@@ -563,6 +569,7 @@ i.fa.fa-search {
 }
 
 .list-item .data.number {
+    background-color: var(--bt-bg);
     font-size: 10px;
     top: 235px;
     left: 3.3px;
@@ -574,8 +581,8 @@ i.fa.fa-search {
     backdrop-filter: var(--bg-blur);
     pointer-events: none;
     background-color: #ffffff08;
-    box-shadow: 0px 0px 5px #131722;
-    border: 1px solid #131722 !important;
+    box-shadow: 0px 0px 5px var(--bt-shadow);
+    border: 1px solid var(--bt-border) !important;
     z-index: 10;
 }
 
@@ -721,8 +728,9 @@ i.fa.fa-search {
 }
 
 .list-item .data.score {
-    box-shadow: 0px 0px 5px #131722;
-    border: 1px solid #131722 !important;
+    background-color: var(--bt-bg);
+    box-shadow: 0px 0px 5px var(--bt-shadow);
+    border: 1px solid var(--bt-border) !important;
     backdrop-filter: var(--bg-blur);
     top: 125px;
     left: 14px;
@@ -806,9 +814,10 @@ a.icon-add-volume {
 
 .list-item .data.progress,
 .list-item .data.chapter {
+    background-color: var(--bt-bg);
     border-radius: 20px 0 20px 0;
-    box-shadow: 0px 0px 5px #131722;
-    border: 1px solid #131722 !important;
+    box-shadow: 0px 0px 5px var(--bt-shadow);
+    border: 1px solid var(--bt-border) !important;
     backdrop-filter: var(--bg-blur);
     top: 120px;
     right: 15px;
@@ -971,8 +980,9 @@ a.icon-add-volume {
     line-height: 37px;
     text-align: center;
     border-radius: 50%;
-    box-shadow: 0 0 5px #131722;
-    border: 1px solid #131722 !important;
+    background-color: var(--bt-bg);
+    box-shadow: 0px 0px 5px var(--bt-shadow);
+    border: 1px solid var(--bt-border) !important;
 }
 
 .list-table .list-table-data .tags {
@@ -1119,7 +1129,7 @@ a.icon-add-volume {
     position: absolute;
     display: var(--char-display);
     right: 180px;
-    bottom: 5px;
+    bottom: 0;
     width: var(--char-width);
     height: var(--char-height);
     opacity: 0;
@@ -1134,26 +1144,25 @@ a.icon-add-volume {
     width: 100px !important;
     border-radius: 50%;
     top: 20px !important;
-    box-shadow: 0px 0px 5px #131722;
-    border: 1px solid #131722 !important;
+    box-shadow: 0px 0px 2px #131722;
 }
 
 /* Test =====================*/
 .icon-menu.profile:before {
     content: " ";
     display: block;
-    background-color: transparent;
-    border: 3px solid rgb(37 37 37/70%);
-    border-top-color: #adff2f;
+    background: linear-gradient(45deg,var(--u-avatar-color-1),var(--u-avatar-color-2),var(--u-avatar-color-3));
+    filter: blur(2px);
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 106px;
+    height: 106px;
     position: absolute;
     bottom: -3px;
     right: -3px;
     opacity: 1;
     transition: none;
     animation: spin 3s linear 0s infinite;
+    z-index: -1;
 }
 
 @keyframes spin {
