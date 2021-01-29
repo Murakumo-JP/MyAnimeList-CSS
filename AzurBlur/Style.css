@@ -19,6 +19,7 @@
     --u-avatar-color-1: #bcd611;
     --u-avatar-color-2: #3f8717;
     --u-avatar-color-3: #62c40b;
+    --u-avatar-color-4: #3f8717;
 
     /* Character Setting | Atago Summer March */
     /* BG */
@@ -258,7 +259,7 @@ i.fa.fa-search {
 .cover-block .image-container img {
     width: 100%;
     max-width: 100%;
-    max-height: var(--max-height);
+    /* max-height: var(--max-height); */
     border-radius: var(--border-radius);
     object-fit: cover;
     margin-bottom: 10px;
@@ -569,7 +570,6 @@ i.fa.fa-search {
 }
 
 .list-item .data.number {
-    background-color: var(--bt-bg);
     font-size: 10px;
     top: 235px;
     left: 3.3px;
@@ -580,7 +580,7 @@ i.fa.fa-search {
     border-radius: 50%;
     backdrop-filter: var(--bg-blur);
     pointer-events: none;
-    background-color: #ffffff08;
+    background-color: var(--bt-bg);
     box-shadow: 0px 0px 5px var(--bt-shadow);
     border: 1px solid var(--bt-border) !important;
     z-index: 10;
@@ -1151,7 +1151,7 @@ a.icon-add-volume {
 .icon-menu.profile:before {
     content: " ";
     display: block;
-    background: linear-gradient(45deg,var(--u-avatar-color-1),var(--u-avatar-color-2),var(--u-avatar-color-3));
+    background: linear-gradient(45deg,var(--u-avatar-color-1),var(--u-avatar-color-2),var(--u-avatar-color-3),var(--u-avatar-color-4));
     filter: blur(2px);
     border-radius: 50%;
     width: 106px;
