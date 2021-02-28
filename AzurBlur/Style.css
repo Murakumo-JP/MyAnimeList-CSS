@@ -18,8 +18,8 @@
     /* Avatar Calor */
     --u-avatar-color-1: #bcd611;
     --u-avatar-color-2: #3f8717;
-    --u-avatar-color-3: #62c40b;
-    --u-avatar-color-4: #3f8717;
+    --u-avatar-color-3: #3f8717;
+    --u-avatar-color-4: #bcd611;
 
     /* Character Setting | Atago Summer March */
     /* BG */
@@ -116,7 +116,7 @@ body {
     border-collapse: separate;
     border-spacing: 40px 0;
 }
-
+.status-menu {white-space: nowrap;} /* Fix Firefox by Valerio_Lyndon */
 .status-menu-container .status-menu .status-button:after {
     width: 10px;
     height: 10px;
@@ -1019,10 +1019,7 @@ a.icon-add-volume {
     box-shadow: 0 5px 10px 0 #131722;
 }
 
-.list-menu-float:hover:before {
-    right: 0;
-    top: -66px;
-}
+.list-menu-float:hover:before {right: 0;}
 
 .list-menu-float:before {
     content: "\f0c9";
@@ -1034,7 +1031,7 @@ a.icon-add-volume {
     width: 66px;
     height: 66px;
     top: -66px;
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     z-index: 999;
 }
@@ -1430,7 +1427,7 @@ a.icon-add-volume {
 .data.airing-finished,
 .data.studio,
 .data.licensor,
-.data.storage {
+.data.storage, .btn-list-setting {
     display: none !important;
 }
 
