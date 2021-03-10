@@ -183,6 +183,7 @@ body {
     line-height: 30px;
     color: #ffffff;
     text-align: center;
+    z-index: 2;
 }
 
 .status-menu-container .search-container {
@@ -1349,6 +1350,7 @@ a.icon-add-volume {
     background-image: var(--Sort-img);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     position: absolute;
     margin: 0 auto;
     left: 0;
