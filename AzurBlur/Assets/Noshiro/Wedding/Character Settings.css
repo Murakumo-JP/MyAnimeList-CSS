@@ -1,0 +1,22 @@
+/*	README!!!!! | Just add this to the beginning of the CSS */
+
+:root {
+  /* Character Setting | Noshiro: Wedding */
+  /* BG */
+  --body-bg: url("https://i.imgur.com/aBuP6sF.jpg");
+  /* Menu Character */
+  --char-img: url("https://i.imgur.com/eeDWB6i.png");
+  --char-width: 1920px;
+  --char-display: block;
+  /* Sort Menu */
+  --SortPTop: 150px;
+  --Sort-img: url("https://i.imgur.com/QQ63C1F.png");
+  --Sort-display: block;
+  /*==================*/
+}
+
+.list-menu-float:after {
+  background-position: right;
+  background-size: auto;
+  right: 0;
+}
