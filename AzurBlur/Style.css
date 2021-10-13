@@ -1170,6 +1170,7 @@ a.icon-add-volume {
 
 .list-menu-float:hover + .list-container::after {
   opacity: 1;
+  visibility: visible;
   transition: var(--menu-transition);
 }
 
@@ -1187,6 +1188,7 @@ a.icon-add-volume {
   right: 180px;
   z-index: 2;
   opacity: 0;
+  visibility: hidden;
   transition: var(--menu-transition);
 }
 
