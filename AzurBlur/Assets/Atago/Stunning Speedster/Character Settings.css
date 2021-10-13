@@ -1,16 +1,10 @@
-/*	README!!!!! | Just add this to the beginning of the CSS */
-
+/* Character Setting | Atago Stunning Speedster */
 :root{
-	/* Character Setting | Atago Stunning Speedster */
-		/* BG */
 		--body-bg: url("https://i.imgur.com/4NdtxcA.jpg");
 		/* Menu Character */
 		--char-img: url("https://i.imgur.com/cFiMxU6.png");
-		--char-width: 860px;
 		--char-display: block;
 		/* Sort Menu */
-		--SortPTop: 150px;
 		--Sort-img: url("https://i.imgur.com/osYsItT.png");
 		--Sort-display: block;
-	/*==================*/
 }
