@@ -59,8 +59,6 @@ You can also change the character in the menu and sort.
 :root{
 	/* Menu */
 	--char-img: url("https://i.imgur.com/yhtoTSX.png");
-	--char-width: 590px;
-	--char-height: 860px;
 	/* Sort Menu */
 	--Sort-img: url("https://i.imgur.com/pBs9ms9.png");
 }
