@@ -11,6 +11,7 @@
   --menu-bg-color: rgba(12, 16, 27, 0.8);
   --menu-transition: all 0.4s;
   --border-radius: 0 0 15px 15px;
+  --border-cover: 10px;
   /* Button outline color */
   --bt-border: #131722;
   --bt-shadow: #131722;
@@ -27,7 +28,6 @@
   --char-img: url("https://i.imgur.com/yhtoTSX.png");
   --char-display: block;
   /* Sort Menu */
-  --SortPTop: 150px;
   --Sort-img: url("https://i.imgur.com/pBs9ms9.png");
   --Sort-display: block;
 }
@@ -604,7 +604,6 @@ i.fa.fa-search {
   width: 100%;
   padding: 8px 0 8px 0 !important;
   border-bottom: 1px solid #131722;
-  background-color: #1317224d;
 }
 
 .list-item .data.title a {
@@ -1393,8 +1392,26 @@ a.icon-add-volume {
   width: 65px;
   height: 66px;
 }
+.list-table .list-table-header .header-title.status {
+  padding: 0;
+  pointer-events: none;
+}
 
 .list-table-header:before {
+  content: " ";
+  background-image: var(--Sort-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: var(--Sort-display);
+  width: 134px;
+  height: 150px;
+}
+
+.list-table .list-table-header .header-title.status:after {
   content: "Sort Menu";
   color: #fff;
   display: block;
@@ -1404,31 +1421,12 @@ a.icon-add-volume {
   left: 0;
   text-align: center;
   padding: 10px 0;
-  border-bottom: 1px solid var(--MenuColor);
 }
-
-.list-table-header:after {
-  content: " ";
-  background-image: var(--Sort-img);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  display: var(--Sort-display);
-  width: 134px;
-  height: 150px;
-  top: 0;
-}
-
 .list-table-header {
   width: 150px;
   top: 66px;
   right: -151px;
   pointer-events: all;
-  padding-top: var(--SortPTop);
   padding-bottom: 10px;
   border-radius: 0 0 0 10px;
   background-color: var(--menu-bg-color) !important;
@@ -1479,7 +1477,6 @@ a.icon-add-volume {
 }
 
 .header-title.number,
-.header-title.status,
 .header-title.image,
 .header-title.tags,
 .header-title.started,
