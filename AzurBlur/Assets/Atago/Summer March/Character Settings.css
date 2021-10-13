@@ -1,16 +1,10 @@
-/*	README!!!!! | Just add this to the beginning of the CSS */
-
+/* Character Setting | Atago Summer March */
 :root{
-	/* Character Setting | Atago Summer March */
-		/* BG */
 		--body-bg: url("https://i.imgur.com/YHB21DC.jpg");
 		/* Menu Character */
 		--char-img: url("https://i.imgur.com/yhtoTSX.png");
-		--char-width: 590px;
 		--char-display: block;
 		/* Sort Menu */
-		--SortPTop: 150px;
 		--Sort-img: url("https://i.imgur.com/pBs9ms9.png");
 		--Sort-display: block;
-	/*==================*/
 }
