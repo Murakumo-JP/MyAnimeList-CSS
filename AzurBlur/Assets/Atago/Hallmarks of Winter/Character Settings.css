@@ -1,16 +1,10 @@
-/*	README!!!!! | Just add this to the beginning of the CSS */
-
+/* Character Setting | Atago Hallmarks of Winter */
 :root{
-	/* Character Setting | Atago Hallmarks of Winter */
-		/* BG */
 		--body-bg: url("https://i.imgur.com/SD2tGDc.jpg");
 		/* Menu Character */
 		--char-img: url("https://i.imgur.com/0nk80Em.png");
-		--char-width: 760px;
 		--char-display: block;
 		/* Sort Menu */
-		--SortPTop: 150px;
 		--Sort-img: url("https://i.imgur.com/vbUQyvB.png");
 		--Sort-display: block;
-	/*==================*/
 }
