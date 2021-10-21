@@ -1,4 +1,4 @@
-/* Azur Blur v0.1 by MurakumoJP / https://github.com/Murakumo-JP /10.06.2020 */
+/* Azur Blur v0.1 by MurakumoJP / https://github.com/Murakumo-JP / 10.06.2020 */
 
 :root {
   --MenuHoverColor: #fff;
@@ -408,6 +408,7 @@ i.fa.fa-search {
   left: 0;
   bottom: 0;
   right: 0;
+  border-radius: var(--border-cover);
 }
 
 .data.number {
@@ -421,6 +422,7 @@ i.fa.fa-search {
   width: 180px;
   height: 280px;
   border: none;
+  border-radius: var(--border-cover);
 }
 
 .list-table .list-table-data .data.number,
@@ -890,10 +892,6 @@ a.icon-add-volume {
   color: #9b9b9b !important;
 }
 
-.list-item .more-info a {
-  color: #fff;
-}
-
 .list-table .list-table-data .data.title .add-edit-more .add {
   left: 96px;
 }
@@ -1167,13 +1165,13 @@ a.icon-add-volume {
 
 /* New version */
 
-.list-menu-float:hover + .list-container::after {
+.list-menu-float:hover + .list-container::before {
   opacity: 1;
   visibility: visible;
   transition: var(--menu-transition);
 }
 
-.list-container::after {
+.list-container::before {
   content: "";
   display: var(--char-display);
   position: fixed;
@@ -1200,7 +1198,8 @@ a.icon-add-volume {
   box-shadow: 0px 0px 2px #131722;
 }
 
-/* Test =====================*/
+/* Profile Avatar Color */
+
 .icon-menu.profile:before {
   content: " ";
   display: block;
@@ -1240,6 +1239,7 @@ a.icon-add-volume {
 }
 
 /*==========================*/
+
 .icon-menu.profile:after {
   content: "User Menu";
   color: #fff;
@@ -1411,7 +1411,7 @@ a.icon-add-volume {
   height: 150px;
 }
 
-.list-table .list-table-header .header-title.status:after {
+.list-table .list-table-header .header-title.status:before {
   content: "Sort Menu";
   color: #fff;
   display: block;
@@ -1537,13 +1537,14 @@ a[href="/register.php"] {
 }
 
 /*copyright*/
+
 footer #footer-block,
 .root {
   display: none !important;
 }
 
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2020 All Rights Reserved. \a Azur Blur v0.1, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2021 All Rights Reserved. \a Azur Blur v0.1, Design and Code by MurakumoJP.";
   display: block !important;
   padding: 15px 0 !important;
   bottom: -58px;
@@ -1560,6 +1561,7 @@ footer #footer-block,
 }
 
 /*Filter Option*/
+
 #advanced-options {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   background-color: var(--menu-bg-color);
