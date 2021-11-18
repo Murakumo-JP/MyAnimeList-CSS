@@ -937,7 +937,7 @@ a.icon-add-volume {
 
 .list-item .list-table-data .tags span:before {
   content: "\f02b";
-  font: 15px FontAwesome;
+  font: 15px var(--font);
   color: white;
   padding-right: 5px;
 }
@@ -997,7 +997,7 @@ a.icon-add-volume {
   .List_LightBox:before,
 .list-table .list-table-data .data.title .add-edit-more .more a:before,
 .list-table .list-table-data .data.title .add-edit-more .add a:before {
-  font: 15px FontAwesome;
+  font: 15px var(--font);
   position: absolute;
   color: #9b9b9b;
   width: 37px;
@@ -1112,7 +1112,7 @@ a.icon-add-volume {
   content: "\f129";
   right: 0;
   top: 0;
-  font: 15px FontAwesome;
+  font: 15px var(--font);
   display: block;
   position: absolute;
   text-align: center;
@@ -1521,7 +1521,7 @@ a[href="/register.php"] {
 
 .header-info a[href="/login.php"]:before {
   content: "\f090";
-  font: 20px FontAwesome;
+  font: 20px var(--font);
   line-height: 66px;
   transition: var(--menu-transition);
   right: 0;
