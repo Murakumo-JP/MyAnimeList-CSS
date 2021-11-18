@@ -4,6 +4,7 @@
 
 :root{
 	--color: #f10834;
+  --font: 'Font Awesome 6 Pro';
 }
 
 /* Latest Updates: 02.09.2018
@@ -115,7 +116,7 @@ body .initialize-tutorial {
     width: 30px;
     height: 30px;
     color: #3c3c3c;
-    font: 20px/30px FontAwesome;
+    font: 20px/30px var(--font);
     z-index: 1;
 }
 
@@ -602,7 +603,7 @@ body.ownlist.manga .list-container .list-unit .list-table tbody:first-child:hove
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .more a::before {
     content: "\f078";
     display: inline-block;
-    font: normal normal normal 15px / 1 FontAwesome;
+    font: normal normal normal 15px / 1 var(--font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: auto;
@@ -662,7 +663,7 @@ td.td1.borderRBL div {
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.score::before {
   display: inline-block;
-  font: normal normal normal 28px / 1 FontAwesome;
+  font: normal normal normal 28px / 1 var(--font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: auto;
@@ -767,7 +768,7 @@ td.td1.borderRBL div {
     position: absolute;
     right: -22px;
     top: 0px;
-    padding: 5px 5px 6px 5px;
+    padding: 7px 5px 6px 5px;
     border-left: 1px solid #a0102b;
     background-color: var(--color);
 }
@@ -805,7 +806,7 @@ a[href="/login.php"] {
 a[href="/login.php"]:after {
     content: "";
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px / 1 var(--font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: auto;
@@ -847,7 +848,7 @@ a[href="/login.php"]:after {
 .header .header-menu .list-menu .icon-menu:before {
     content: "";
     display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
+    font: normal normal normal 14px / 1 var(--font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: auto;
@@ -1121,7 +1122,7 @@ form:hover {
 
 .list-menu-float .icon-menu::before {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px / 1 var(--font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: auto;
@@ -1157,6 +1158,13 @@ form:hover {
 
 .list-menu-float .icon-menu.setting {
   cursor: pointer;
+}
+
+.fa-chart-column:before {
+  font-size: 15px;
+  display: table-cell;
+  line-height: 30px;
+  text-align: center;
 }
 
 /* Menu 2 */
@@ -1503,7 +1511,7 @@ a.status-button:hover {
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .edit a::before,
 .list-container .list-unit .list-table .list-item .list-table-data .data.title .add-edit-more .add a::before {
 	display: inline-block;
-    font: normal normal normal 15px / 1 FontAwesome;
+    font: normal normal normal 15px / 1 var(--font);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: auto;
