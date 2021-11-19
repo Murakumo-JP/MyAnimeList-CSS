@@ -12,7 +12,8 @@
   --menu-transition: all 0.4s;
   --border-radius: 0 0 15px 15px;
   --border-cover: 10px;
-  --font: 'Font Awesome 6 Pro';
+  --font: FontAwesome;
+  --fontSpare: 'Font Awesome 6 Pro';
   /* Button outline color */
   --bt-border: #131722;
   --bt-shadow: #131722;
@@ -937,7 +938,7 @@ a.icon-add-volume {
 
 .list-item .list-table-data .tags span:before {
   content: "\f02b";
-  font: 15px var(--font);
+  font: 15px var(--font, var(--fontSpare));
   color: white;
   padding-right: 5px;
 }
@@ -985,7 +986,7 @@ a.icon-add-volume {
 }
 
 .list-table .list-table-data .data.title .add-edit-more .add a:before {
-  content: "\f067";
+  content: "+";
 }
 
 .list-table .list-table-data .tags .edit:before,
@@ -997,7 +998,7 @@ a.icon-add-volume {
   .List_LightBox:before,
 .list-table .list-table-data .data.title .add-edit-more .more a:before,
 .list-table .list-table-data .data.title .add-edit-more .add a:before {
-  font: 15px var(--font);
+  font: 15px var(--font, var(--fontSpare));
   position: absolute;
   color: #9b9b9b;
   width: 37px;
@@ -1050,7 +1051,7 @@ a.icon-add-volume {
 
 .list-menu-float:before {
   content: "\f0c9";
-  font: 21px var(--font);
+  font: 21px var(--font, var(--fontSpare));
   line-height: 66px;
   transition: var(--menu-transition);
   right: 182px;
@@ -1112,7 +1113,7 @@ a.icon-add-volume {
   content: "\f129";
   right: 0;
   top: 0;
-  font: 15px var(--font);
+  font: 15px var(--font, var(--fontSpare));
   display: block;
   position: absolute;
   text-align: center;
@@ -1367,7 +1368,7 @@ a.icon-add-volume {
 
 .list-menu-float .icon-menu.setting .text .link-style-setting:before {
   content: "\f1fc";
-  font: 14px var(--font);
+  font: 14px var(--font, var(--fontSpare));
   position: absolute;
   margin: 17px 17px;
   left: 0;
@@ -1393,7 +1394,7 @@ a.icon-add-volume {
 .list-table > tbody:first-of-type::before {
   content: "\f0dc";
   pointer-events: all;
-  font: 15px var(--font);
+  font: 15px var(--font, var(--fontSpare));
   position: absolute;
   line-height: 66px;
   color: var(--MenuColor);
@@ -1521,7 +1522,7 @@ a[href="/register.php"] {
 
 .header-info a[href="/login.php"]:before {
   content: "\f090";
-  font: 20px var(--font);
+  font: 20px var(--font, var(--fontSpare));
   line-height: 66px;
   transition: var(--menu-transition);
   right: 0;
