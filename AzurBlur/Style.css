@@ -1,4 +1,4 @@
-/* Azur Blur v0.1 by MurakumoJP / https://github.com/Murakumo-JP / 10.06.2020 */
+/* Azur Blur v1.0 by MurakumoJP / https://github.com/Murakumo-JP / 10.06.2020 */
 
 :root {
   --MenuHoverColor: #fff;
@@ -34,9 +34,7 @@
   --Sort-display: block;
 }
 
-* {
-  outline: none;
-}
+* {outline: none;}
 
 a,
 a:hover {
@@ -248,6 +246,10 @@ i.fa.fa-search {
   font-size: 15px;
 }
 
+.fas, .fa-solid {
+  font-weight: normal;
+}
+
 /* Cover Img */
 .cover-block {
   display: block;
@@ -355,23 +357,22 @@ i.fa.fa-search {
   margin: 3px;
 }
 
+.data.studio{ 
+  /* Finish it sometime */
+  display: none !important;
+}
+
 .data.season,
 .data.studio {
+  bottom: 55px;
   font-size: 14px;
   border-bottom: none !important;
   white-space: nowrap;
   z-index: 10;
 }
 
-.data.season {
-  top: 202px;
-}
-
-.data.studio {
-  top: 231px;
-}
-
-.data.season span a {
+.data.season span a,
+.data.studio span a {
   padding-left: 10px;
   color: #9b9b9b;
   border-left: 3px solid #9b9b9b;
@@ -411,10 +412,6 @@ i.fa.fa-search {
   bottom: 0;
   right: 0;
   border-radius: var(--border-cover);
-}
-
-.data.number {
-  display: none;
 }
 
 .list-item,
@@ -1020,10 +1017,6 @@ a.icon-add-volume {
   margin-top: 0;
 }
 
-.icon-watch {
-  display: none !important;
-}
-
 /*==========\ Cover End /==========*/
 
 /* List Menu */
@@ -1085,9 +1078,6 @@ a.icon-add-volume {
 }
 
 /* info user */
-.header-menu > .btn-menu {
-  display: none !important;
-}
 
 .header .header-info {
   visibility: hidden;
@@ -1152,31 +1142,6 @@ a.icon-add-volume {
 }
 
 /* Start Menu Character */
-
-/* Old version */
-/* .list-menu-float:hover:after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.list-menu-float:after {
-  content: " ";
-  background-image: var(--char-img);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  display: var(--char-display);
-  right: 180px;
-  bottom: 0;
-  width: var(--char-width);
-  height: var(--char-height);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: var(--menu-transition);
-} */
-
-/* New version */
 
 .list-menu-float:hover + .list-container::before {
   opacity: 1;
@@ -1489,20 +1454,15 @@ a.icon-add-volume {
   border-bottom: 1px solid var(--MenuColor);
 }
 
-.header-title.number,
-.header-title.image,
-.header-title.tags,
-.header-title.started,
-.data.rated,
-.data.started,
-.data.finished,
-.data.days,
-.data.airing-started,
+.header-title.number, .header-title.image,
+.header-title.tags, .header-title.started,
+.data.rated, .data.started, .data.finished,
+.data.days, .data.airing-started,
 .data.airing-finished,
-.data.studio,
-.data.licensor,
-.data.storage,
-.btn-list-setting {
+.data.licensor, .data.storage,
+.btn-list-setting, .data.genre, a[href="/register.php"],
+footer #footer-block, .root, .icon-watch,
+.header-menu > .btn-menu {
   display: none !important;
 }
 
@@ -1514,10 +1474,6 @@ a.icon-add-volume {
   margin: 0;
   text-align: center;
   font-size: 0;
-}
-
-a[href="/register.php"] {
-  display: none !important;
 }
 
 .header-info a[href="/login.php"]:before {
@@ -1551,13 +1507,8 @@ a[href="/register.php"] {
 
 /*copyright*/
 
-footer #footer-block,
-.root {
-  display: none !important;
-}
-
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2021 All Rights Reserved. \a Azur Blur v0.1, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2021 All Rights Reserved. \a Azur Blur v1.0, Design and Code by MurakumoJP.";
   display: block !important;
   padding: 15px 0 !important;
   bottom: -58px;
