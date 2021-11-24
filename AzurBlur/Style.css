@@ -48,6 +48,19 @@ body {
   background-attachment: fixed !important;
 }
 
+/* Hide unnecessary */
+.header-title.number, .header-title.image,
+.header-title.tags, .header-title.started,
+.data.rated, .data.started, .data.finished,
+.data.days, .data.airing-started,
+.data.airing-finished,
+.data.licensor, .data.storage,
+.btn-list-setting, .data.genre, a[href="/register.php"],
+footer #footer-block, .root, .icon-watch,
+.header-menu > .btn-menu, .data.priority {
+  display: none !important;
+}
+
 /* Header Menu */
 .header .header-title {
   background-position: center;
@@ -1452,18 +1465,6 @@ a.icon-add-volume {
   margin-top: 0 !important;
   z-index: 999;
   border-bottom: 1px solid var(--MenuColor);
-}
-
-.header-title.number, .header-title.image,
-.header-title.tags, .header-title.started,
-.data.rated, .data.started, .data.finished,
-.data.days, .data.airing-started,
-.data.airing-finished,
-.data.licensor, .data.storage,
-.btn-list-setting, .data.genre, a[href="/register.php"],
-footer #footer-block, .root, .icon-watch,
-.header-menu > .btn-menu {
-  display: none !important;
 }
 
 /* Login Menu */
