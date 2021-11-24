@@ -259,8 +259,8 @@ i.fa.fa-search {
   font-size: 15px;
 }
 
-.fas, .fa-solid {
-  font-weight: normal;
+.stats .fa-solid, .search-container .fa-solid {
+  font-weight: 100 !important;
 }
 
 /* Cover Img */
