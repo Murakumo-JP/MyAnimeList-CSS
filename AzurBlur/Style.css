@@ -373,9 +373,10 @@ i.fa.fa-search {
 .data.studio {
   bottom: 50px!important;
   text-overflow: ellipsis;
-  text-align: center !important;
-  position: absolute !important;
+  position: absolute!important;
   max-width: 180px;
+  line-height: 20px;
+  height: 20px;
   overflow: hidden;
 }
 
