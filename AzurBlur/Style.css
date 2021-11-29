@@ -371,14 +371,13 @@ i.fa.fa-search {
 }
 
 .data.studio{ 
-  /* Finish it sometime */
-  display: none !important;
+  bottom: 50px !important;
 }
 
 .data.season,
 .data.studio {
-  bottom: 55px;
-  font-size: 14px;
+  bottom: 68px;
+  font-size: 13px;
   border-bottom: none !important;
   white-space: nowrap;
   z-index: 10;
@@ -548,7 +547,7 @@ i.fa.fa-search {
   display: block;
   font-size: 14px;
   position: absolute;
-  top: 185px;
+  top: 175px;
   left: 0px;
   border-left: 3px solid #9b9b9b;
   padding-left: 11px;
@@ -841,19 +840,14 @@ a.icon-add-volume {
 }
 
 .list-item .data.type {
-  top: 185px;
-  right: 15px;
-  font-size: 14px;
+  display: block;
+  top: 175px;
+  right: 0;
+  font-size: 13px !important;
   color: #9b9b9b;
-  border: none;
-}
-
-.list-item .data.type::before {
-  content: "[";
-}
-
-.list-item .data.type::after {
-  content: "]";
+  border-right: 3px solid #9b9b9b !important;
+  padding-right: 5px;
+  border: 0;
 }
 
 .list-item .data.progress,
