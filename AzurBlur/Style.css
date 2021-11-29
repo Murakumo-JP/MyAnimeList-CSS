@@ -370,8 +370,19 @@ i.fa.fa-search {
   margin: 3px;
 }
 
-.data.studio{ 
-  bottom: 50px !important;
+.data.studio {
+  bottom: 50px!important;
+  text-overflow: ellipsis;
+  text-align: center !important;
+  position: absolute !important;
+  max-width: 180px;
+  overflow: hidden;
+}
+
+.data.studio span {font-size: 0;}
+.data.studio span a {
+  font-size: 13px;
+  margin-right: 5px;
 }
 
 .data.season,
