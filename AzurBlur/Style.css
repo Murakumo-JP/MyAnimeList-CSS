@@ -443,10 +443,6 @@ i.fa.fa-search {
   position: absolute;
 }
 
-.list-table .list-table-data .data.status {
-  width: 0;
-}
-
 .list-table > tbody:nth-of-type(2n + 1) {
   background-color: transparent !important;
 }
@@ -535,8 +531,10 @@ i.fa.fa-search {
 }
 
 .list-item .data.status {
-  left: 0px;
-  top: 0px;
+  width: 0 !important;
+  height: 100%;
+  left: 0;
+  top: 0;
   background-color: transparent !important;
 }
 
@@ -594,8 +592,8 @@ i.fa.fa-search {
 
 .list-item .data.number {
   font-size: 10px;
-  top: 235px;
-  left: 3.3px;
+  bottom: 6px;
+  left: 3px;
   color: #9b9b9b;
   height: 37px;
   width: 37px;
@@ -614,10 +612,11 @@ i.fa.fa-search {
 }
 
 .list-item .data.title {
-  top: 0px;
+  top: 0;
   width: 100%;
-  padding: 8px 0 8px 0 !important;
-  border-bottom: 1px solid #131722;
+  height: 100%;
+  padding: 0 !important;
+  border: 0;
 }
 
 .list-item .data.title a {
@@ -650,6 +649,17 @@ i.fa.fa-search {
   overflow: hidden;
 }
 
+.list-table .list-table-data .data.title .link:before {
+  content: " ";
+  display: block;
+  position: fixed;
+  border-bottom: 1px solid #131722;
+  width: 180px;
+  top: 33px;
+  right: 0;
+  z-index: 1;
+}
+
 .list-table .list-table-data .data.title .link:hover {
   color: #fff !important;
   transition: 0.2s ease-in-out;
@@ -678,6 +688,7 @@ i.fa.fa-search {
   position: absolute !important;
   height: 1px;
   top: 33px;
+  z-index: 10;
 }
 
 .list-item .data.title .rewatching {
@@ -686,6 +697,9 @@ i.fa.fa-search {
 
 .list-table .list-table-data .data.title .add-edit-more {
   color: transparent;
+  margin: 0;
+  width: 0;
+  height: 0;
 }
 
 .list-table .list-table-data .data.title .add-edit-more .edit {
@@ -971,8 +985,8 @@ a.icon-add-volume {
   font-family: none;
   width: 0;
   height: 0;
-  top: 236px;
-  left: 49px;
+  top: 235px;
+  left: 48px;
   display: inline-block;
   position: absolute;
   border: 0;
@@ -1174,7 +1188,7 @@ a.icon-add-volume {
   background-size: contain;
   top: 66px;
   right: 180px;
-  z-index: 2;
+  z-index: 999;
   opacity: 0;
   visibility: hidden;
   transition: var(--menu-transition);
