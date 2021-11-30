@@ -79,3 +79,13 @@ https://myanimelist.net/ownlist/style/theme/1
 	--Sort-display: none;
 }
 ```
+● Now you can change the color of the avatar outline in the user menu.
+
+```css
+:root{
+    --u-avatar-color-1: #bcd611;
+    --u-avatar-color-2: #3f8717;
+    --u-avatar-color-3: #62c40b;
+    --u-avatar-color-4: #3f8717;
+}
+```
