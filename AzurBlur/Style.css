@@ -793,27 +793,26 @@ i.fa.fa-search {
 }
 
 .list-item .data.score a {
-  top: 10px;
+  line-height: 40px;
   text-align: center;
-  color: rgb(255, 215, 0) !important;
-  text-shadow: 0 0 2px rgb(255, 215, 0);
-  text-decoration: none !important;
-  font-size: 15px !important;
+  color: gold!important;
+  text-shadow: 0 0 2px gold;
+  text-decoration: none!important;
+  font-size: 15px!important;
   position: relative;
 }
-.list-item .data.score a:hover {
-  color: gold !important;
-}
+.list-item .data.score a:hover {color: gold !important;}
 .list-item .data.score a::after {
-  content: "/ 10";
+  content: "\f005";
   display: block;
-  position: absolute;
-  top: 2px;
-  left: 31px;
+  font: 15px var(--font, var(--fontSpare));
+  position: fixed;
+  top: 0;
+  left: 30px;
   font-size: 12px;
   font-weight: 300;
   white-space: nowrap;
-  text-shadow: 0 0 2px rgb(255, 215, 0);
+  text-shadow: 0 0 2px gold;
 }
 
 .list-item .data.progress span,
