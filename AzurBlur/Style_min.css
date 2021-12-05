@@ -2,21 +2,16 @@
 /* THE OLD FILE THAT IS CURRENTLY IMPORTING THE NEW ONE IS TEMPORARY!!! */
 body:before {
    content: "Please update the current CSS style link with a new one \a https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/Style.min.css, \a I am replacing the current file with another one, so the old link will not work, \a you can follow the updates on the MAL forum \a https://myanimelist.net/forum/?topicid=1868018";
-   color: white;
-   font-size: 25px;
+   position: fixed;
+   background: #000000d9;
+   color: #ffff;
+   font-size: 20px;
+   border-radius: 10px;
    white-space: pre;
-   position: fixed;
-   z-index: 99999;
-   width: 100%;
+   top: 68px;
+   z-index: 999;
+   width: 1100px;
+   margin: 0 auto;
    left: 0;
-}
-body:after {
-   content: " ";
-   background: #000000d1;
-   z-index: 9999;
-   position: fixed;
-   display: block;
-   width: 100%;
-   height: 100%;
-   top: 0;
+   right: 0;
 }
