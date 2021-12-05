@@ -42,7 +42,7 @@ https://myanimelist.net/ownlist/style/theme/1
 
 ```css
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
-@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/Style_min.css";
+@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/Style.min.css";
 ```
 ## ► Hentai
 
