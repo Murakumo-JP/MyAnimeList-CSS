@@ -17,7 +17,7 @@ Cover version CSS by MurakumoJP
 
 ```css
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
-@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Redesign%20CSS/5cmDashboard/5cmDashboard_Redesign.css";
+@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Other/5cmDashboard/CoverVer.css";
 ```
 
 ## Image Сhanges
