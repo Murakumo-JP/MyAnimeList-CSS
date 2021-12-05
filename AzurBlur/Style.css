@@ -817,12 +817,17 @@ i.fa.fa-search {
 
 .list-item .data.progress span,
 .list-item .data.chapter span {
-  font-size: 11px;
+  font-size: 0;
   font-weight: bold;
   position: relative;
-  top: 12px;
   color: #9b9b9b;
 }
+.data.progress span a:after {
+  content: "|";
+  margin: 0 2px 0 2px;
+}
+.data.progress > div {line-height: 50px;}
+.list-item .data.progress span ~ span {font-size: 11px !important;}
 
 .list-item .data.progress a,
 .list-item .data.chapter a {
@@ -864,14 +869,13 @@ a.icon-add-volume {
 .list-item .data.chapter {
   background-color: var(--bt-bg);
   border-radius: 20px 0 20px 0;
-  box-shadow: 0px 0px 5px var(--bt-shadow);
-  border: 1px solid var(--bt-border) !important;
+  box-shadow: 0 0 5px var(--bt-shadow);
+  border: 1px solid var(--bt-border)!important;
   backdrop-filter: var(--bg-blur);
   top: 120px;
   right: 15px;
-  width: 54px;
-  height: 48px !important;
-  font-size: 14px;
+  min-width: 55px;
+  height: 48px!important;
 }
 
 /* More */
