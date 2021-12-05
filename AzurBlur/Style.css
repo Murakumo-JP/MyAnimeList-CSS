@@ -1,4 +1,7 @@
-/* Azur Blur v1.0 by MurakumoJP / https://github.com/Murakumo-JP / 10.06.2020 */
+/*---------------------------------------------*/
+/*----------- Azur Blur v1.21.06 ------------ */
+/*------ https://github.com/Murakumo-JP -----*/
+/*------------------------------------------*/
 
 :root {
   --MenuHoverColor: #fff;
@@ -1531,7 +1534,7 @@ a.icon-add-volume {
 /*copyright*/
 
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2021 All Rights Reserved. \a Azur Blur v1.0, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2021 All Rights Reserved. \a Azur Blur v1.21.06, Design and Code by MurakumoJP.";
   display: block !important;
   padding: 15px 0 !important;
   bottom: -58px;
