@@ -1,0 +1,10 @@
+/* Character Setting | Atago Stunning Speedster */
+:root{
+		--body-bg: url("Resources/AtagoRaceBG.jpg");
+		/* Menu Character */
+		--char-img: url("Resources/AtagoRace.png");
+		--char-display: block;
+		/* Sort Menu */
+		--Sort-img: url("Resources/AtagoRaceChibi.png");
+		--Sort-display: block;
+}

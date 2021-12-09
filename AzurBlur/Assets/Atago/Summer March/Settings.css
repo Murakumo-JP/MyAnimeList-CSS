@@ -1,0 +1,10 @@
+/* Character Setting | Atago Summer March */
+:root{
+		--body-bg: url("Resources/AtagoSummerBG.jpg");
+		/* Menu Character */
+		--char-img: url("Resources/AtagoSummer.png");
+		--char-display: block;
+		/* Sort Menu */
+		--Sort-img: url("Resources/AtagoSummerChibi.png");
+		--Sort-display: block;
+}

@@ -1,0 +1,10 @@
+/* Character Setting | Atago Hallmarks of Winter */
+:root{
+		--body-bg: url("Resources/AtagoNewYearBG.jpg");
+		/* Menu Character */
+		--char-img: url("Resources/AtagoNewYear.png");
+		--char-display: block;
+		/* Sort Menu */
+		--Sort-img: url("Resources/AtagoNewYearChibi.png");
+		--Sort-display: block;
+}

@@ -1,0 +1,10 @@
+/* Character Setting | Atago School Traumerei */
+:root{
+		--body-bg: url("Resources/AtagoSchoolBG.jpg");
+		/* Menu Character */
+		--char-img: url("Resources/AtagoSchool.png");
+		--char-display: block;
+		/* Sort Menu */
+		--Sort-img: url("Resources/AtagoSchoolChibi.png");
+		--Sort-display: block;
+}
