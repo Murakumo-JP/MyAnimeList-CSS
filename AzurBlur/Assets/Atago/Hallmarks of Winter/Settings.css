@@ -1,10 +1,10 @@
 /* Character Setting | Atago Hallmarks of Winter */
 :root{
-		--body-bg: url("Resources/AtagoNewYearBG.jpg");
+		--body-bg: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoNewYearBG.jpg");
 		/* Menu Character */
-		--char-img: url("Resources/AtagoNewYear.png");
+		--char-img: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoNewYear.png");
 		--char-display: block;
 		/* Sort Menu */
-		--Sort-img: url("Resources/AtagoNewYearChibi.png");
+		--Sort-img: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoNewYearChibi.png");
 		--Sort-display: block;
 }

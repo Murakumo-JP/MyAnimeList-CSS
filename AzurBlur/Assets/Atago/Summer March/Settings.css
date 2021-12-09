@@ -1,10 +1,10 @@
 /* Character Setting | Atago Summer March */
 :root{
-		--body-bg: url("Resources/AtagoSummerBG.jpg");
+		--body-bg: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoSummerBG.jpg");
 		/* Menu Character */
-		--char-img: url("Resources/AtagoSummer.png");
+		--char-img: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoSummer.png");
 		--char-display: block;
 		/* Sort Menu */
-		--Sort-img: url("Resources/AtagoSummerChibi.png");
+		--Sort-img: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoSummerChibi.png");
 		--Sort-display: block;
 }
