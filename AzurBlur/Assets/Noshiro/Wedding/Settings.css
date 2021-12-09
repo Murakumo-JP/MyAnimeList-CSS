@@ -1,10 +1,10 @@
 /* Character Setting | Noshiro: Wedding */
 :root {
-  --body-bg: url("Resources/BG.jpg");
+  --body-bg: url("/Resources/BG.jpg");
   /* Menu Character */
-  --char-img: url("Resources/NoshiroWedding.png");
+  --char-img: url("/Resources/NoshiroWedding.png");
   --char-display: block;
   /* Sort Menu */
-  --Sort-img: url("Resources/NoshiroWeddingChibi.png");
+  --Sort-img: url("/Resources/NoshiroWeddingChibi.png");
   --Sort-display: block;
 }
