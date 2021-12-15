@@ -22,14 +22,6 @@ Installation and Settings: https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_
 
 ![Screenshot](Eorzea_Collection/preview/Snapshot.png?raw=true)
 
-# 5cmDashboard Redesign CSS theme for MyAnimeList
-
-Installation and Settings: https://murakumo-jp.github.io/MyAnimeList-CSS/Redesign%20CSS/
-
-## Preview
-
-![Screenshot](Redesign%20CSS/5cmDashboard/5cmDashboard_Redesign_Snapshot.jpg?raw=true)
-
 ## MIT License
 
 Copyright (c) 2018 Murakumo-JP
