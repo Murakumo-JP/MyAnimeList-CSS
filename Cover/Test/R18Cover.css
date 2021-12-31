@@ -1,0 +1,22 @@
+@import url(R18List.css);
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.image .link::before {
+   position: fixed;
+   background: var(--menu-bg-color);
+   backdrop-filter: var(--bg-blur);
+   border-radius: var(--border-cover);
+   text-shadow: 2px 2px 5px #000;
+   color: #fff;
+   font-family: cursive;
+   width: 180px;
+   height: 280px;
+   line-height: 280px;
+   font-size: 30px;
+   text-align: center;
+   z-index: 1;
+   transition: var(--menu-transition);
+ }
+ 
+ .list-container .list-unit .list-table .list-item:hover .list-table-data .data.image .link::before {
+   opacity: 0;
+ }
