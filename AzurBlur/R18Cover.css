@@ -1,5 +1,9 @@
 @import url(Assets/R18List.css);
 
+:root{
+  --R18: "Hentai" ;
+}
+
 .list-container .list-unit .list-table .list-item .list-table-data .data.image .link::before {
    position: fixed;
    background: var(--menu-bg-color);
