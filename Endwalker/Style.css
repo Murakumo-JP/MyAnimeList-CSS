@@ -8,6 +8,7 @@
   --body-bg-color: #27282c;
   --font: FontAwesome;
   --fontSpare: "Font Awesome 6 Pro";
+  --transition: all 0.4s;
 }
 
 * {
@@ -58,6 +59,7 @@ body {
   margin: 3px;
   border-radius: 10px;
   transform: translateY(0px);
+  transition: var(--transition);
 }
 .list-container .list-unit .list-table .list-item:hover {
   transform: translateY(-10px);
@@ -80,4 +82,15 @@ body {
   border-radius: 10px 10px 0 0;
   bottom: 0;
   position: absolute;
+}
+.list-container .list-unit .list-table .list-item .list-table-data .data.image .link::after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
