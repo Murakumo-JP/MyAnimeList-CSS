@@ -94,3 +94,33 @@ body {
   bottom: 0;
   right: 0;
 }
+.list-table .list-table-data .data.title .link {
+  font-size: 12px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  white-space: nowrap;
+  color: #333333;
+  overflow: hidden;
+  font-family: 'Noto Sans', sans-serif;
+  text-decoration: none !important;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 35px;
+}
+.content-status {
+  display: block;
+  font-size: 11px !important;
+  color: #666666 !important;
+  font-family: 'Noto Sans', sans-serif;
+  position: absolute;
+  width: 170px;
+  top: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
