@@ -9,6 +9,7 @@
   --font: FontAwesome;
   --fontSpare: "Font Awesome 6 Pro";
   --transition: all 0.4s;
+  --color-text: #ffd591;
 }
 
 * {
@@ -26,10 +27,23 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed !important;
+  
 }
 
 /* Header */
 
+
+/* Container */
+
+.list-container {
+  background: transparent;
+  border: 0;
+}
+.list-table .list-table-data .data {
+  position: absolute;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+}
 /* Cover */
 
 .list-unit {
@@ -102,6 +116,12 @@ body {
   bottom: 0;
   right: 0;
 }
+.data.image {
+  width: 100%;
+  height: 100%;
+  padding: 0 !important;
+  border: 0 !important;
+}
 /*-----------------------------------------------*/
 .list-table .list-table-data .data.title .link {
   font-size: 12px;
@@ -142,13 +162,23 @@ body {
 .data.status.watching:before {
   content: "\f04b";
   display: block;
-  position: absolute;
+  position: fixed;
   right: 10px;
   top: 0;
   line-height: 28px;
   z-index: 1;
   font-size: 15px;
   font-weight: 100;
-  color: #ffd591;
+  color: var(--color-text);
   font-family: var(--font);
+}
+.data.type {
+  position: absolute;
+  color: var(--color-text);
+  border: 0 !important;
+  line-height: 28px;
+  top: 0;
+  right: 30px;
+  padding: 0 !important;
+  z-index: 1;
 }
