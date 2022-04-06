@@ -63,6 +63,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .list-container .list-unit .list-table .list-item {
   position: relative;
   display: inline-block;
@@ -88,6 +89,22 @@ body {
   z-index: 1;
   border-radius: 10px 10px 0 0;
 }
+.list-table-data:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: rgb(0 0 0 / 50%);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+  opacity: 0;
+  z-index: 0;
+}
+.list-item:hover .list-table-data:after {
+  opacity: 1;
+}
 .list-item .list-table-data .data.title.clearfix {
   background: linear-gradient(135deg, #ffffff 0%,#c4c4cc 100%);
   width: 100%;
@@ -98,20 +115,29 @@ body {
   bottom: 0;
   position: absolute;
   transition: var(--transition);
+  z-index: 10;
 }
 .list-item:hover .list-table-data .data.title.clearfix {
   height: 65px;
   opacity: 1;
 }
 /* Image */
+.list-table .list-table-data .data.image .image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: none !important;
+}
 .list-container .list-unit .list-table .list-item .list-table-data .data.image .link::after {
   content: "";
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: absolute;
-  border-radius: 0 0 10px 10px;
-  top: 28px;
+  border-radius: 10px;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
@@ -206,7 +232,7 @@ body {
   line-height: 40px;
   text-align: center;
   color: gold!important;
-  text-shadow: 0 0 2px rgb(0 0 0);
+  text-shadow: 0 0 2px gold;
   text-decoration: none!important;
   font-size: 15px!important;
   position: relative;
