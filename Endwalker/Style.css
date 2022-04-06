@@ -182,3 +182,44 @@ body {
   padding: 0 !important;
   z-index: 1;
 }
+/* Score */
+.list-item:hover .data.score {
+  transform: scale(1);
+}
+.data.score {
+  background: linear-gradient(135deg, rgb(255 255 255 / 50%) 0%,#c4c4cc80 100%);
+  box-shadow: 0 0 5px #131722;
+  border: 1px solid #13172280 !important;
+  backdrop-filter: blur(2px);
+  top: 125px;
+  left: 14px;
+  color: #fff;
+  font-size: 14px;
+  width: 40px;
+  height: 40px!important;
+  border-radius: 20px;
+  z-index: 99;
+  transform: scale(0);
+  transition: var(--transition);
+}
+.list-item .data.score a {
+  line-height: 40px;
+  text-align: center;
+  color: gold!important;
+  text-shadow: 0 0 2px rgb(0 0 0);
+  text-decoration: none!important;
+  font-size: 15px!important;
+  position: relative;
+}
+.list-item .data.score a::after {
+  content: "\f005";
+  display: block;
+  font: 15px var(--font,var(--fontSpare));
+  position: fixed;
+  top: 0;
+  left: 30px;
+  font-size: 12px;
+  font-weight: 300;
+  white-space: nowrap;
+  text-shadow: 0 0 2px gold;
+}
