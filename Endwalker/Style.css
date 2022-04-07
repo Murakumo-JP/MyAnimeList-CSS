@@ -42,7 +42,7 @@ body {
 .list-table .list-table-data .data {
   position: absolute;
   padding: 0 !important;
-  border-bottom: 0 !important;
+  border-bottom: none;
 }
 /* Cover */
 
@@ -209,14 +209,13 @@ body {
   z-index: 1;
 }
 /* Score */
-.list-item:hover .data.score {
+.list-item:hover .data.score, .list-item:hover .data.progress {
   transform: scale(1);
 }
 .data.score {
-  background: linear-gradient(135deg, rgb(255 255 255 / 50%) 0%,#c4c4cc80 100%);
+  background: linear-gradient(to right, rgb(24 24 26 / 50%) 0%,rgb(35 35 38 / 50%) 100%);
   box-shadow: 0 0 5px #131722;
-  border: 1px solid #13172280 !important;
-  backdrop-filter: blur(2px);
+  border: 1px solid #131722 !important;
   top: 125px;
   left: 14px;
   color: #fff;
@@ -248,4 +247,34 @@ body {
   font-weight: 300;
   white-space: nowrap;
   text-shadow: 0 0 2px gold;
+}
+/* Progress */
+.list-item .data.progress {
+  background: linear-gradient(to right, rgb(24 24 26 / 50%) 0%,rgb(35 35 38 / 50%) 100%);
+  box-shadow: 0 0 5px #131722;
+  border: 1px solid #131722 !important;
+  border-radius: 20px 0 20px 0;
+  top: 120px;
+  right: 15px;
+  min-width: 55px;
+  height: 48px!important;
+  z-index: 1;
+  transform: scale(0);
+  transition: var(--transition);
+}
+.data.progress>div {
+  line-height: 50px;
+}
+.list-item .data.progress a, .list-item .data.progress span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #969697!important;
+}
+.list-item .data.progress a.icon-add-episode {
+  position: absolute;
+  top: 3.3px;
+  right: -6.2px;
+  opacity: 1;
+  transition: opacity .15s ease-in-out;
+  font-size: 12px;
 }
