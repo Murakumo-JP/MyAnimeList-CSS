@@ -278,3 +278,15 @@ body {
   transition: opacity .15s ease-in-out;
   font-size: 12px;
 }
+/* Number */
+.data.number {
+  color: var(--color-text);
+  border: 0 !important;
+  line-height: 28px;
+  top: 0;
+  left: 10px;
+  z-index: 1;
+}
+.data.number:before {
+  content: "#";
+}
