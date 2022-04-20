@@ -10,6 +10,8 @@
   --fontSpare: "Font Awesome 6 Pro";
   --transition: all 0.4s;
   --color-text: #ffd591;
+  --color-gradient-gray: linear-gradient(to right, #18181a 0%,#232326 100%);
+  --color-gradient-white: linear-gradient(135deg, #ffffff 0%,#c4c4cc 100%);
 }
 
 * {
@@ -29,7 +31,11 @@ body {
   background-attachment: fixed !important;
   
 }
-
+/* Scale */
+.list-item:hover .data.score, .list-item:hover .data.progress,
+.list-item:hover .data.studio {
+  transform: scale(1);
+}
 /* Header */
 
 
@@ -83,7 +89,7 @@ body {
   content: " ";
   display: block;
   position: absolute;
-  background: linear-gradient(to right, #18181a 0%,#232326 100%);
+  background: var(--color-gradient-gray);
   width: 100%;
   height: 28px;
   z-index: 1;
@@ -106,7 +112,7 @@ body {
   opacity: 1;
 }
 .list-item .list-table-data .data.title.clearfix {
-  background: linear-gradient(135deg, #ffffff 0%,#c4c4cc 100%);
+  background: var(--color-gradient-white);
   width: 100%;
   padding: 0;
   height: 0;
@@ -209,11 +215,8 @@ body {
   z-index: 1;
 }
 /* Score */
-.list-item:hover .data.score, .list-item:hover .data.progress {
-  transform: scale(1);
-}
 .data.score {
-  background: linear-gradient(to right, rgb(24 24 26 / 50%) 0%,rgb(35 35 38 / 50%) 100%);
+  background: #18181a80;
   box-shadow: 0 0 5px #131722;
   border: 1px solid #131722 !important;
   top: 125px;
@@ -250,7 +253,7 @@ body {
 }
 /* Progress */
 .list-item .data.progress {
-  background: linear-gradient(to right, rgb(24 24 26 / 50%) 0%,rgb(35 35 38 / 50%) 100%);
+  background: #18181a80;
   box-shadow: 0 0 5px #131722;
   border: 1px solid #131722 !important;
   border-radius: 20px 0 20px 0;
@@ -289,4 +292,23 @@ body {
 }
 .data.number:before {
   content: "#";
+}
+/* Studio */
+.data.studio {
+  background: var(--color-gradient-gray);
+  bottom: 66px;
+  z-index: 19;
+  margin: 0 auto;
+  width: 175px;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  transform: scale(0);
+  transition: var(--transition);
+}
+.data.studio span a {
+  color: var(--color-text);
 }
