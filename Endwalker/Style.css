@@ -233,8 +233,8 @@ body {
 .list-item .data.score a {
   line-height: 40px;
   text-align: center;
-  color: gold!important;
-  text-shadow: 0 0 2px gold;
+  color: var(--color-text)!important;
+  text-shadow: 0 0 2px var(--color-text);
   text-decoration: none!important;
   font-size: 15px!important;
   position: relative;
@@ -249,7 +249,6 @@ body {
   font-size: 12px;
   font-weight: 300;
   white-space: nowrap;
-  text-shadow: 0 0 2px gold;
 }
 /* Progress */
 .list-item .data.progress {
@@ -271,7 +270,7 @@ body {
 .list-item .data.progress a, .list-item .data.progress span {
   font-size: 11px;
   font-weight: 700;
-  color: #969697!important;
+  color: var(--color-text)!important;
 }
 .list-item .data.progress a.icon-add-episode {
   position: absolute;
@@ -311,4 +310,8 @@ body {
 }
 .data.studio span a {
   color: var(--color-text);
+  text-decoration: none;
+}
+.list-table .list-table-data .data.studio span~span{
+  display: none !important;
 }
