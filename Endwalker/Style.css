@@ -12,6 +12,13 @@
   --color-text: #ffd591;
   --color-gradient-gray: linear-gradient(to right, #18181a 0%,#232326 100%);
   --color-gradient-white: linear-gradient(135deg, #ffffff 0%,#c4c4cc 100%);
+  /* Test Color */
+  --dt-watching: #afff91;
+  --dt-completed: #91b3ff;
+  --dt-on-hold: #f8ff91;
+  --dt-dropped: #ff9191;
+  --dt-plan-to-watch: #e7ffdf;
+  
 }
 
 * {
@@ -32,8 +39,7 @@ body {
   
 }
 /* Scale */
-.list-item:hover .data.score, .list-item:hover .data.progress,
-.list-item:hover .data.studio {
+.list-item:hover .data.score, .list-item:hover .data.progress{
   transform: scale(1);
 }
 /* Header */
@@ -186,12 +192,12 @@ body {
   right: 0;
 }
 /* Status Anime */
-.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status.watching {
+.list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status {
   background-color: transparent !important;
   width: 0 !important;
   height: 0 !important;
 }
-.data.status.watching:before {
+.data.status:before {
   content: "\f04b";
   display: block;
   position: fixed;
@@ -213,6 +219,10 @@ body {
   right: 30px;
   padding: 0 !important;
   z-index: 1;
+}
+.data.status.watching:before {
+  color: var(--dt-watching);
+  text-shadow: 0 0 3px var(--dt-watching);
 }
 /* Score */
 .data.score {
@@ -305,8 +315,11 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 10px;
-  transform: scale(0);
+  opacity: 0;
   transition: var(--transition);
+}
+.list-item:hover .data.studio{
+  opacity: 1;
 }
 .data.studio span a {
   color: var(--color-text);
