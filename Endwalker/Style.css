@@ -13,11 +13,12 @@
   --color-gradient-gray: linear-gradient(to right, #18181a 0%,#232326 100%);
   --color-gradient-white: linear-gradient(135deg, #ffffff 0%,#c4c4cc 100%);
   /* Test Color */
+  --dt-default: #ffd591;
   --dt-watching: #afff91;
   --dt-completed: #91b3ff;
-  --dt-on-hold: #f8ff91;
+  --dt-onhold: #f8ff91;
   --dt-dropped: #ff9191;
-  --dt-plan-to-watch: #e7ffdf;
+  --dt-plantowatch: #e7ffdf;
   
 }
 
@@ -123,6 +124,7 @@ body {
   padding: 0;
   height: 0;
   opacity: 0;
+  visibility: hidden;
   border-radius: 10px;
   bottom: 0;
   position: absolute;
@@ -132,6 +134,7 @@ body {
 .list-item:hover .list-table-data .data.title.clearfix {
   height: 65px;
   opacity: 1;
+  visibility: visible;
 }
 /* Image */
 .list-table .list-table-data .data.image .image {
@@ -207,12 +210,14 @@ body {
   z-index: 1;
   font-size: 15px;
   font-weight: 100;
-  color: var(--color-text);
+  color: var(--dt-default);
+  text-shadow:  0 0 3px var(--dt-default);
   font-family: var(--font);
 }
 .data.type {
   position: absolute;
-  color: var(--color-text);
+  color: var(--dt-default);
+  text-shadow: 0 0 3px var(--dt-default);
   border: 0 !important;
   line-height: 28px;
   top: 0;
@@ -220,9 +225,31 @@ body {
   padding: 0 !important;
   z-index: 1;
 }
-.data.status.watching:before {
+/* Status Color */
+.data.status.watching:before,
+.data.status.watching ~ .data.type {
   color: var(--dt-watching);
   text-shadow: 0 0 3px var(--dt-watching);
+}
+.data.status.completed:before,
+.data.status.completed ~ .data.type {
+  color: var(--dt-completed);
+  text-shadow: 0 0 3px var(--dt-completed);
+}
+.data.status.onhold:before,
+.data.status.onhold ~ .data.type {
+  color: var(--dt-onhold);
+  text-shadow: 0 0 3px var(--dt-onhold);
+}
+.data.status.dropped:before,
+.data.status.dropped ~ .data.type {
+  color: var(--dt-dropped);
+  text-shadow: 0 0 3px var(--dt-dropped);
+}
+.data.status.plantowatch:before,
+.data.status.plantowatch ~ .data.type {
+  color: var(--dt-plantowatch);
+  text-shadow: 0 0 3px var(--dt-plantowatch);
 }
 /* Score */
 .data.score {
