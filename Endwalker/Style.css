@@ -375,7 +375,7 @@ body {
   margin: 2px;
   border-radius: 10px;
   background: var(--color-gradient-gray);
-  color: var(--dt-default) !important;
+  color: var(--color-text) !important;
 }
 .edit a:before {content: "\f304";}
 .more a:before {content: "\f129";}
@@ -402,14 +402,28 @@ body {
 .data.tags div span:before {
   content: "\f02b";
   font-family: var(--font, var(--fontSpare));
-  color: var(--dt-default) !important;
+  color: var(--color-text) !important;
   font-size: 10px;
   margin-right: 3px;
 }
 .data.tags div span a {
   line-height: 20px !important;
+  text-decoration: none !important;
   font-size: 8px;
-  color: var(--dt-default) !important;
+  color: var(--color-text) !important;
+}
+.list-table .list-table-data .tags .edit {
+  width: 35px !important;
+  background: var(--color-gradient-gray);
+  color: var(--color-text) !important;
+  text-decoration: none !important;
+  border-radius: 0 5px 5px 0;
+}
+.tags .edit:before {
+  content: "\f02b";
+  font-family: var(--font, var(--fontSpare));
+  color: var(--color-text) !important;
+  margin-right: 2px;
 }
 /* Info */
 .list-item:hover .more-info {
