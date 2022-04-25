@@ -40,6 +40,14 @@ body {
   background-attachment: fixed !important;
   
 }
+/* DISPLAY NONE!!! */
+.data.rated,.data.started,.data.finished,.data.days,
+.data.storage,.data.genre,.data.demographic,.header-title.status,
+.header-title.number,.header-title.image,.header-title.tags,
+.header-title.days,.header-title.started,.header-title.studio,
+.header-title.genre,.header-title.demographic {
+  display: none !important;
+}
 /* Scale */
 .list-item:hover .data.score, .list-item:hover .data.progress{
   transform: scale(1);
@@ -418,6 +426,9 @@ body {
   color: var(--color-text) !important;
   text-decoration: none !important;
   border-radius: 0 5px 5px 0;
+}
+.list-table .list-table-data .tags .edit:hover {
+  color: var(--color-text) !important;
 }
 .tags .edit:before {
   content: "\f02b";
