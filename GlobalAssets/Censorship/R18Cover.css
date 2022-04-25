@@ -11,7 +11,7 @@
    position: fixed;
    background: var(--R18-color);
    backdrop-filter: var(--R18-blur);
-   border-radius: var(--border-cover);
+   border-radius: var(--R18-boreder);
    text-shadow: 2px 2px 5px #000;
    color: #fff;
    font-family: cursive;
