@@ -2,18 +2,22 @@
 
 :root{
   --R18: "Hentai" ;
+  --R18-blur: blur(5px);
+  --R18-color: rgba(12, 16, 27, 0.8);
+  --R18-boreder: 15px 15px 10px 10px;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.image .link::before {
    position: fixed;
-   background: var(--menu-bg-color);
-   backdrop-filter: var(--bg-blur);
+   background: var(--R18-color);
+   backdrop-filter: var(--R18-blur);
    border-radius: var(--border-cover);
    text-shadow: 2px 2px 5px #000;
    color: #fff;
    font-family: cursive;
    width: 180px;
    height: 280px;
+   left: 0;
    line-height: 280px;
    font-size: 30px;
    text-align: center;
