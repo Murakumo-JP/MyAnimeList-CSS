@@ -69,6 +69,37 @@ body {
   width: 100px;
   height: 64px;
 }
+/* Status Menu */
+.status-menu-container {
+  position: fixed;
+  width: auto !important;
+  top: 0;
+  left: 100px;
+  height: 64px;
+  z-index: 51;
+  background: transparent !important;
+  border: none !important;
+}
+.status-menu-container .status-menu .status-button {
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Noto Serif', serif;
+  padding: 0 12px;
+  line-height: 64px;
+  -moz-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.status-menu-container .status-menu .status-button:hover, 
+.status-menu-container .status-menu .status-button.on {
+  color: #bcbccc;
+  font-weight: normal;
+}
+.status-menu-container .status-menu .status-button:after {
+  opacity: 0;
+  visibility: hidden;
+}
 /* List Menu */
 .list-menu-float {
   background: var(--color-gradient-gray);
