@@ -47,7 +47,7 @@ body {
 .data.storage,.data.genre,.data.demographic,.header-title.status,
 .header-title.number,.header-title.image,.header-title.tags,
 .header-title.days,.header-title.started,.header-title.studio,
-.header-title.genre,.header-title.demographic {
+.header-title.genre,.header-title.demographic,.header-menu {
   display: none !important;
 }
 /* Scale */
@@ -99,6 +99,33 @@ body {
 .status-menu-container .status-menu .status-button:after {
   opacity: 0;
   visibility: hidden;
+}
+.status-menu-container .search-container {
+  position: absolute;
+  line-height: 64px;
+  right: 0;
+  top: 0;
+}
+.status-menu-container .search-container #search-box.open {
+  margin: 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #27282c;
+}
+.status-menu-container .search-container #search-box {
+  height: 40px;
+  margin: 0;
+}
+.status-menu-container .search-container #search-box input {
+  background: var(--color-gradient-gray);
+  color: var(--color-text);
+  border: none !important;
+}
+.status-menu-container .search-container #search-button {
+  margin-top: 0 !important;
+  font-size: 16px;
+  height: 16px;
 }
 /* List Menu */
 .list-menu-float {
