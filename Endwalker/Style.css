@@ -101,9 +101,10 @@ body {
 .list-menu-float .icon-menu .text {
   left: -90px;
   width: 80px;
-  text-align: left;
+  text-align: center;
   top: 50%;
   opacity: 0;
+  visibility: hidden;
   padding: 6px 0 6px 6px;
   background: #995c1f;
   box-sizing: border-box;
@@ -126,6 +127,7 @@ body {
   left: -90px;
   width: 80px;
   opacity: 1;
+  visibility: visible;
 }
 .list-menu-float .icon-menu:hover {
   background-color: transparent !important;
