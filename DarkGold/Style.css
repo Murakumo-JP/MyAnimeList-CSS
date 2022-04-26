@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------  Endwalker v0.0.37 ---------- */
+/*-------------  DarkGold v0.0.38 ---------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -26,7 +26,7 @@
 }
 
 .list-unit .list-stats:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a Endwalker v0.0.37, Design and Code by MurakumoJP. \a The rights to the titles and images belong to © 2010 - 2022 SQUARE ENIX CO., LTD. All Rights Reserved.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a DarkGold v0.0.38, Design and Code by MurakumoJP.";
 }
 * {outline: none;}
 a,a:hover {color: #131722;}
