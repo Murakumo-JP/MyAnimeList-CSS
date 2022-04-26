@@ -3,7 +3,7 @@
 If the covers are not updated via malscraper.azurewebsites.net, then you can insert this code at the beginning of the CSS, this will remove blur covers.
 
 ```css
-@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Cover/AnimeCover.css";
+@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/GlobalAssets/Cover/AnimeCover.css";
 ```
 
 # Azur Blur CSS theme for MyAnimeList
