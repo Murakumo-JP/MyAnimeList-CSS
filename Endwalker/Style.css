@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
-  --body-bg: url("https://i.imgur.com/YHB21DC.jpg");
+  --body-bg: url("./Assets/FFXIV.jpg");
   --body-bg-color: #27282c;
   --font: FontAwesome;
   --fontSpare: "Font Awesome 6 Pro";
@@ -35,7 +35,7 @@ a:hover {
 }
 
 body {
-  /* background-image: var(--body-bg); */
+  background-image: var(--body-bg);
   background-color: var(--body-bg-color);
   background-position: center;
   background-size: cover;
@@ -47,7 +47,8 @@ body {
 .data.storage,.data.genre,.data.demographic,.header-title.status,
 .header-title.number,.header-title.image,.header-title.tags,
 .header-title.days,.header-title.started,.header-title.studio,
-.header-title.genre,.header-title.demographic,.header-menu {
+.header-title.genre,.header-title.demographic,.header-menu,
+.list-unit .list-status-title .text,.cover-block .image-container .btn-list-setting {
   display: none !important;
 }
 /* Scale */
@@ -126,6 +127,74 @@ body {
   margin-top: 0 !important;
   font-size: 16px;
   height: 16px;
+}
+/* Stats and Filters */
+.list-unit .list-status-title {
+  position: fixed;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 64px;
+  z-index: 999;
+}
+.list-unit .list-status-title .stats {
+  position: absolute;
+  height: 66px;
+  width: 100%;
+  line-height: 60px;
+  right: 0;
+}
+#advanced-options-button, #show-stats-button {
+  position: absolute;
+  text-align: center;
+  width: 50px;
+  height: 64px;
+  color: #bcbccc;
+  font-size: 0;
+  margin-right: 0;
+}
+.search-container .fa-solid, .stats .fa-solid {
+  font-weight: 100 !important;
+}
+.fa-bar-chart-o:before, .fa-bar-chart:before,
+.fa-filter:before, .fa-chart-column:before {
+  font-size: 15px;
+  display: table-cell;
+  line-height: 66px;
+  text-align: center;
+}
+.list-unit .list-stats {
+  position: fixed;
+  border-top: 1px solid var(--dt-default);
+  font-size: 11px;
+  font-family: 'Noto Serif', serif;
+  background: #18181a;
+  width: 100% !important;
+  left: 0;
+  top: 64px;
+}
+/* Sort Menu */
+/* Finish it later */
+.list-table-header{
+  display: none !important;
+}
+/* User Cover */
+.cover-block {
+  display: block;
+  width: 1120px;
+}
+.cover-block .image-container {
+  padding: 0;
+  width: 1120px;
+}
+.cover-block .image-container img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0 0 10px 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 0 4px #131722;
 }
 /* List Menu */
 .list-menu-float {
