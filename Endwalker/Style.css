@@ -56,9 +56,10 @@ body {
 
 /* List Menu */
 .list-menu-float {
-  background: rgba(0,0,0,0.9);
+  background: var(--color-gradient-gray);
   border: none !important;
   border-radius: 12px 0 0 12px;
+  padding: 10px 0 10px 0;
   width: 64px;
   top: 50%;
   right: 0;
@@ -129,6 +130,28 @@ body {
 .list-menu-float .icon-menu:hover {
   background-color: transparent !important;
   width: 50px !important;
+}
+.list-menu-float .icon-menu svg.icon {fill: var(--color-text);}
+.icon-menu.profile:before {opacity: 0;}
+.icon-menu.profile {border-radius: 50%;}
+.list-menu-float .icon-menu.setting:hover .text {
+  top: 50%;
+  width: 180px;
+  height: 24px;
+  padding: 0;
+  left: -190px;
+  transform: translateY(-50%);
+}
+.list-menu-float .icon-menu.setting:hover .text .link-list-setting, .list-menu-float .icon-menu.setting:hover .text .link-style-setting {
+  background: transparent;
+  display: inline-block;
+  position: initial;
+  height: 24px;
+  line-height: 24px;
+  left: 0;
+  border: none;
+  text-align: center;
+  width: 85px;
 }
 /* Container */
 .list-container {
