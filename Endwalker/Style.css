@@ -343,6 +343,7 @@ body {
 }
 .list-table {
   width: 100%;
+  padding-bottom: 50px;
   display: block;
   margin: 0 auto;
   border-collapse: collapse;
@@ -557,6 +558,9 @@ body {
   text-decoration: none!important;
   font-size: 15px!important;
   position: relative;
+}
+.list-table .list-table-data a:not(.edit-disabled):hover {
+  color: var(--color-text)!important;
 }
 .list-item .data.score a::after {
   content: "\f005";
