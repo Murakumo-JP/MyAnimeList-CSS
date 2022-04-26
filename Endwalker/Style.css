@@ -204,6 +204,9 @@ body {
   width: 85px;
 }
 /* Container */
+.list-block, .status-menu-container.fixed+div.list-block {
+  margin-top: 0;
+}
 .list-container {
   width: 100%;
   background: transparent;
