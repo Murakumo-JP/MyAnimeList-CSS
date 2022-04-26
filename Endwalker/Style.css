@@ -3,6 +3,8 @@
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
 :root {
   --body-bg: url("https://i.imgur.com/YHB21DC.jpg");
   --body-bg-color: #27282c;
@@ -53,7 +55,20 @@ body {
   transform: scale(1);
 }
 /* Header */
-
+.header {
+  position: fixed;
+  width: 100%;
+  height: 64px;
+  background: #18181a;
+  z-index: 50;
+}
+.header .header-title {
+  background-image: url(./Assets/mal_logo.png);
+  background-position: center;
+  top: 0;
+  width: 100px;
+  height: 64px;
+}
 /* List Menu */
 .list-menu-float {
   background: var(--color-gradient-gray);
