@@ -159,8 +159,15 @@ body {
 }
 /* Container */
 .list-container {
+  width: 100%;
   background: transparent;
   border: 0;
+}
+.list-block {
+  width: 1120px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
 .list-table .list-table-data .data {
   position: absolute;
