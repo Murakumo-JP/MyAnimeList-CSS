@@ -54,9 +54,79 @@ body {
 }
 /* Header */
 
-
+/* List Menu */
+.list-menu-float {
+  background: rgba(0,0,0,0.9);
+  border: none !important;
+  border-radius: 12px 0 0 12px;
+  width: 64px;
+  top: 50%;
+  right: 0;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.list-menu-float .icon-menu {
+  background: transparent;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.icon-menu:before {
+  display: block;
+  content: "";
+  border-color: transparent #995c1f #995c1f transparent;
+  border-width: 8px;
+  border-style: solid;
+  width: 0;
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  margin: -8px 0 0 -9px;
+  z-index: 10;
+  opacity: 0;
+  -moz-box-shadow: 1px 1px 0 #995c1f,0px 1px 4px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 0 #995c1f, 0px 1px 4px 0px rgb(0 0 0 / 50%);
+  box-shadow: 1px 1px 0 #995c1f, 0px 1px 4px 0px rgb(0 0 0 / 50%);
+  transition: var(--transition);
+}
+.icon-menu:hover:before {opacity: 1;}
+.list-menu-float .icon-menu .text {
+  left: -90px;
+  width: 80px;
+  text-align: left;
+  top: 50%;
+  opacity: 0;
+  padding: 6px 0 6px 6px;
+  background: #995c1f;
+  box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+  font-size: 12px;
+  z-index: 10;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1;
+  -moz-transition: all .1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: all .1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all .1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all .1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: var(--transition);
+}
+.list-menu-float .icon-menu:hover .text {
+  left: -90px;
+  width: 80px;
+  opacity: 1;
+}
 /* Container */
-
 .list-container {
   background: transparent;
   border: 0;
@@ -146,6 +216,9 @@ body {
   visibility: visible;
 }
 /* Image */
+.list-table .list-table-data .data.image a {
+  pointer-events: none !important;
+}
 .list-table .list-table-data .data.image .image {
   position: absolute;
   left: 0;
