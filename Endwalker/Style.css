@@ -134,7 +134,8 @@ body {
 .list-menu-float .icon-menu svg.icon {fill: var(--color-text);}
 .icon-menu.profile:before {opacity: 0;}
 .icon-menu.profile {border-radius: 50%;}
-.list-menu-float .icon-menu.setting:hover .text {
+.list-menu-float .icon-menu.setting:hover .text,
+.list-menu-float .icon-menu.setting .text {
   top: 50%;
   width: 180px;
   height: 24px;
