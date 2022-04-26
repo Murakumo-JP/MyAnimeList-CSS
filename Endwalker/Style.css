@@ -126,6 +126,10 @@ body {
   width: 80px;
   opacity: 1;
 }
+.list-menu-float .icon-menu:hover {
+  background-color: transparent !important;
+  width: 50px !important;
+}
 /* Container */
 .list-container {
   background: transparent;
