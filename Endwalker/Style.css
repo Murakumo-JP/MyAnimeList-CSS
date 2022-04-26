@@ -25,15 +25,8 @@
   
 }
 
-* {
-  outline: none;
-}
-
-a,
-a:hover {
-  color: #131722;
-}
-
+* {outline: none;}
+a,a:hover {color: #131722;}
 body {
   background-image: var(--body-bg);
   background-color: var(--body-bg-color);
@@ -153,6 +146,9 @@ body {
   color: #bcbccc;
   font-size: 0;
   margin-right: 0;
+}
+#advanced-options-button {
+  right: 0;
 }
 .search-container .fa-solid, .stats .fa-solid {
   font-weight: 100 !important;
@@ -307,6 +303,7 @@ body {
   width: 100%;
   background: transparent;
   border: 0;
+  top: 64px;
 }
 .list-block {
   width: 1120px;
