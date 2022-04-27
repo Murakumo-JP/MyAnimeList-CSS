@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------  DarkGold v0.0.38 ---------- */
+/*-------------  DarkGold v0.0.40 ---------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -15,7 +15,8 @@
   --color-gradient-gray: linear-gradient(to right, #18181a 0%,#232326 100%);
   --color-gradient-white: linear-gradient(135deg, #ffffff 0%,#c4c4cc 100%);
   --border: 15px 15px 10px 10px;
-  /* Test Color */
+  --width: 1120px;
+  --sm-color: #9B9B9B;
   --dt-default: #ffd591;
   --dt-watching: #afff91;
   --dt-completed: #91b3ff;
@@ -25,10 +26,10 @@
   
 }
 
-.list-unit .list-stats:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a DarkGold v0.0.38, Design and Code by MurakumoJP.";
+* {
+  outline: none;
+  text-decoration: none !important;
 }
-* {outline: none;}
 a,a:hover {color: #131722;}
 body {
   background-image: var(--body-bg);
@@ -37,6 +38,9 @@ body {
   background-size: cover;
   background-attachment: fixed !important;
   
+}
+.list-unit .list-stats:after {
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a DarkGold v0.0.40, Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -196,11 +200,11 @@ body {
 /* User Cover */
 .cover-block {
   display: block;
-  width: 1120px;
+  width: var(--width);
 }
 .cover-block .image-container {
   padding: 0;
-  width: 1120px;
+  width: var(--width);
 }
 .cover-block .image-container img {
   width: 100%;
@@ -324,7 +328,7 @@ body {
   top: 64px;
 }
 .list-block {
-  width: 1120px;
+  width: var(--width);
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -337,7 +341,7 @@ body {
 /* Cover */
 
 .list-unit {
-  width: 1120px;
+  width: var(--width);
   border: 0;
   display: block;
 }
@@ -452,10 +456,9 @@ body {
   width: 100%;
   max-width: 170px;
   white-space: nowrap;
-  color: #333333;
+  color: #333333 !important;
   overflow: hidden;
   font-family: 'Noto Sans', sans-serif;
-  text-decoration: none !important;
   text-overflow: ellipsis;
   font-weight: bold;
   margin: 0 auto;
@@ -555,7 +558,6 @@ body {
   text-align: center;
   color: var(--color-text)!important;
   text-shadow: 0 0 2px var(--color-text);
-  text-decoration: none!important;
   font-size: 15px!important;
   position: relative;
 }
@@ -636,7 +638,6 @@ body {
 .data.studio span a, .data.season span a,
 .list-item .more-info a {
   color: var(--color-text);
-  text-decoration: none !important;
 }
 .list-table .list-table-data .data.studio span~span{
   display: none !important;
@@ -692,7 +693,6 @@ body {
 }
 .data.tags div span a {
   line-height: 20px !important;
-  text-decoration: none !important;
   font-size: 8px;
   color: var(--color-text) !important;
 }
@@ -700,7 +700,6 @@ body {
   width: 35px !important;
   background: var(--color-gradient-gray);
   color: var(--color-text) !important;
-  text-decoration: none !important;
   border-radius: 0 5px 5px 0;
 }
 .list-table .list-table-data .tags .edit:hover {
