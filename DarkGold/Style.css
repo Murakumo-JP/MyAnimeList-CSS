@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------  DarkGold v0.0.40 ---------- */
+/*-------------  DarkGold v0.0.41 ---------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -40,7 +40,7 @@ body {
   
 }
 .list-unit .list-stats:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a DarkGold v0.0.40, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a DarkGold v0.0.41, Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -73,13 +73,18 @@ body {
 /* Status Menu */
 .status-menu-container {
   position: fixed;
-  width: auto !important;
+  width: 100%;
   top: 0;
-  left: 100px;
+  left: 0;
   height: 64px;
   z-index: 51;
   background: transparent !important;
   border: none !important;
+}
+.status-menu-container .status-menu {
+  display: inline-block;
+  left: 100px;
+  position: fixed;
 }
 .status-menu-container .status-menu .status-button {
   display: inline-block;
@@ -102,10 +107,10 @@ body {
   visibility: hidden;
 }
 .status-menu-container .search-container {
-  position: absolute;
-  line-height: 64px;
-  right: 0;
-  top: 0;
+  position: fixed;
+  right: 100px!important;
+  top: 0!important;
+  z-index: 999;
 }
 .status-menu-container .search-container #search-box.open {
   margin: 0;
@@ -124,9 +129,16 @@ body {
   border: none !important;
 }
 .status-menu-container .search-container #search-button {
-  margin-top: 0 !important;
+  margin: 0;
   font-size: 16px;
-  height: 16px;
+  text-align: center;
+  width: 50px;
+  height: 64px;
+  line-height: 64px;
+  color: var(--sm-color);
+}
+.fa-solid.fa-magnifying-glass {
+  line-height: 64px;
 }
 /* Stats and Filters */
 .list-unit .list-status-title {
@@ -150,7 +162,7 @@ body {
   text-align: center;
   width: 50px;
   height: 64px;
-  color: #bcbccc;
+  color: var(--sm-color);
   font-size: 0;
   margin-right: 0;
 }
@@ -733,4 +745,16 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition);
+}
+/* Webkit */
+::-webkit-scrollbar {
+  height: 9px;
+  width: 9px;
+  background-color: #18181a;
+  border: 4px solid #18181a;
+}
+::-webkit-scrollbar-thumb {
+  border: 4px solid transparent;
+  background-clip: padding-box;
+  background-color: #ffd591;
 }
