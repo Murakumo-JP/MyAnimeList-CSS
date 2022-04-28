@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------  DarkGold v0.0.41 ---------- */
+/*---------------  eScape v0.0.42 ----------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -40,7 +40,7 @@ body {
   
 }
 .list-unit .list-stats:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a DarkGold v0.0.41, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape v0.0.42, Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
