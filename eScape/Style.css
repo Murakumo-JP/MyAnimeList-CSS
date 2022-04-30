@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*--------------  eScape Dev0.0.43 ---------- */
+/*--------------  eScape Dev0.0.44 ---------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -17,6 +17,7 @@
   --border: 15px 15px 10px 10px;
   --width: 1120px;
   --sm-color: #9B9B9B;
+  --sm-hover: #bcbccc;
   --dt-default: #ffd591;
   --dt-watching: #afff91;
   --dt-completed: #91b3ff;
@@ -40,7 +41,7 @@ body {
   
 }
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape Dev0.0.43, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape Dev0.0.44, Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -96,10 +97,11 @@ body {
   -o-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -webkit-transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: var(--sm-color);
 }
 .status-menu-container .status-menu .status-button:hover, 
 .status-menu-container .status-menu .status-button.on {
-  color: #bcbccc;
+  color: var(--sm-hover);
   font-weight: normal;
 }
 .status-menu-container .status-menu .status-button:after {
@@ -139,6 +141,10 @@ body {
 }
 .fa-solid.fa-magnifying-glass {
   line-height: 64px;
+}
+.status-menu-container .search-container #search-button:hover,
+#advanced-options-button:hover, #show-stats-button:hover {
+  color: var(--sm-hover);
 }
 /* Stats and Filters */
 .list-unit .list-status-title {
@@ -735,11 +741,10 @@ body {
 /*Filter Option*/
 
 #advanced-options {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  background-color: var(--menu-bg-color);
-  backdrop-filter: var(--menu-blur);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 60%);
+  background: var(--color-gradient-gray);
   border: none;
-  color: #fff;
+  color: var(--sm-color);
   top: 150px;
   position: fixed;
 }
@@ -784,12 +789,11 @@ body {
   position: absolute;
   width: 100%;
   font-size: 12px;
-  color: #fff;
+  color: var(--sm-color);
   text-transform: none;
   white-space: pre;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
-  background-color: var(--menu-bg-color);
-  backdrop-filter: var(--menu-blur);
+  box-shadow: 0 0 3px #00000080;
+  background: var(--color-gradient-gray);
 }
 /* Webkit */
 ::-webkit-scrollbar {
