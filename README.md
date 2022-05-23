@@ -1,26 +1,16 @@
-# Covers without auto-updating.
+# This repository is for all my styles
 
-If the covers are not updated via malscraper.azurewebsites.net, then you can insert this code at the beginning of the CSS, this will remove blur covers.
+- Features
+  - Supports anime
+  - Uses MAL Modern Theme
 
-```css
-@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/GlobalAssets/Cover/AnimeCover.css";
-```
+## Azur Blur CSS theme for MyAnimeList
 
-# Azur Blur CSS theme for MyAnimeList
+- [Installation and Settings](https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/)
 
-Installation and Settings: https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/
+## Eorzea Collection CSS theme for MyAnimeList
 
-## Preview
-
-![Screenshot](AzurBlur/AzurBlur.jpg?raw=true)
-
-# Eorzea Collection CSS theme for MyAnimeList
-
-Installation and Settings: https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/
-
-## Preview
-
-![Screenshot](Eorzea_Collection/preview/Snapshot.png?raw=true)
+- [Installation and Settings](https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/)
 
 ## MIT License
 
