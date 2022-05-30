@@ -178,6 +178,7 @@ body {
 }
 .search-container .fa-solid, .stats .fa-solid {
   font-weight: 100 !important;
+  transition: var(--transition);
 }
 .fa-bar-chart-o:before, .fa-bar-chart:before,
 .fa-filter:before, .fa-chart-column:before {
