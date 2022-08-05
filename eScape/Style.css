@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*--------------  eScape Dev0.0.45 ---------- */
+/*--------------  eScape Dev0.0.46 ---------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -41,7 +41,7 @@ body {
   
 }
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape Dev0.0.45, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.46), Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -406,23 +406,34 @@ body {
 .list-item:hover .list-table-data:after {
   opacity: 1;
 }
-.list-item .list-table-data .data.title.clearfix {
-  background: var(--color-gradient-white);
+.list-item .list-table-data .data.title {
   width: 100%;
   padding: 0;
-  height: 40px;
   opacity: 0;
-  visibility: hidden;
+  height: 64px;
   border-radius: 10px;
   bottom: 0;
   position: absolute;
   transition: var(--transition);
   z-index: 10;
 }
-.list-item:hover .list-table-data .data.title.clearfix {
-  height: 65px;
+.list-item:hover .list-table-data .data.title {
   opacity: 1;
-  visibility: visible;
+}
+.data.title:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: var(--color-gradient-white);
+  border-radius: 10px;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: -5;
+  transition: var(--transition);
+}
+.list-item:hover .data.title:before {
+  height: 50%;
 }
 /* Image */
 .list-table .list-table-data .data.image a {
