@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*--------------  eScape Dev0.0.46 ---------- */
+/*--------------  eScape Dev0.0.47 ---------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -41,7 +41,7 @@ body {
   
 }
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.46), Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.47), Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -374,10 +374,12 @@ body {
   background-color: transparent;
   margin: 3px;
   border-radius: 10px;
+}
+.list-table-data {
   transform: translateY(0px);
   transition: var(--transition);
 }
-.list-container .list-unit .list-table .list-item:hover {
+.list-item:hover .list-table-data {
   transform: translateY(-10px);
 }
 .list-table-data:before {
@@ -390,27 +392,17 @@ body {
   z-index: 5;
   border-radius: 10px 10px 0 0;
 }
-.list-table-data:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  background: rgb(0 0 0 / 50%);
-  backdrop-filter: blur(5px);
-  border-radius: var(--border);
-  width: 100%;
-  height: 100%;
-  transition: var(--transition);
-  opacity: 0;
-  z-index: 0;
-}
-.list-item:hover .list-table-data:after {
-  opacity: 1;
-}
 .list-item .list-table-data .data.title {
-  width: 100%;
+  display: block;
+  background: var(--color-gradient-white);
+  border-radius: 10px;
+  width: 0;
+  height: 64px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
   padding: 0;
   opacity: 0;
-  height: 64px;
   border-radius: 10px;
   bottom: 0;
   position: absolute;
@@ -419,21 +411,7 @@ body {
 }
 .list-item:hover .list-table-data .data.title {
   opacity: 1;
-}
-.data.title:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  background: var(--color-gradient-white);
-  border-radius: 10px;
-  height: 0;
   width: 100%;
-  bottom: 0;
-  z-index: -5;
-  transition: var(--transition);
-}
-.list-item:hover .data.title:before {
-  height: 50%;
 }
 /* Image */
 .list-table .list-table-data .data.image a {
@@ -464,6 +442,22 @@ body {
   height: 100%;
   padding: 0 !important;
   border: 0 !important;
+}
+.data.image:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: rgb(0 0 0 / 50%);
+  backdrop-filter: blur(5px);
+  border-radius: var(--border);
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+  opacity: 0;
+  z-index: 0;
+}
+.list-item:hover .data.image:after {
+  opacity: 1;
 }
 /*-----------------------------------------------*/
 .list-table .list-table-data .data.title .link {
