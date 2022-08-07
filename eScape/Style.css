@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*--------------  eScape Dev0.0.47 ---------- */
+/*--------------  eScape Dev0.0.48 ---------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -41,7 +41,7 @@ body {
   
 }
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.47), Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.48), Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -394,7 +394,6 @@ body {
 }
 .list-item .list-table-data .data.title {
   display: block;
-  background: var(--color-gradient-white);
   border-radius: 10px;
   width: 0;
   height: 64px;
@@ -412,6 +411,25 @@ body {
 .list-item:hover .list-table-data .data.title {
   opacity: 1;
   width: 100%;
+}
+.data.title:before, .data.title:after{
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+.data.title:before {
+  height: 32px;
+  background: var(--color-gradient-gray);
+  border-radius: 10px;
+}
+.data.title:after {
+  height: 50px;
+  background: var(--color-gradient-white);
+  border-radius: 0 0 10px 10px;
+  bottom: 0;
+  visibility: visible;
+  z-index: -1;
 }
 /* Image */
 .list-table .list-table-data .data.image a {
@@ -472,23 +490,22 @@ body {
   font-family: 'Noto Sans', sans-serif;
   text-overflow: ellipsis;
   font-weight: bold;
+  text-align: center;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 40px;
+  line-height: 32px;
+  bottom: 0;
 }
 .content-status {
-  font-size: 9px !important;
+  font-size: 10px !important;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
-  background: var(--color-gradient-gray);
   color: var(--dt-default) !important;
-  padding: 2px 6px 2px 6px;
-  border-radius: 10px;
+  padding: 0 0 0 10px;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  line-height: 32px;
 }
 /* Status Anime */
 .list-table .list-table-data .data.status.reading, .list-table .list-table-data .data.status {
