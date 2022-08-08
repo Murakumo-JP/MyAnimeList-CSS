@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*--------------  eScape Dev0.0.48 ---------- */
+/*-------------  eScape DEV(0.0.49) --------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -41,7 +41,7 @@ body {
   
 }
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.48), Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.49), Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -110,38 +110,41 @@ body {
   visibility: hidden;
 }
 .status-menu-container .search-container {
+  display: block;
   position: fixed;
-  right: 100px!important;
+  width: 152px;
+  right: 100px !important;
   top: 0!important;
   z-index: 999;
-}
-.status-menu-container .search-container #search-box.open {
-  margin: 0;
-  width: 150px;
-  height: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 3px #27282c;
+  height: 64px;
 }
 .status-menu-container .search-container #search-box {
-  height: 40px;
-  margin: 0;
+  position: absolute;
+  margin: 0 !important;
+  width: 150px !important;
+  height: 35px !important;
+  border-radius: 10px;
+  border: 1px solid #00000080;
+  box-shadow: 0 0 3px #00000080;
+  top: 15px;
 }
 .status-menu-container .search-container #search-box input {
-  background: var(--color-gradient-gray);
+  width: 115px;
+  margin-left: 5px;
+  background: transparent;
   color: var(--color-text);
   border: none !important;
 }
 .status-menu-container .search-container #search-button {
-  margin: 0;
+  display: block;
+  position: absolute;
+  right: 10px;
   font-size: 16px;
-  text-align: center;
-  width: 50px;
-  height: 64px;
-  line-height: 64px;
   color: var(--sm-color);
+  pointer-events: none;
 }
 .fa-solid.fa-magnifying-glass {
-  line-height: 64px;
+  line-height: 37px;
 }
 .status-menu-container .search-container #search-button:hover,
 #advanced-options-button:hover, #show-stats-button:hover {
@@ -672,9 +675,10 @@ body {
 }
 /* More and Edit Bt */
 .list-table .list-table-data .data.title .add-edit-more {
+  position: absolute;
+  top: 4px;
+  right: 5px;
   font-size: 0;
-  height: 24px;
-  line-height: 24px;
   margin: 0 !important;
 }
 .edit a:before, .more a:before {
@@ -687,7 +691,6 @@ body {
   height: 20px;
   margin: 2px;
   border-radius: 10px;
-  background: var(--color-gradient-gray);
   color: var(--color-text) !important;
 }
 .edit a:before {content: "\f304";}
