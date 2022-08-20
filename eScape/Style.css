@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------  eScape DEV(0.0.49) --------- */
+/*-------------  eScape DEV(0.0.50) --------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -41,7 +41,7 @@ body {
   
 }
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.49), Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.50), Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -50,7 +50,7 @@ body {
 .header-title.days,.header-title.started,.header-title.studio,
 .header-title.genre,.header-title.demographic,.header-menu,
 .list-unit .list-status-title .text,.cover-block .image-container .btn-list-setting,
-.icon-watch2 {
+.icon-watch2,#footer-block {
   display: none !important;
 }
 /* Scale */
