@@ -65,8 +65,7 @@
 .data.image a[href^="/anime/977/"]:before{content: var(--R18);}    
 .data.image a[href^="/anime/5400/"]:before{content: var(--R18);} 
 .data.image a[href^="/anime/10458/"]:before{content: var(--R18);}
-.data.image a[href^="/anime/1787/"]:before{content: var(--R18);} 
-.data.image a[href^="/anime/20261/"]:before{content: var(--R18);}
+.data.image a[href^="/anime/1787/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/12955/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/29730/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/4840/"]:before{content: var(--R18);} 
@@ -1249,7 +1248,6 @@
 .data.image a[href^="/anime/29915/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/30460/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/11997/"]:before{content: var(--R18);}
-.data.image a[href^="/anime/5101/"]:before{content: var(--R18);} 
 .data.image a[href^="/anime/4260/"]:before{content: var(--R18);} 
 .data.image a[href^="/anime/8293/"]:before{content: var(--R18);} 
 .data.image a[href^="/anime/14543/"]:before{content: var(--R18);}
@@ -1450,3 +1448,6 @@
 .data.image a[href^="/anime/52717/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/52252/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/52734/"]:before{content: var(--R18);}
+.data.image a[href^="/anime/51338/"]:before{content: var(--R18);}
+.data.image a[href^="/anime/52904/"]:before{content: var(--R18);}
+.data.image a[href^="/anime/52752/"]:before{content: var(--R18);}
