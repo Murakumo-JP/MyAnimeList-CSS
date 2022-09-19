@@ -1,0 +1,13 @@
+{
+   "json_version": 0.2,
+   "themes": [
+       {
+           "name": "Azur Blur",
+           "author": "MurakumoJP",
+           "image": "https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/AzurBlur.jpg",
+           "css": "https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/Style.css",
+           "type": "modern"
+       }
+   ]
+   
+}
