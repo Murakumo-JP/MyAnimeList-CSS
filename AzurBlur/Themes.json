@@ -6,10 +6,10 @@
 		"type": "modern",
 		"css": "https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/Style.css",
 		"mods": {
-			"hd-images": {
+			"R18": {
 				"name": "Hentai Censorship",
 				"description": "Censorship of all hentai on your list",
-				"css": {"import": "@\\import \"https://murakumo-jp.github.io/MyAnimeList-CSS/GlobalAssets/Censorship/R18Cover.css"}
+				"css": {"import": "@\import \"https://murakumo-jp.github.io/MyAnimeList-CSS/GlobalAssets/Censorship/R18Cover.css";",}
 			}
 		}
 	}
