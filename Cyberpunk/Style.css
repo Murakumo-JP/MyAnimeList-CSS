@@ -15,344 +15,313 @@
    --razor-top-black: url("Assets/svg/razor-top-black.svg");
 }
 
-body {
-   font: normal normal normal 13px / 1 tahoma, verdana, arial, sans-serif;
-   background-image: url(none) !important;
-   background-position: top 40px center !important;
-   background-attachment: fixed !important;
-   background-color: #fcee0a !important;
-   background-repeat: no-repeat !important;
-   background-size: cover !important;
-}
-
-.header {
-   height: auto;
-   width: 100%;
-   position: absolute;
-}
-
-.header .header-title {
-   color: #0e0e0e;
-   font-family: var(--fontbold);
-   font-size: 21px;
-   z-index: 101;
-   height: 45px;
-   background-image: none;
-   text-indent: 0;
-   top: 0;
-   left: 15px;
-   position: fixed;
-   font-weight: 700;
-   text-transform: uppercase;
-   line-height: 55px;
-   width: 200px;
-   text-decoration: none !important;
-   display: inline-block;
-   padding: 0 5px 0 10px;
-   vertical-align: middle;
-}
-
-/* Status-Menu */
-
-.list-container .status-menu-container {
-   position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   height: 80px;
-   width: 100%;
-   background: #fcee0a;
-   color: #fff;
-   z-index: 100;
-   list-style: none;
-   border-bottom: #000000 1px solid;
-   padding: 0;
-}
-
-#status-menu:after {
-   content: "";
-   position: absolute;
-   left: 0;
-   right: 0;
-   bottom: -2px;
-   background: var(--razor-top-black) repeat-x top;
-   height: 40px;
-}
-
-a.header-title:after {
-   content: "";
-   background: var(--detail-header-bottom-black);
-   background-repeat: no-repeat;
-   height: 4px;
-   width: 240px;
-   position: absolute;
-   left: 0;
-   bottom: 0;
-}
-
-.list-container .status-menu-container .status-menu {
-   height: 100%;
-   width: 700px;
-   border-spacing: 0;
-   margin: 0 auto;
-   left: 0;
-   right: 0;
-}
-
-.status-menu-container.fixed:before {
-   content: "";
-   position: absolute;
-   left: 0;
-   right: 0;
-   top: 80px;
-   background: var(--razor-bottom-black) repeat-x top;
-   height: 40px;
-}
-
-#status-menu .status-button {
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   -o-transition: all 0.3s;
-   transition: all 0.3s;
-   top: 15px;
-   display: inline;
-   color: #000;
-   height: 20px;
-   line-height: 30px;
-   margin-top: 5px;
-   padding: 0 15px;
-   font-size: 15px;
-   font-family: var(--fontbook);
-}
-
-.status-menu-container .status-menu .status-button:after {
-   content: "";
-   background: var(--detail-header-bottom-black);
-   background-repeat: no-repeat;
-   height: 4px;
-   position: absolute;
-   left: 0px;
-   top: 20px;
-}
-
 /* BACKGROUND */
 
 body {
-background-color: teal;
-}
-
-/* HEADER */
-
-.header {
-background-color: pink;
-}
-
-.header .header-menu {
-/* "Viewing someone's list" */
-background-color: gray;
-}
-
-/* LIST MENU */
-
-.list-menu-float {
-border: 3px solid red;
-}
-
-.list-menu-float .icon-menu {
-/* All list menu buttons */
-background-color: green;
-}
-
-.list-menu-float .icon-menu.anime-list {
-/* Specific list menu button */
-background-color: blue;
-}
-
-/* LIST CONTAINER */
-
-#list-container {
-   width: 100%;
-   top: 80px;
-   border: 0;
-   background-color: transparent;
-}
-
-.list-block {
-   margin-top: 50px;
-   min-height: 600px;
-   padding: 0;
-}
-
-.list-unit {
-   display: block;
-   margin: 0 auto;
-   width: 95%;
-}
-
-.list-unit .list-status-title {
-   width: 500px;
-   margin: 0 auto;
-   background-color: transparent;
-}
-
-.list-unit .list-status-title .text:after {
-   content: "";
-   background: var(--detail-header-bottom-black);
-   background-repeat: no-repeat;
-   height: 4px;
-   width: 100%;
-   position: absolute;
-   left: 0;
-   bottom: 0;
-}
-
-.list-unit .list-status-title .text {
-   margin: 0 auto;
-   display: table-cell;
-   width: 305px;
-   height: 38px;
-   font-size: 24px;
-   color: #000;
-   font-weight: bold;
-   font-family: var(--fontbold);
-   text-align: center;
-   vertical-align: middle;
-}
-
-/* IMAGE BLOCK */
-
-.cover-block {width: 100%;}
-
-.cover-block .image-container img {
-   width: 100%;
-   max-width: 1920px;
-   height: 400px;
-   background-size: cover;
-}
-
-.cover-block .image-container {
-   width: 100%;
-   padding: 0;
-}
-
-.cover-block .image-container:after {
-   content: "";
-   position: absolute;
-   left: 0;
-   right: 0;
-   top: 400px;
-   background: var(--razor-bottom-black) repeat-x top;
-   height: 40px;
-}
-
-/* SEARCH */
-
-.status-menu-container .search-container {
-background-color: orange;
-}
-
-/* STATS */
-
-#show-stats-button {
-/* Duh */
-background-color: teal;
-}
-
-#advanced-options-button {
-/* Duh */
-background-color: lime;
-}
-
-.list-unit .list-stats {
-/* Stat bar */
-background-color: orange;
-}
-
-/* LIST TABLE */
-
-/* Sort row */
-
-.list-table .list-table-header {
-   display: none;
-}
-
-.list-table .list-table-header .header-title {
-/* All sort cells */
-background-color: green;
-}
-
-.list-table .list-table-header .header-title.title {
-/* Specific sort cell */
-background-color: orange;
-}
-
-/* Data rows */
-
-.list-table tbody.list-item {
-border: 3px solid pink;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.image {
-   width: 194px;
-   height: 297px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data {
-   position: absolute;
-   padding: 0;
-   border-style: none;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.image .link {
-   width: 100%;
-   height: 100%;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.image .link .image {
-   width: 100%;
-   height: 100%;
-   border: 0;
-}
-
-.status-menu-container.fixed + div.list-block {
-   margin-top: 50px;
-}
-
-.list-container .list-unit .list-table .list-item .list-table-data .data.image .link::after {
-   content: '';
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   position: absolute;
-   top: 0;
-   left: 0;
-   bottom: 0;
-   right: 0;
-}
-
-.list-table .list-table-data .data.score {
-/* Specific data cell */
-background-color: wheat;
-}
-
-.list-table .list-table-data .data.title .link {
-/* Anime titles */
-color: magenta;
-}
-
-.add-edit-more {
-/* Duh */
-background-color: red;
-}
-
-/* LOADING SPACE */
-
-.list-unit .loading-space {
-background-color: blue;
-}
-
-/* FOOTER */
-
-footer {
-background-color: orange;
-}
+   visibility: visible;
+   }
+   
+   /* HEADER */
+   
+   .header {
+   visibility: visible;
+   }
+   
+   .header .header-menu {
+   visibility: visible;
+   }
+   
+   .header .header-title {
+   visibility: visible;
+   }
+   
+   /* SIDE MENU */
+   
+   .list-menu-float {
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu {
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu.anime-list {
+   visibility: visible;
+   }
+   
+   /* LIST CONTAINER */
+   
+   #list-container {
+   visibility: visible;
+   }
+   
+   /* IMAGE BLOCK */
+   
+   .cover-block {
+   visibility: visible;
+   }
+   
+   .cover-block #cover-image {
+   /* Cover image */
+   visibility: visible;
+   }
+   
+   .cover-block .image-container .btn-list-setting {
+   visibility: visible;
+   }
+   
+   /* STATUS MENU */
+   
+   #status-menu {
+   visibility: visible;
+   }
+   
+   #status-menu .status-button {
+   visibility: visible;
+   }
+   
+   #status-menu .status-button.watching {
+   visibility: visible;
+   }
+   
+   /* SEARCH */
+   
+   .status-menu-container .search-container {
+   visibility: visible;
+   }
+   
+   /* LIST UNIT */
+   
+   .list-unit {
+   visibility: visible;
+   }
+   
+   /* STATUS TITLE */
+   
+   .list-unit .list-status-title {
+   visibility: visible;
+   }
+   
+   /* STATS */
+   
+   #show-stats-button {
+   visibility: visible;
+   }
+   
+   #advanced-options-button {
+   visibility: visible;
+   }
+   
+   .list-unit .list-stats {
+   visibility: visible;
+   }
+   
+   /* LIST TABLE */
+   
+   /* Sort row */
+   
+   .list-table .list-table-header {
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title {
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title.title {
+   visibility: visible;
+   }
+   
+   /* Data rows */
+   
+   .list-table tbody.list-item {
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data {
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.score {
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.title .link {
+   visibility: visible;
+   }
+   
+   .add-edit-more {
+   visibility: visible;
+   }
+   
+   /* LOADING SPACE */
+   
+   .list-unit .loading-space {
+   visibility: visible;
+   }
+   
+   /* FOOTER */
+   
+   footer {
+   visibility: visible;
+   }
+   
+   
+   /* MORE SEPARATION FOR INSPECT ELEMENT USERS */
+   .list-table .list-table-header .header-title.image {
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title.number {
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title.score {
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title.type{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title.progress{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title.tags{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title.rated{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-header .header-title.started{
+   visibility: visible;
+   }
+   
+   
+   
+   .list-table .list-table-header .header-title.finished{
+   visibility: visible;
+   }
+   
+   
+   .list-table .list-table-header .header-title.days{
+   visibility: visible;
+   }
+   
+   
+   .list-table .list-table-header .header-title.storage{
+   visibility: visible;
+   }
+   
+   
+   .list-table .list-table-header .header-title.priority{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.number{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.title{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.type{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.progress{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.rated{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.storage{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.licensor{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.studio{
+   visibility: visible;
+   }
+   
+   .list-table .list-table-data .data.title.clearfix{
+   visibility: visible;
+   }
+   
+   #status-menu .status-button.completed{
+   visibility: visible;
+   }
+   
+   #status-menu .status-button.onhold{
+   visibility: visible;
+   }
+   
+   #status-menu .status-button.dropped{
+   visibility: visible;
+   }
+   
+   #status-menu .status-button.plantowatch{
+   visibility: visible;
+   }
+   
+   #status-menu .status-button.all_anime{
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu.profile
+   {
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu.quick-add {
+   visibility: visible;
+   }
+   
+   
+   .list-menu-float .icon-menu.anime-list {
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu.manga-list{
+   visibility: visible;
+   }
+   
+   
+   .list-menu-float .icon-menu.history{
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu.export{
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu.logout{
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu.setting{
+   visibility: visible;
+   }
+   
+   .list-menu-float .icon-menu.quick-add {
+   visibility: visible;
+   }
+   
+   .list-table > tbody:nth-of-type(2n+1){
+   visibility: visible;
+   }
+   
+   
+   #copyright:after {
+   /* Custom copyright text */
+   content: "Mapped layout by Shishio-kun & Doomcat55.";
+   }
