@@ -5,7 +5,6 @@
 	--colorYellow: #f8ef02;
    --colorBlack: #000;
 	--fontBold: BlenderProBold,sans-serif;
-	--fontBook: BlenderProBook,sans-serif;
 
    --button: url("Assets/svg/button.svg");
    --button-submit: url("Assets/svg/button-submit.svg");
@@ -27,6 +26,7 @@ body {
    height: 85px;
    width: 100%;
    background-color: var(--colorYellow);
+   z-index: 1;
 }
 
 .header:after {
@@ -39,4 +39,13 @@ body {
    background-repeat: no-repeat;
    background-image: var(--razor-bottom-black);
    bottom: 0;
+}
+
+#status-menu {
+   display: block;
+   position: fixed;
+   top: 0;
+   border: 0;
+   background: transparent;
+   z-index: 2;
 }
