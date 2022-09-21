@@ -28,6 +28,7 @@ body {
    height: 85px;
    width: 100%;
    background-color: var(--colorYellow);
+   z-index: 10;
 }
 
 .header:after, .header:before {
@@ -55,22 +56,14 @@ body {
 
 .status-menu-container {
    position: fixed;
-   width: 100%;
-   top: 0;
+   display: block;
    left: 0;
-   height: 64px;
-   z-index: 51;
-   background: transparent !important;
-   border: none !important;
-}
-
-.status-menu-container .status-menu {
-   position: fixed;
-   width: 0;
+   right: 0;
+   margin: 0 auto;
+   width: fit-content;
    top: 0;
-   left: 0;
-   height: 0;
-   z-index: 51;
+   height: 60px;
+   z-index: 11;
    background: transparent !important;
    border: none !important;
 }
