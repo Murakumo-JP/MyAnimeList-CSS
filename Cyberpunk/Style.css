@@ -5,6 +5,8 @@
 	--colorYellow: #f8ef02;
    --colorBlack: #000;
 	--fontBold: BlenderProBold,sans-serif;
+	--fontBook: BlenderProBook,sans-serif;
+   --transition: all 0.4s;
 
    --button: url("Assets/svg/button.svg");
    --button-submit: url("Assets/svg/button-submit.svg");
@@ -16,7 +18,7 @@
 }
 
 body {
-   background: #000;
+   background: var(--colorYellow);
 }
 
 /* Top Menu */
@@ -26,10 +28,9 @@ body {
    height: 85px;
    width: 100%;
    background-color: var(--colorYellow);
-   z-index: 1;
 }
 
-.header:after {
+.header:after, .header:before {
    content: " ";
    display: block;
    position: absolute;
@@ -41,11 +42,61 @@ body {
    bottom: 0;
 }
 
-#status-menu {
-   display: block;
+.header:before {
+   top: 85px;
+   transform: scale(-1, 1);
+}
+
+.header .header-title {
+   top: 15px;
+   left: 20px;
+   filter: invert(1);
+}
+
+.status-menu-container {
    position: fixed;
+   width: 100%;
    top: 0;
-   border: 0;
+   left: 0;
+   height: 64px;
+   z-index: 51;
+   background: transparent !important;
+   border: none !important;
+}
+
+.status-menu-container .status-menu {
+   position: fixed;
+   width: 0;
+   top: 0;
+   left: 0;
+   height: 0;
+   z-index: 51;
+   background: transparent !important;
+   border: none !important;
+}
+
+.status-menu-container .status-menu .status-button {
+   display: inline-block;
+   font-size: 16px;
+   font-family: var(--fontBold);
    background: transparent;
-   z-index: 2;
+   color: #000 !important;
+   padding: 0 12px;
+   line-height: 60px;
+}
+
+.status-menu-container .status-menu .status-button:after {
+   background-image: var(--detail-header-bottom-black);
+   background-color: transparent;
+   background-repeat: no-repeat;
+   bottom: 10px;
+   transition: all 0.4s;
+}
+
+/* List Content */
+
+.list-container {
+   width: 100%;
+   top: 85px;
+   border: 0;
 }
