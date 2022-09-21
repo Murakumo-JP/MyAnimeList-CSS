@@ -1,6 +1,5 @@
 @import url(Assets/glitch.css);
 @import url(Assets/fonts/fonts.css);
-@import url(Assets/section-clip.html);
 
 :root{
 	--colorYellow: #f8ef02;
@@ -16,6 +15,7 @@
    --razor-bottom-yellow: url("Assets/svg/razor-bottom-yellow.svg");
    --razor-side: url("Assets/svg/razor-side.svg");
    --razor-top-black: url("Assets/svg/razor-top-black.svg");
+   --testClip: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Cyberpunk/Assets/section-clip.svg");
 }
 
 body {
