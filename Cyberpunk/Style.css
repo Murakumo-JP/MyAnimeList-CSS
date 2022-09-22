@@ -15,11 +15,10 @@
    --razor-bottom-yellow: url("Assets/svg/razor-bottom-yellow.svg");
    --razor-side: url("Assets/svg/razor-side.svg");
    --razor-top-black: url("Assets/svg/razor-top-black.svg");
-   --testClip: url("https://murakumo-jp.github.io/MyAnimeList-CSS/Cyberpunk/Assets/section-clip.svg");
 }
 
 body {
-   background: var(--colorYellow);
+   background: var(--colorBlack);
 }
 
 /* Top Menu */
@@ -87,10 +86,48 @@ body {
    transition: all 0.4s;
 }
 
+/* Cover Image Container */
+
+.cover-block {
+   position: relative;
+   width: 100%;
+}
+.cover-block .image-container, 
+.cover-block .image-container img {
+   padding: 0;
+   width: 100%;
+   max-width: -webkit-fill-available;
+}
+
+.cover-block:after, .cover-block .image-container:after {
+   content: " ";
+   transform: scale(-1, 1);
+   background-image: var(--razor-bottom-yellow);
+   background-repeat: repeat-x;
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 39px;
+}
+
+.cover-block .image-container:after {
+   transform: scale(1, -1);
+   bottom: 0;
+}
+
 /* List Content */
 
+.list-block,
+.status-menu-container.fixed + div.list-block {
+  margin-top: 0;
+  background-color: var(--colorYellow);
+}
+.list-block {
+   transition: var(--transition);
+}
 .list-container {
+   background-color: #000;
    width: 100%;
-   top: 85px;
+   top: 95px;
    border: 0;
 }
