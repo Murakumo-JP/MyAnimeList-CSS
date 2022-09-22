@@ -16,8 +16,8 @@
    text-shadow: 2px 2px 5px #000;
    color: #fff;
    font-family: cursive;
-   width: 180px;
-   height: 280px;
+   width: -webkit-fill-available;
+   height: -webkit-fill-available;
    left: 0;
    line-height: 280px;
    font-size: 30px;
