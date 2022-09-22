@@ -49,7 +49,7 @@ https://myanimelist.net/ownlist/style/theme/1
 ● To censor the Hentai anime in the list add this to the beginning or end of the code if you use import
 
 ```css
-@\import "@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Resources/Censorship/R18Cover.min.css";";
+@\import "@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Resources/Censorship/R18Cover.min.css";
 ```
 
 ## ► User Settings
