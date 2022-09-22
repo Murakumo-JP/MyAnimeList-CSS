@@ -120,7 +120,9 @@ body {
 .list-block,
 .status-menu-container.fixed + div.list-block {
   margin-top: 0;
-  background-color: var(--colorYellow);
+}
+.status-menu-container.fixed + div.list-block{
+   background-color: var(--colorYellow);
 }
 .list-block {
    transition: var(--transition);
