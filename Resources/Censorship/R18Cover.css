@@ -5,8 +5,9 @@
   --R18: "Hentai" ;
   --R18-blur: blur(5px);
   --R18-color: rgba(12, 16, 27, 0.8);
-  --R18-boreder: 15px 15px 10px 10px;
+  --R18-boreder: 10px;
   --R18-transition: all 0.4s;
+  --R18Text-Height: 280px;
 }
 
 .list-container .list-unit .list-table .list-item .list-table-data .data.image .link::before {
@@ -20,7 +21,7 @@
    width: -webkit-fill-available;
    height: -webkit-fill-available;
    left: 0;
-   line-height: 280px;
+   line-height: var(--R18Text-Height);
    font-size: 30px;
    text-align: center;
    z-index: 1;
