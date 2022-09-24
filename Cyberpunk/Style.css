@@ -15,6 +15,7 @@
    --razor-bottom-yellow: url("Assets/svg/razor-bottom-yellow.svg");
    --razor-side: url("Assets/svg/razor-side.svg");
    --razor-top-black: url("Assets/svg/razor-top-black.svg");
+   --small-image-bg-cyan: url("Assets/svg/small-image-bg-cyan.svg");
 }
 
 body {
@@ -132,4 +133,44 @@ body {
    width: 100%;
    top: 95px;
    border: 0;
+}
+
+.list-unit {
+   width: 1120px;
+   border: 0;
+   display: block;
+}
+
+.list-table {
+   width: 100%;
+   padding-bottom: 50px;
+   display: block;
+   margin: 0 auto;
+   border-collapse: collapse;
+   border: 0;
+}
+
+.list-container .list-unit .list-table .list-item {
+   position: relative;
+   display: inline-block;
+   width: 180px;
+   height: 280px;
+   box-sizing: border-box;
+   margin: 3px;
+}
+
+.list-item:before {
+   content: " ";
+   display: block;
+   background-image: var(--small-image-bg-cyan),linear-gradient(0deg,#00ffd2,#00ffd2);;
+   background-position: center -3px,center 36px;
+   background-repeat: no-repeat;
+   background-size: 100% auto,100%;
+   height: 50%;
+   left: 0;
+   min-height: 270px;
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: -1;
 }
