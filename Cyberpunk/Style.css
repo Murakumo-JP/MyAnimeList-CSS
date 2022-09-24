@@ -15,7 +15,6 @@
    --razor-bottom-yellow: url("Assets/svg/razor-bottom-yellow.svg");
    --razor-side: url("Assets/svg/razor-side.svg");
    --razor-top-black: url("Assets/svg/razor-top-black.svg");
-   --small-image-bg-cyan: url("Assets/svg/small-image-bg-cyan.svg");
 }
 
 body {
@@ -152,6 +151,7 @@ body {
 
 .list-container .list-unit .list-table .list-item {
    position: relative;
+   background: transparent;
    display: inline-block;
    width: 180px;
    height: 280px;
@@ -162,15 +162,7 @@ body {
 .list-item:before {
    content: " ";
    display: block;
-   background-image: var(--small-image-bg-cyan),linear-gradient(0deg,#00ffd2,#00ffd2);;
-   background-position: center -3px,center 36px;
-   background-repeat: no-repeat;
-   background-size: 100% auto,100%;
-   height: 50%;
-   left: 0;
-   min-height: 270px;
-   position: absolute;
-   right: 0;
-   top: 0;
-   z-index: -1;
+   height: 100%;
+   background: #00ffd2;
+   clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0 90%);
 }
