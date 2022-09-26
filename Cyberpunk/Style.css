@@ -151,8 +151,6 @@ body {
    border: 0;
 }
 
-.data.image {z-index: 1;}
-
 .list-container .list-unit .list-table .list-item {
    position: relative;
    background: transparent;
@@ -172,6 +170,18 @@ body {
    clip-path: var(--clip-path);
 }
 
+.data.image:after{
+   content: " ";
+   display: block;
+   width: 175px;
+   height: 275px;
+   margin: 3px;
+   opacity: 0.5;
+   background: var(--colorRed);
+   clip-path: var(--clip-path);
+   z-index: 2;
+}
+
 .list-table-data, .data {
    position: absolute;
    width: 100%;
@@ -187,4 +197,42 @@ body {
    margin: 3px;
    border: 0;
    clip-path: var(--clip-path);
+}
+
+/* HD Cover */
+
+.list-container .list-unit .list-table .list-item .list-table-data .data.image .link::after {
+   content: "";
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   position: absolute;
+   border-radius: var(--border);
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+
+/* Test Glitch Anim*/
+
+.cover-block .image-container:before {
+   content: " ";
+   display: block;
+   position: absolute;
+   background-color: #ff003c80;
+   opacity: 0;
+   width: 100%;
+   height: 100%;
+   -webkit-animation-direction: alternate;
+   animation-direction: alternate;
+   -webkit-animation-duration: 2s;
+   animation-duration: 4s;
+   -webkit-animation-iteration-count: infinite;
+   animation-iteration-count: 2;
+   -webkit-animation-name: glitch-anim;
+   animation-name: glitch-anim;
+   -webkit-animation-timing-function: linear;
+   animation-timing-function: linear;
+   transition: var(--transition);
 }
