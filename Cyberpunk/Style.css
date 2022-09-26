@@ -21,6 +21,7 @@
 
 body {
    background: var(--colorBlack);
+   overflow-x: hidden;
 }
 
 /* Top Menu */
