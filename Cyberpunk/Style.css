@@ -3,6 +3,7 @@
 
 :root{
 	--colorYellow: #f8ef02;
+   --colorRed: #ff003c;
    --colorBlack: #000;
 	--fontBold: BlenderProBold,sans-serif;
 	--fontBook: BlenderProBook,sans-serif;
@@ -123,7 +124,7 @@ body {
   margin-top: 0;
 }
 .status-menu-container.fixed + div.list-block{
-   background-color: var(--colorYellow);
+   background-color: var(--colorRed);
 }
 .list-block {
    transition: var(--transition);
@@ -150,6 +151,8 @@ body {
    border: 0;
 }
 
+.data.image {z-index: 1;}
+
 .list-container .list-unit .list-table .list-item {
    position: relative;
    background: transparent;
@@ -160,10 +163,9 @@ body {
    margin: 3px;
 }
 
-.list-item:before {
+.list-item:after {
    content: " ";
    display: block;
-   position: absolute;
    width: 100%;
    height: 100%;
    background: #00ffd2;
@@ -176,6 +178,7 @@ body {
    height: 100%;
    padding: 0 !important;
    border: 0 !important;
+   z-index: 1;
 }
 
 .list-table .list-table-data .data.image .image {
