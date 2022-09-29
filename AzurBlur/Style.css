@@ -1614,10 +1614,10 @@ a.icon-add-volume {
   content: "Chapters";
 }
 
-.data.chapter>div, .data.volume>div {
+.data.chapter>div,
+.data.volume>div {
   color: #9b9b9b;
   position: relative;
-  top: 10px;
   line-height: 40px;
 }
 
