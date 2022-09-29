@@ -4,6 +4,7 @@
 /*------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url(Assets/animate/flipInX.css);
 
 :root {
   --body-bg: url("./Assets/FFXIV.jpg");
