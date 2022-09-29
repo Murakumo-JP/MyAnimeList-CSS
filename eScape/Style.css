@@ -3,8 +3,8 @@
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url(Assets/animate/flipInX.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
   --body-bg: url("./Assets/FFXIV.jpg");
