@@ -658,9 +658,9 @@ body {
   content: "\f005";
   display: block;
   font: 15px var(--font,var(--fontSpare));
-  position: fixed;
-  top: 0;
-  left: 30px;
+  position: relative;
+  bottom: 41px;
+  left: 16px;
   font-size: 12px;
   font-weight: 300;
   white-space: nowrap;
