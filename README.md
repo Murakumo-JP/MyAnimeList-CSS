@@ -1,7 +1,7 @@
 # This repository is for all my styles
 
 - Features
-  - Supports anime
+  - Supports Anime
   - Uses MAL Modern Theme
 
 ## Azur Blur CSS theme for MyAnimeList
