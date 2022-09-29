@@ -229,9 +229,11 @@ body {
 }
 .list-table>tbody:first-of-type:hover>.list-table-header {
   opacity: 1;
+  visibility: visible;
 }
 .list-table-header {
   opacity: 0;
+  visibility: hidden;
   position: absolute;
   z-index: 99;
   right: 68px;
