@@ -3,7 +3,7 @@
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
-@import url(Assets/animate/flipInX.css);
+@import url(Assets/animate.css);
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
@@ -54,9 +54,16 @@ body {
 .icon-watch2,#footer-block {
   display: none !important;
 }
-/* Scale */
-.list-item:hover .data.score, .list-item:hover .data.progress{
-  transform: scale(1);
+/* Anim */
+.list-item:hover .data.score, 
+.list-item:hover .data.progress{
+  opacity: 1;
+  animation-name: flipInX;
+  animation-duration: 1.5s;
+}
+.list-item .data.score, 
+.list-item .data.progress {
+  opacity: 0;
 }
 /* Header */
 .header {
@@ -635,7 +642,6 @@ body {
   height: 40px!important;
   border-radius: 20px;
   z-index: 99;
-  transform: scale(0);
   transition: var(--transition);
 }
 .list-item .data.score a {
@@ -670,7 +676,6 @@ body {
   right: 15px;
   min-width: 55px;
   z-index: 1;
-  transform: scale(0);
   transition: var(--transition);
 }
 .data.progress>div {line-height: 50px;}
