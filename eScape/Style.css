@@ -54,7 +54,7 @@ body {
 .icon-watch2,#footer-block {
   display: none !important;
 }
-/* Anim */
+/* Anim List*/
 .list-item:hover .data.score, 
 .list-item:hover .data.progress,
 .list-item:hover .data.title,
