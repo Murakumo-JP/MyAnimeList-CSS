@@ -860,7 +860,8 @@ a.icon-add-volume {
 }
 
 .list-item .data.progress,
-.list-item .data.chapter {
+.list-item .data.chapter,
+.list-item .data.volume {
   background-color: var(--bt-bg);
   border-radius: 20px 0 20px 0;
   box-shadow: 0 0 5px var(--bt-shadow);
@@ -1621,4 +1622,8 @@ a.icon-add-volume {
 .list-item .data.chapter a.icon-add-chapter,
 a.icon-add-volume {
   top: -7px !important;
+}
+
+.list-item .data.volume {
+  top: 65px;
 }
