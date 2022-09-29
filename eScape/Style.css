@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------  eScape DEV(0.0.50) --------- */
+/*-------------  eScape DEV(0.0.51) --------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -41,7 +41,7 @@ body {
   
 }
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.50), Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.51), Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
@@ -202,9 +202,48 @@ body {
   z-index: 99;
 }
 /* Sort Menu */
-/* Finish it later */
-.list-table-header{
-  display: none !important;
+.list-table>tbody:first-of-type {
+  position: fixed;
+  top: 73%;
+  right: 0;
+  -moz-transform: translateY(-73%);
+  -ms-transform: translateY(-73%);
+  -webkit-transform: translateY(-73%);
+  transform: translateY(-73%);
+  z-index: 1;
+}
+.list-table>tbody:first-of-type::before {
+  content: "\F161";
+  background: var(--color-gradient-gray);
+  border: none !important;
+  border-radius: 12px 0 0 12px;
+  pointer-events: all;
+  font: 15px var(--font,var(--fontSpare));
+  position: absolute;
+  line-height: 40px;
+  color: var(--color-text);
+  text-align: center;
+  cursor: pointer;
+  right: 0;
+  width: 65px;
+}
+.list-table>tbody:first-of-type:hover>.list-table-header {
+  opacity: 1;
+}
+.list-table .list-table-header .header-title {
+  background: #995c1f;
+  border: 0;
+  height: 19px;
+  padding: 5px;
+}
+.list-table>tbody:first-of-type::after {
+  border-width: 10px;
+  top: 20px;
+  left: -70px;
+}
+.list-table>tbody:first-of-type:hover:after {
+  opacity: 1;
+  visibility: visible;
 }
 /* User Cover */
 .cover-block {
@@ -244,7 +283,7 @@ body {
   right: 0;
   margin: 0 auto;
 }
-.icon-menu:before {
+.icon-menu:before, .list-table>tbody:first-of-type::after {
   display: block;
   content: "";
   border-color: transparent #995c1f #995c1f transparent;
