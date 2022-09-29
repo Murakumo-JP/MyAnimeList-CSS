@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------- Azur Blur v1.1.1 ------------*/
+/*-------------- Azur Blur v1.1.2 ------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -48,7 +48,7 @@ body {
 }
 
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a Azur Blur v1.1.1, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a Azur Blur v1.1.2, Design and Code by MurakumoJP.";
 }
 
 /* Hide unnecessary */
@@ -1591,43 +1591,38 @@ a.icon-add-volume {
 /* Manga Support */
 
 .data.chapter:before, .data.volume:before {
+  width: 57px;
   background-color: var(--bt-bg);
-  border: 1px solid;
-  border-radius: 5px;
+  box-shadow: 0 0 5px var(--bt-shadow);
+  border-radius: 20px 0 20px 0;
   padding: 0 3px 0 3px;
   display: block;
-  font-weight: 700;
-  font-size: 9px;
-  position: absolute;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 10px;
   top: -11px;
-  left: 0;
   color: #9b9b9b;
   z-index: 1;
 }
 
 .data.volume:before {
   content: "Volue";
-  left: 14px;
 }
 
 .data.chapter:before {
   content: "Chapters";
 }
 
-.data.chapter>div,
-.data.volume>div {
+.data.chapter>div, .data.volume>div {
   color: #9b9b9b;
   position: relative;
-  line-height: 40px;
-}
-
-.list-item .data.chapter a.icon-add-chapter,
-a.icon-add-volume {
-  top: -7px !important;
+  line-height: 30px;
+  text-align: center;
 }
 
 .list-item .data.volume {
-  top: 64px;
+  top: 65px;
+  z-index: 99;
 }
 .list-item .data.magazine {
   display: block;
