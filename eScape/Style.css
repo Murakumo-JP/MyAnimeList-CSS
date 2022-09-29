@@ -230,6 +230,14 @@ body {
 .list-table>tbody:first-of-type:hover>.list-table-header {
   opacity: 1;
 }
+.list-table-header {
+  opacity: 0;
+  position: absolute;
+  z-index: 99;
+  right: 68px;
+  top: 8px;
+  transition: var(--transition);
+}
 .list-table .list-table-header .header-title {
   background: #995c1f;
   border: 0;
@@ -237,13 +245,17 @@ body {
   padding: 5px;
 }
 .list-table>tbody:first-of-type::after {
-  border-width: 10px;
-  top: 20px;
-  left: -70px;
+  border-width: 10px !important;
+  top: 20px !important;
+  left: -70px !important;
 }
 .list-table>tbody:first-of-type:hover:after {
   opacity: 1;
   visibility: visible;
+}
+.list-table .list-table-header .header-title a {
+  color: #fff !important;
+  padding: 0 3px 0px 3px;
 }
 /* User Cover */
 .cover-block {
