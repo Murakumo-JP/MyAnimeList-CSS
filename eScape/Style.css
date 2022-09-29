@@ -668,7 +668,6 @@ body {
   top: 120px;
   right: 15px;
   min-width: 55px;
-  height: 48px!important;
   z-index: 1;
   transform: scale(0);
   transition: var(--transition);
