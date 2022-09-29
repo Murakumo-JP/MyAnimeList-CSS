@@ -9,7 +9,7 @@ MyAnimeList Forum: https://myanimelist.net/forum/?topicid=1868018
 
 ## ► Features
 
-* Supports anime
+* Supports Anime/Manga
 * Uses MAL Modern Theme
 
 ## ► Installation and Settings
