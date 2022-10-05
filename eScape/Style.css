@@ -1,9 +1,9 @@
 /*---------------------------------------------*/
-/*-------------  eScape DEV(0.0.52) --------- */
+/*-------------  eScape DEV(0.0.53) --------- */
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
-@import url(Assets/animate.css);
+@import url("https://murakumo-jp.github.io/MyAnimeList-CSS/eScape/Assets/animate.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
@@ -42,7 +42,7 @@ body {
   
 }
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.52), Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2022 All Rights Reserved. \a eScape DEV(0.0.53), Design and Code by MurakumoJP.";
 }
 /* DISPLAY NONE!!! */
 .data.rated,.data.started,.data.finished,.data.days,
