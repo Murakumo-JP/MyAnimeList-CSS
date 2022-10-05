@@ -11,12 +11,21 @@
 * Supports Anime/Manga
 * Uses MAL Modern Theme
 
-## ► Layout Code
+## ☆ Layout Code
 
 ```css
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
 @\import "https://murakumo-jp.github.io/MyAnimeList-CSS/eScape/Style.min.css";
 ```
+
+* Edit Background
+
+```css
+:root {
+  --body-bg: url("Your link to the images");
+}
+```
+
 
 ## ☆ Censorship Hentai
 
