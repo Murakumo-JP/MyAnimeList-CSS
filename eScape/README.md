@@ -11,6 +11,19 @@
 * Supports Anime/Manga
 * Uses MAL Modern Theme
 
+## ☆ Anime List Settings
+
+- [ ] ☆ Common
+    - [X] Numbers
+    - [X] Score
+    - [X] Type
+    - [X] Episodes
+    - [X] Tags
+- [ ] ☆ Modern Only
+    - [X] Image
+    - [X] Premiered
+    - [X] Studios
+
 ## ☆ Layout Code
 
 ```css
