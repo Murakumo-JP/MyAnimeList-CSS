@@ -471,10 +471,6 @@ body {
   position: absolute;
   z-index: 10;
 }
-.list-item:hover .list-table-data .data.title {
-  opacity: 1;
-  width: 100%;
-}
 .data.title:before, .data.title:after{
   content: " ";
   display: block;
@@ -641,7 +637,6 @@ body {
   height: 40px!important;
   border-radius: 20px;
   z-index: 99;
-  transition: var(--transition);
 }
 .list-item .data.score a {
   line-height: 40px;
@@ -675,7 +670,6 @@ body {
   right: 15px;
   min-width: 55px;
   z-index: 1;
-  transition: var(--transition);
 }
 .data.progress>div {line-height: 50px;}
 .list-item .data.progress a, .list-item .data.progress span {
@@ -801,7 +795,7 @@ body {
 .list-item .more-info::-webkit-scrollbar {width: 0;}
 .list-item .more-info {
   position: absolute;
-  top: 0;
+  top: -10;
   left: 0;
   right: 0;
   margin: 0 auto;
