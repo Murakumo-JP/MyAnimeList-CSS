@@ -676,8 +676,7 @@
 .data.image a[href^="/anime/5664/"]:before{content: var(--R18);} 
 .data.image a[href^="/anime/5608/"]:before{content: var(--R18);} 
 .data.image a[href^="/anime/37340/"]:before{content: var(--R18);}
-.data.image a[href^="/anime/11321/"]:before{content: var(--R18);}
-.data.image a[href^="/anime/2239/"]:before{content: var(--R18);} 
+.data.image a[href^="/anime/11321/"]:before{content: var(--R18);} 
 .data.image a[href^="/anime/16476/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/36121/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/36755/"]:before{content: var(--R18);}
@@ -1456,3 +1455,4 @@
 .data.image a[href^="/anime/53204/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/53258/"]:before{content: var(--R18);}
 .data.image a[href^="/anime/53257/"]:before{content: var(--R18);}
+.data.image a[href^="/anime/53425/"]:before{content: var(--R18);}
