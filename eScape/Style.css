@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------  eScape DEV(0.0.54) --------- */
+/*-------------- eScape (1.0.0) --------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -28,7 +28,7 @@
 }
 
 #advanced-options:before {
-  content: "eScape [DEV] v0.0.54, Design and Code by MurakumoJP.";
+  content: "eScape v1.0.0, Design and Code by MurakumoJP.";
 }
 
 * {
@@ -218,8 +218,8 @@ body {
 /* Sort Menu */
 .list-table>tbody:first-of-type {
   position: fixed;
-  top: 73%;
-  right: 0;
+  bottom: 8%;
+  right: 2%;
   -moz-transform: translateY(-73%);
   -ms-transform: translateY(-73%);
   -webkit-transform: translateY(-73%);
@@ -230,16 +230,16 @@ body {
   content: "\F161";
   background: var(--color-gradient-gray);
   border: none !important;
-  border-radius: 12px 0 0 12px;
   pointer-events: all;
   font: 15px var(--font,var(--fontSpare));
   position: absolute;
-  line-height: 40px;
   color: var(--color-text);
   text-align: center;
   cursor: pointer;
   right: 0;
-  width: 65px;
+  border-radius: 50%;
+  width: 45px;
+  line-height: 3;
 }
 .list-table>tbody:first-of-type:hover>.list-table-header {
   opacity: 1;
