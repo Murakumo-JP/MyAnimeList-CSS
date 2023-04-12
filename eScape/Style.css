@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------- eScape (1.0.0) --------------*/
+/*-------------- eScape (1.0.1) --------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -27,8 +27,10 @@
   --dt-plantowatch: #e7ffdf;
 }
 
+.dark-mode {background-color: transparent;} /* Fix Dark Mode MAL */
+
 #advanced-options:before {
-  content: "eScape v1.0.0, Design and Code by MurakumoJP.";
+  content: "eScape v1.0.1, Design and Code by MurakumoJP.";
 }
 
 * {
@@ -484,6 +486,7 @@ body {
   border-radius: 10px 10px 0 0;
 }
 .list-item .list-table-data .data.title {
+  background: white;
   display: block;
   width: 100%;
   height: 64px;
