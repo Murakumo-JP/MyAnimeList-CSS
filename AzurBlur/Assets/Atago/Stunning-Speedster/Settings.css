@@ -1,10 +1,10 @@
 /* Character Setting | Atago Stunning Speedster */
 :root{
-		--body-bg: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoRaceBG.jpg");
+		--body-bg: url("/MyAnimeList-CSS/AzurBlur/Assets/Atago/Stunning-Speedster/Resources/AtagoRaceBG.jpg");
 		/* Menu Character */
-		--char-img: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoRace.png");
+		--char-img: url("/MyAnimeList-CSS/AzurBlur/Assets/Atago/Stunning-Speedster/Resources/AtagoRace.png");
 		--char-display: block;
 		/* Sort Menu */
-		--Sort-img: url("/MyAnimeList-CSS/AzurBlur/Assets/Noshiro/Wedding/Resources/AtagoRaceChibi.png");
+		--Sort-img: url("/MyAnimeList-CSS/AzurBlur/Assets/Atago/Stunning-Speedster/Resources/AtagoRaceChibi.png");
 		--Sort-display: block;
 }
