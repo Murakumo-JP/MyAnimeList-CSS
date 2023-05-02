@@ -28,9 +28,9 @@
   --u-avatar-color-4: #bcd611;
 
   
-  --body-bg: url("./Assets/Atago/Summer-March/Resources/AtagoSummerBG.jpg");
-  --char-img: url("./Assets/Atago/Summer-March/Resources/AtagoSummer.png");
-  --Sort-img: url("./Assets/Atago/Summer-March/Resources/AtagoSummerChibi.png");
+  --body-bg: url("MyAnimeList-CSS/AzurBlur/Assets/Atago/Summer-March/Resources/AtagoSummerBG.jpg");
+  --char-img: url("MyAnimeList-CSS/AzurBlur/Assets/Atago/Summer-March/Resources/AtagoSummer.png");
+  --Sort-img: url("MyAnimeList-CSS/AzurBlur/Assets/Atago/Summer-March/Resources/AtagoSummerChibi.png");
   --char-display: block;
   --Sort-display: block;
 }
