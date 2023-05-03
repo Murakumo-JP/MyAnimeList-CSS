@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
-  --body-bg: url("MyAnimeList-CSS/eScape/Assets/FFXIV.jpg");
+  --body-bg: url("Assets/FFXIV.jpg");
   --body-bg-color: #27282c;
   --font: FontAwesome;
   --fontSpare: "Font Awesome 6 Pro";
