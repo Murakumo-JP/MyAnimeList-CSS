@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------- eScape (1.0.1) --------------*/
+/*-------------- eScape (1.0.2) --------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
-  --body-bg: url("./Assets/FFXIV.jpg");
+  --body-bg: url("MyAnimeList-CSS/eScape/Assets/FFXIV.jpg");
   --body-bg-color: #27282c;
   --font: FontAwesome;
   --fontSpare: "Font Awesome 6 Pro";
@@ -30,7 +30,7 @@
 .dark-mode {background-color: transparent;} /* Fix Dark Mode MAL */
 
 #advanced-options:before {
-  content: "eScape v1.0.1, Design and Code by MurakumoJP.";
+  content: "eScape v1.0.2, Design and Code by MurakumoJP.";
 }
 
 * {
@@ -329,7 +329,7 @@ body {
   z-index: 10;
 }
 .list-menu-float .icon-menu {
-  background: transparent;
+  background-color: transparent !important;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -391,6 +391,7 @@ body {
 }
 .list-menu-float .icon-menu:hover {
   background-color: transparent !important;
+  fill: #ffffff;
   width: 50px !important;
 }
 .list-menu-float .icon-menu svg.icon {fill: var(--color-text);}
