@@ -1,5 +1,5 @@
-@import url(R18Anime.css);
-@import url(R18Manga.css);
+@import url(./Data/R18Anime.css);
+@import url(./Data/R18Manga.css);
 
 :root{
   --R18: "Hentai" ;
