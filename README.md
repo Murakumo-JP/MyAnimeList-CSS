@@ -4,11 +4,15 @@
   - Supports Anime
   - Uses MAL Modern Theme
 
-## Azur Blur CSS theme for MyAnimeList
+## eScape
+
+- [Installation and Settings](https://murakumo-jp.github.io/MyAnimeList-CSS/eScape/)
+
+## Azur Blur
 
 - [Installation and Settings](https://murakumo-jp.github.io/MyAnimeList-CSS/AzurBlur/)
 
-## Eorzea Collection CSS theme for MyAnimeList
+## Eorzea Collection
 
 - [Installation and Settings](https://murakumo-jp.github.io/MyAnimeList-CSS/Eorzea_Collection/)
 
