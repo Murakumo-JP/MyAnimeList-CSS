@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------- Azur Blur v1.1.5 ------------*/
+/*-------------- Azur Blur v1.1.6 ------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -46,7 +46,7 @@ body {
 }
 
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2023 All Rights Reserved. \a Azur Blur v1.1.5, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2023 All Rights Reserved. \a Azur Blur v1.1.6, Design and Code by MurakumoJP.";
 }
 
 /* Hide unnecessary */
@@ -351,6 +351,12 @@ i.fa.fa-search {
 .list-table {
   max-width: 1120px;
   border: none;
+  vertical-align: top;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px 180px 180px;
+  justify-items: center;
+  justify-content: space-evenly;
 }
 
 /*==========\ Start Cover /==========*/
@@ -364,13 +370,9 @@ i.fa.fa-search {
 }
 
 .list-container .list-unit .list-table .list-item {
-  position: relative;
-  display: inline-block;
   width: 180px;
   height: 280px;
-  box-sizing: border-box;
-  background-color: transparent;
-  margin: 3px;
+  position: relative;
 }
 
 .data.studio span {font-size: 0;}
@@ -1177,6 +1179,7 @@ a.icon-add-volume {
 .list-menu-float:hover + .list-container::before {
   opacity: 1;
   visibility: visible;
+  right: 180px;
   transition: var(--menu-transition);
 }
 
@@ -1187,11 +1190,12 @@ a.icon-add-volume {
   width: calc(100% - 180px);
   height: calc(100% - 66px);
   background-image: var(--char-img);
+  background-color: #00000080;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
   top: 66px;
-  right: 180px;
+  right: 0;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
