@@ -3,7 +3,6 @@
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
-@import url("https://murakumo-jp.github.io/MyAnimeList-CSS/eScape/Assets/animate.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
@@ -452,7 +451,7 @@ body {
   grid-template-columns: 180px 180px 180px 180px 180px 180px;
   justify-items: center;
   justify-content: space-evenly;
-  padding-top: 17px;
+  padding-top: 10px;
   border: 0!important;
 }
 .list-table-data {
@@ -466,7 +465,7 @@ body {
   height: 280px;
   background-color: transparent;
   position: relative;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 }
 .list-table-data {
   transform: translateY(0px);
