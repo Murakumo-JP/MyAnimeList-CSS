@@ -1187,7 +1187,7 @@ a.icon-add-volume {
   content: "";
   display: var(--char-display);
   position: fixed;
-  width: calc(100% - 180px);
+  width: calc(110% - 180px);
   height: calc(100% - 66px);
   background-image: var(--char-img);
   background-color: #00000080;
