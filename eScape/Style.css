@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------- eScape (1.0.2) --------------*/
+/*-------------- eScape (1.0.3) --------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -30,7 +30,7 @@
 .dark-mode {background-color: transparent;} /* Fix Dark Mode MAL */
 
 #advanced-options:before {
-  content: "eScape v1.0.2, Design and Code by MurakumoJP.";
+  content: "eScape v1.0.3, Design and Code by MurakumoJP.";
 }
 
 * {
@@ -446,12 +446,14 @@ body {
   display: block;
 }
 .list-table {
-  width: 100%;
-  padding-bottom: 50px;
-  display: block;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px 180px 180px;
+  justify-items: center;
+  justify-content: space-evenly;
+  padding-top: 17px;
+  border: 0!important;
 }
 .list-table-data {
   position: absolute;
@@ -460,14 +462,11 @@ body {
 }
 
 .list-container .list-unit .list-table .list-item {
-  position: relative;
-  display: inline-block;
   width: 180px;
   height: 280px;
-  box-sizing: border-box;
   background-color: transparent;
-  margin: 3px;
-  border-radius: 10px;
+  position: relative;
+  margin-bottom: 17px;
 }
 .list-table-data {
   transform: translateY(0px);
