@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------- Azur Blur v1.1.7 ------------*/
+/*-------------- Azur Blur v1.1.8 ------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -46,7 +46,7 @@ body {
 }
 
 #advanced-options:after {
-  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2023 All Rights Reserved. \a Azur Blur v1.1.7, Design and Code by MurakumoJP.";
+  content: "MyAnimeList.net is a property of MyAnimeList, LLC. ©2023 All Rights Reserved. \a Azur Blur v1.1.8, Design and Code by MurakumoJP.";
 }
 
 /* Hide unnecessary */
@@ -1508,6 +1508,22 @@ a.icon-add-volume {
   position: absolute;
   z-index: 999;
   visibility: initial;
+}
+
+/* MAL Score */
+
+.list-item .mal_score {
+  display: block !important;
+  bottom: 70px;
+  height: 16px;
+  line-height: 16px;
+  right: 0;
+  font-size: 13px!important;
+  color: #9b9b9b;
+  border-right: 3px solid #9b9b9b!important;
+  border-bottom: 0 !important;
+  padding-right: 5px !important;
+  border: 0;
 }
 
 /* Webkit */
