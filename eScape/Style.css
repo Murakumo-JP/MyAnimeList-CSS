@@ -1,9 +1,9 @@
 /*---------------------------------------------*/
-/*-------------- eScape (1.0.4) --------------*/
+/*-------------- eScape (1.0.5) --------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
-@import url("https://murakumo-jp.github.io/MyAnimeList-CSS/eScape/Assets/animate.css");
+/* @import url("https://murakumo-jp.github.io/MyAnimeList-CSS/eScape/Assets/animate.css"); */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
@@ -30,7 +30,7 @@
 .dark-mode {background-color: transparent;} /* Fix Dark Mode MAL */
 
 #advanced-options:before {
-  content: "eScape v1.0.4, Design and Code by MurakumoJP.";
+  content: "eScape v1.0.5, Design and Code by MurakumoJP.";
 }
 
 * {
@@ -837,16 +837,25 @@ body {
 
 /* MAL Score */
 
-.data.mal_score {
-  z-index: 5;
+.list-item .data.mal_score {
+  background: var(--color-gradient-gray);
   color: var(--color-text);
-  border: 0!important;
-  line-height: 28px;
-  right: 0;
-  left: 0;
+  border-top: 1px solid var(--color-text);
+  border-radius: 0 0 10px 10px;
+  width: max-content;
+  top: 28px;
   margin: 0 auto;
+  padding: 5px !important;
+  left: 0;
+  right: 0;
+  font-size: 9px;
+  opacity: 1;
+  transition: var(--transition);
 }
-
+.list-item:hover .data.mal_score {
+  top: 0;
+  opacity: 0;
+}
 .data.mal_score:before {
   content: "Score:";
 }
