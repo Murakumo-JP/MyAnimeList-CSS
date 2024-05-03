@@ -851,6 +851,7 @@ body {
   font-size: 9px;
   opacity: 1;
   transition: var(--transition);
+  z-index: 1;
 }
 .list-item:hover .data.mal_score {
   top: 0;
