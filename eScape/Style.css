@@ -857,7 +857,7 @@ body {
   opacity: 0;
 }
 .data.mal_score:before {
-  content: "Score:";
+  content: "MAL Score:";
 }
 /*Filter Option*/
 
