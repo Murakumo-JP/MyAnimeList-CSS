@@ -1,0 +1,37 @@
+on:
+  schedule:
+    - cron: "*/50 * * * *"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    name: Generate repository
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: '3.8'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r ../Resources/Censorship/Generator/requirements.txt
+
+    - name: Run R18Anime
+      run: python ../Resources/Censorship/Generator/R18Anime.py
+
+    - name: Run R18Manga
+      run: python ../Resources/Censorship/Generator/R18Manga.py
+
+    - name: Commit files
+      run: |
+        git config --local user.name "GitHub Action"
+        git fetch origin main
+        git checkout main
+        git add R18Anime.css R18Manga.css
+        git diff --cached --quiet && exit 0
+        git commit -m "[Update] Censorship"
+        git push
