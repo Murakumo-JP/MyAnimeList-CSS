@@ -19,7 +19,7 @@ while True:
         temp = re.sub(r'\/[^\/]*?$', '', temp)
         animelist.append('.data.image a[href^="'+temp+'/"]:before{content: var(--R18);}')
 
-        f = open('../Data/R18Anime.css', 'w')
+        f = open('R18Anime.css', 'w')
     for index in animelist:
         f.write(index + '\n')
     print(animelist)
