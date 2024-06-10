@@ -1,5 +1,5 @@
 /*---------------------------------------------*/
-/*-------------- eScape (1.0.5) --------------*/
+/*-------------- eScape (1.0.6) --------------*/
 /*------ https://github.com/Murakumo-JP -----*/
 /*------------------------------------------*/
 
@@ -30,7 +30,7 @@
 .dark-mode {background-color: transparent;} /* Fix Dark Mode MAL */
 
 #advanced-options:before {
-  content: "eScape v1.0.5, Design and Code by MurakumoJP.";
+  content: "eScape v1.0.6, Design and Code by MurakumoJP.";
 }
 
 * {
@@ -480,6 +480,7 @@ body {
   display: block;
   position: absolute;
   background: var(--color-gradient-gray);
+  border-top: 1px solid var(--color-text);
   width: 100%;
   height: 28px;
   z-index: 5;
@@ -522,9 +523,10 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 272px;
   border-radius: var(--border);
   border: none !important;
+  object-fit: cover;
 }
 .list-container .list-unit .list-table .list-item .list-table-data .data.image .link::after {
   content: "";
@@ -840,7 +842,8 @@ body {
 .list-item .data.mal_score {
   background: var(--color-gradient-gray);
   color: var(--color-text);
-  border-top: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-text);
+  box-shadow: 0px 3px 5px 0px #000000b3;
   border-radius: 0 0 10px 10px;
   width: max-content;
   top: 28px;
