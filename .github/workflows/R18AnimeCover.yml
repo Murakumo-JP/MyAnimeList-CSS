@@ -1,0 +1,34 @@
+name: Daily Task
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Запуск каждый день в полночь UTC
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'  # Укажите версию Python, которую вы используете
+
+      - name: Install dependencies
+        run: |
+          pip install -r Resources/Censorship/Data/requirements.txt
+
+      - name: Run Python script
+        run: |
+          python Resources/Censorship/Data/R18Anime.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Resources/Censorship/Data/R18Anime.css
+          git commit -m "Update R18Anime.css"
+          git push
