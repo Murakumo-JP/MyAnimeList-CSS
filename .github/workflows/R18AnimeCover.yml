@@ -1,8 +1,9 @@
-name: Daily Task
+name: R18Anime
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Запуск каждый день в полночь UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 jobs:
   run-script:
