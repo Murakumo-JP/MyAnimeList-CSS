@@ -30,9 +30,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git fetch origin master
-          git checkout master
           git add Resources/Censorship/Data/R18Anime.css
-          git diff --cached --quiet && exit 0
           git commit -m "Update R18Anime.css"
           git push
