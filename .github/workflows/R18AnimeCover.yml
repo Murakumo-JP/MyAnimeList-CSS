@@ -32,9 +32,11 @@ jobs:
           git diff --name-only
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add R18Anime.css
+          git add Resources/Censorship/Data/R18Anime.css
           git commit -m "Update R18Anime.css"
           git push
