@@ -25,6 +25,11 @@ jobs:
       - name: Run Python script
         run: |
           python Resources/Censorship/Data/R18Anime.py
+          
+      - name: Check git status
+        run: |
+          git status
+          git diff --name-only
 
       - name: Commit and push changes
         run: |
