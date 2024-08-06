@@ -43,5 +43,5 @@
 ## ☆ Censorship Hentai
 
 ```css
-@\import "https://murakumo-jp.github.io/MyAnimeList-CSS/Resources/Censorship/R18Cover.min.css";
+@\import "https://murakumo-jp.github.io/MALCensorship/R18Cover.min.css";
 ```
