@@ -3,6 +3,10 @@
 > 
 > All that is being updated now is censorship for hentai covers.
 
+> [!NOTE]
+> The censorship of hentai covers has been completely migrated to the new repository and is available here [MALCensorship
+](https://github.com/Murakumo-JP/MALCensorship)
+
 # This repository is for all my styles
 
 - Features
